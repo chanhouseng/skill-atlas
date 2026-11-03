@@ -1,6 +1,6 @@
 {
   "name": "skill-atlas-zh",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "type": "module",
   "private": true,
   "scripts": {
@@ -8,9 +8,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test": "node --test src/lib/*.test.mjs src/data/*.test.mjs scripts/catalog-sync.test.mjs",
+    "test": "node --test src/lib/*.test.mjs src/data/*.test.mjs scripts/catalog-sync.test.mjs scripts/discover-core.test.mjs",
     "sync:skills": "node scripts/sync-github.mjs",
+    "discover:skills": "node scripts/discover-github.mjs",
     "qa:e2e": "node scripts/qa-phase2.mjs",
+    "qa:phase3": "node scripts/qa-phase3.mjs",
     "catalog:localize": "node scripts/compile-localizations.mjs",
     "typecheck": "tsc --noEmit"
   },

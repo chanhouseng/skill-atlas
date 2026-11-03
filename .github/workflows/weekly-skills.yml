@@ -1,0 +1,48 @@
+name: Weekly Skill catalog discovery
+on:
+  schedule:
+    # Monday 09:17 Asia/Singapore (UTC+8), avoids peak top-of-hour load
+    - cron: '17 1 * * 1'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: skill-catalog-weekly
+  cancel-in-progress: false
+jobs:
+  discover-and-propose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - name: Search newly discovered SKILL.md candidates
+        run: npm run discover:skills
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Refresh versions of approved Skills
+        run: npm run sync:skills
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Run catalog validation
+        run: npm run test
+      - name: Open review PR without auto-publishing candidates
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: bot/weekly-skill-discovery
+          commit-message: 'chore: weekly public GitHub Skill discovery and source update'
+          title: 'chore: weekly GitHub Skill candidates and source versions'
+          body: |
+            Automated weekly public GitHub Skill scan.
+            - New candidates are **pending review** and have not become approved Skills.
+            - GitHub SKILL.md source changes may require re-review of existing Chinese summaries.
+            - Review the diff, source licenses, permissions, dependencies and Chinese text before merging.
+          add-paths: |
+            src/data/discovery.candidates.json
+            src/data/catalog.snapshot.json

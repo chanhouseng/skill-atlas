@@ -42,3 +42,6 @@ next-env.d.ts
 
 # Local Playwright quality-check screenshots (kept on developer machine)
 docs/qa-*.png
+
+# Weekly local GitHub discovery logs
+logs/

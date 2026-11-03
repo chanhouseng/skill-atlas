@@ -1,0 +1,11 @@
+.discoveries-page{padding-bottom:100px}.discoveries-hero{padding:40px 0 28px;max-width:750px}.discoveries-hero h1{font-size:43px;letter-spacing:-.05em;margin:10px 0}.discoveries-hero p{font-size:15px;line-height:1.9;color:#66778e}
+.discovery-summary{display:flex;gap:24px;margin:14px 0 24px}.discovery-summary>div{background:white;border:1px solid #e2e8ef;border-radius:11px;padding:15px 20px;display:flex;gap:8px;align-items:baseline}.discovery-summary strong{font-size:24px}.discovery-summary span{color:#718095;font-size:12px}
+.discoveries-warning{background:#f3f7fb;border:1px solid #dce7ee;border-radius:10px;padding:16px 20px;margin-bottom:25px}.discoveries-warning strong{font-size:14px}.discoveries-warning p{font-size:13px;line-height:1.85;margin:5px 0 0;color:#678}
+.candidate-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+.candidate-card{border:1px solid #dce4ec;background:white;border-radius:11px;padding:20px;min-width:0;display:flex;flex-direction:column;min-height:220px}
+.candidate-card-head{display:flex;justify-content:space-between;align-items:center;gap:10px;color:#9aa6b3;font-size:11px}.candidate-status{border:1px solid #d9dee6;padding:3px 8px;border-radius:4px;color:#6c7785;font-size:11px}
+.candidate-card h2{font:700 19px/1.4 "Geist",monospace;overflow-wrap:anywhere;margin:17px 0 5px}.candidate-repo,.candidate-path{font-size:12px;color:#708298;overflow-wrap:anywhere;margin:0 0 10px}.candidate-path{color:#9aa8b6;font:11px/1.65 monospace}
+.candidate-footer{margin-top:auto;padding-top:13px;border-top:1px solid #ecf1f5;display:flex;flex-direction:column;gap:7px}.candidate-footer span{color:#97a1ae;font-size:11px}.candidate-footer a{color:#1a7a79;font-size:12px;font-weight:700}
+.discoveries-footer-note{margin-top:34px}.discoveries-footer-note a{font-size:13px;color:#0c7c79;font-weight:700}
+@media(max-width:950px){.candidate-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.candidate-grid{grid-template-columns:1fr}.discovery-summary{flex-wrap:wrap;gap:10px}.discovery-summary>div{flex:1;min-width:140px}.discoveries-hero h1{font-size:32px}}

@@ -3,6 +3,7 @@ import Link from "next/link";
 import "./globals.css";
 import "./intent.css";
 import "./language.css";
+import "./discoveries.css";
 import { LanguageProvider, LocaleText } from "@/components/language-provider";
 import { LanguageSwitch } from "@/components/language-switch";
 
@@ -26,6 +27,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             <nav className="main-nav" aria-label="主要導覽">
               <Link href="/" className="nav-link"><LocaleText text="探索技能"/></Link>
               <Link href="/about" className="nav-link"><LocaleText text="使用指南"/></Link>
+              <Link href="/discoveries" className="nav-link"><LocaleText text="新發現"/></Link>
               <LanguageSwitch/><a href="https://skills.sh/" target="_blank" rel="noopener noreferrer" className="nav-external"><LocaleText text="原始目錄"/> <span aria-hidden="true">↗</span></a>
             </nav>
           </div>

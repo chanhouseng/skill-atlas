@@ -90,3 +90,46 @@ scripts/qa-phase2.mjs              本機 Chrome 互動驗收
 - 不展示來源未確認的安裝數、排行榜數據或安全分數；本目錄並不等於 skills.sh 的完整收錄。
 - [skills.sh API 文件](https://skills.sh/docs/api) 所述 API 需 Vercel OIDC，本站未連接該 API。沒有憑據時不繞過驗證限制。
 - 網站尚未公開部署；目前只在你的 Windows 本機運行。
+
+## 第三批功能（2026-11-03）
+
+### 用自然語言找 Skill
+
+首頁的「不知道 Skill 名稱？直接說你想做甚麼。」區域可輸入中文完整需求。系統以本機規則、同義詞及已收錄的技能用途來排序，最多列出 5 個 Skill、推薦原因及實際使用指南。
+
+這是**免付費 API 的可解釋意圖匹配**，不是大模型或真正通用的語意搜尋。未知需求會顯示無結果；輸入不會上傳外部服務。
+
+### 簡體／繁體切換
+
+網站右上角提供語言切換，使用開源 `opencc-js`；首頁、中文介紹、推薦原因、詳細頁和複製的中文示例會切換。英文 Skill `name`、slug、GitHub 來源和安裝指令不會改動。偏好保存在本機瀏覽器 LocalStorage。
+
+### GitHub 新 Skill 候選
+
+訪問 `/discoveries` 查看「**新發現・待審核**」資料。當前有 20 個來自 GitHub 連接工具的來源路徑已核對候選，這只是一次手動初始化，**不是本週自動掃描已成功的證據**；候選與正式的 117 個已核對 Skill 分開，不提供安裝命令。
+
+維護者在 PowerShell 中執行：
+
+```powershell
+npm run discover:skills
+npm run sync:skills
+```
+
+`discover:skills` 以 GitHub 公開搜尋 API 找最近有活動的 Agent Skill 倉庫，再用 Git tree 驗證 `SKILL.md` 路徑，保留舊資料、去除已正式收錄的來源、拒收可疑路徑及失敗的半成品。結果寫在 `src/data/discovery.candidates.json`。它**不能找到 GitHub 上全部 Skill**；匿名 API 有速率限制，如遇 403 請在自己環境設置 `GITHUB_TOKEN`（不要寫入檔案）。
+
+### 已設定每週排程
+
+- 已在本機 Windows Task Scheduler 登記 `Skill Atlas Weekly Discovery`，**每週一 09:17（電腦 China Standard Time，UTC+8）**執行 `scripts/weekly-sync.ps1`。
+- 首次預定執行日期 **2026-11-09 09:17**。電腦需要開啟；如睡眠、斷網或 GitHub 限額耗盡，可能延遲或失敗。Windows 設定 `StartWhenAvailable`，但不能代替 24 小時在線雲端排程。執行記錄存在 `logs/`（不提交 Git）。
+- 另提供 `.github/workflows/weekly-skills.yml`：週一 01:17 UTC 使用 GitHub Actions 內建 Token 批量掃描，並提出需人工審核的 PR，**不自動合併、安裝或正式發布候選**。因為本機專案目前未配置 Git remote，這份雲端工作流程**尚未在 GitHub 上啟用**。必須先將倉庫推送到 GitHub 的預設分支，並允許 Actions 建立 PR。
+
+### 第三批驗收
+
+```powershell
+npm run test
+npm run typecheck
+npm run lint
+npm run build
+npm run qa:phase3
+```
+
+端到端測試需先在本機啟動 3026 端口與 Chrome。截圖位於 `docs/qa-phase3-*.png`，不追蹤到 Git。

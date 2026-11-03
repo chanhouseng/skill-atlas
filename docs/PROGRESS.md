@@ -66,3 +66,11 @@
 - 新發現項目尚未經中文內容、安全性和授權審查，因此不會自動加入正式 117 條目，也不向用戶提供未審核的安裝指令。
 - GitHub Actions 需先將 workflow 提交至已設定預設分支的遠端倉庫，且授予建立 PR 權限；本機沒有已配置的 Git remote，未啟用雲端自動化。
 - Windows 排程受電腦開機、網路、Node.js 環境和 GitHub API 限額影響。
+
+### GitHub Actions 啟用前安全檢查（2026-11-03）
+
+- 已確認 workflow 只允許 `contents: write` 與 `pull-requests: write`，輸出限於候選與來源快照；不會自動合併 PR、安裝或發布第三方 Skill。
+- `actions/checkout`、`actions/setup-node` 與 `peter-evans/create-pull-request` 已固定到明確 commit；checkout 不保留 Git 認證。
+- 依賴安裝改用 `npm ci --ignore-scripts`，避免在每週掃描期間執行套件 lifecycle script；仍以 lockfile 固定依賴。
+- 檢查開始時本機位於 `feat/phase3-natural-discovery`、工作目錄乾淨且沒有 Git remote；安全調整後有尚未提交的修改。預設分支 Actions/PR 權限和首次手動執行仍待驗證。
+- 本機 `npm ci --ignore-scripts` 因 Windows 檔案佔用未完成；補回依賴後單元測試 47/47 通過。乾淨環境安裝仍待 GitHub Actions 驗證。

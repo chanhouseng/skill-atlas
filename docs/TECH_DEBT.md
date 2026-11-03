@@ -24,5 +24,6 @@
 - **GitHub API 訪問限額（已觀察到，未解決）：** 首次對公開 repository search 的匿名批量請求出現 GitHub API rate limit；本機候選 JSON 原子寫入保護生效。可用授權 Token 提高 API 限額，但不得在程式碼中保存 Token。
 - **GitHub 全量覆蓋（產品不可能保證）：** GitHub 沒有完整 Skills 登記 API；目前 discovery 是多種倉庫關鍵字查詢＋樹核對，不保證抓到所有倉庫或所有 SKILL.md。
 - **每週排程運行環境：** Windows Scheduler 已設定，但電腦關機、連線中斷、token 限額耗盡可能導致延期／失敗。若未來上雲，改用 GitHub Actions/CI，PR 仍需人工審核；現階段雲端工作流程未啟用。
+- **GitHub Actions 供應鏈（已收緊，待遠端驗證）：** workflow 使用的三個 Action 已固定到明確 commit，checkout 不保留認證，`npm ci` 禁止 lifecycle script。仍需在 GitHub 倉庫啟用 Actions 建立 PR 權限後，以手動觸發驗證實際權限與 PR 行為。
 - **候選與正式收錄隔離（已實作）：** 新發現的 20 個項目只有來源檔案路徑已核對，未做安全/內容審核；正式 Skill 數仍為 117。
 - **自然語言匹配能力邊界：** 固定同義詞規則能解釋推薦，但對新概念、複雜否定與含糊任務的覆蓋有限，應持續評估實際命中率；不能描述為完整語意搜尋。

@@ -1,0 +1,4 @@
+.language-switch {display:inline-flex;flex-shrink:0;align-items:center;gap:1px;border:1px solid #d9e3ea;background:#f3f6f9;border-radius:7px;padding:3px;}
+.language-switch button{border:0;border-radius:5px;padding:6px 9px;color:#597084;background:transparent;font-size:12px;font-weight:700}
+.language-switch button[aria-pressed="true"]{background:#10243b;color:white}
+@media(max-width:570px){.site-header-inner{gap:6px}.main-nav{gap:8px}.language-switch button{padding:6px}.site-header .brand-name{font-size:17px}}

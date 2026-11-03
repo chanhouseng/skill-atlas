@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { LocaleText } from "@/components/language-provider";
 import { notFound } from "next/navigation";
 import { CopyButton } from "@/components/copy-button";
 import { getSkillBySlug, githubUrl, installCommand, skills, sourceFileUrl } from "@/data/skills";
@@ -21,14 +22,14 @@ export default async function SkillDetail({ params }: Props) {
   if (!skill) notFound();
   const related = skills.filter((other) => other.category === skill.category && other.id !== skill.id).slice(0,3);
   return <main id="main" className="container detail-page">
-    <nav aria-label="麵包屑" className="breadcrumbs"><Link href="/">技能目錄</Link><span>/</span><span>{skill.category}</span><span>/</span><span>{skill.slug}</span></nav>
+    <nav aria-label="麵包屑" className="breadcrumbs"><Link href="/"><LocaleText text="技能目錄"/></Link><span>/</span><span><LocaleText text={skill.category}/></span><span>/</span><span>{skill.slug}</span></nav>
     <section className="detail-head">
       <div className="detail-heading-left">
-        <div className="detail-overline"><span className="detail-category">{skill.category}</span><span className="detail-origin">已核對 GitHub SKILL.md · {skill.verifiedAt.slice(0,10)}</span></div>
-        <h1>{skill.zhName}</h1>
-        <p className="detail-slug">{skill.name}</p>{skill.needsReview && <p className="source-update-warning">原始 Skill 有新版本，這份中文介紹仍待重新核對。</p>}
-        <p className="detail-subtitle">{skill.summary}</p>
-        <div className="detail-tag-list">{skill.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
+        <div className="detail-overline"><span className="detail-category"><LocaleText text={skill.category}/></span><span className="detail-origin"><LocaleText text="已核對 GitHub SKILL.md · "/>{skill.verifiedAt.slice(0,10)}</span></div>
+        <h1><LocaleText text={skill.zhName}/></h1>
+        <p className="detail-slug">{skill.name}</p>{skill.needsReview && <p className="source-update-warning"><LocaleText text="原始 Skill 有新版本，這份中文介紹仍待重新核對。"/></p>}
+        <p className="detail-subtitle"><LocaleText text={skill.summary}/></p>
+        <div className="detail-tag-list">{skill.tags.map((tag) => <span key={tag}><LocaleText text={tag}/></span>)}</div>
       </div>
       <div className="detail-mark" aria-hidden="true"><span>{skill.slug.slice(0,1).toUpperCase()}</span><small>SKILL<br/>FILE</small></div>
     </section>
@@ -37,42 +38,42 @@ export default async function SkillDetail({ params }: Props) {
       <div className="detail-content">
         <section className="detail-section">
           <div className="detail-section-number">01 / WHEN TO USE</div>
-          <h2>甚麼時候適合使用？</h2>
-          <p className="section-intro">遇到以下情況時，可以考慮先閱讀這個 Skill 的原始指引，再交由 AI 使用。</p>
-          <ul className="scenario-list">{skill.scenarios.map((scenario) => <li key={scenario}><span className="scenario-check">✓</span>{scenario}</li>)}</ul>
+          <h2><LocaleText text="甚麼時候適合使用？"/></h2>
+          <p className="section-intro"><LocaleText text="遇到以下情況時，可以考慮先閱讀這個 Skill 的原始指引，再交由 AI 使用。"/></p>
+          <ul className="scenario-list">{skill.scenarios.map((scenario) => <li key={scenario}><span className="scenario-check">✓</span><LocaleText text={scenario}/></li>)}</ul>
         </section>
         <section className="detail-section" id="install">
           <div className="detail-section-number">02 / INSTALL</div>
-          <h2>安裝這個 Skill</h2>
-          <p className="section-intro">在自己的終端機執行以下指令。需要預先安裝 Node.js，使用前請先檢查原始倉庫內容。</p>
-          <div className="code-panel"><div className="code-panel-top"><span>終端機指令</span><CopyButton value={installCommand(skill)} label="複製指令"/></div><pre><code>$ {installCommand(skill)}</code></pre></div>
-          <p className="info-paragraph">CLI 會依照你的 AI 工具與安裝選項進行操作。本站只顯示命令，不會在你的電腦執行任何安裝。</p>
+          <h2><LocaleText text="安裝這個 Skill"/></h2>
+          <p className="section-intro"><LocaleText text="在自己的終端機執行以下指令。需要預先安裝 Node.js，使用前請先檢查原始倉庫內容。"/></p>
+          <div className="code-panel"><div className="code-panel-top"><span><LocaleText text="終端機指令"/></span><CopyButton value={installCommand(skill)} label="複製指令"/></div><pre><code>$ {installCommand(skill)}</code></pre></div>
+          <p className="info-paragraph"><LocaleText text="CLI 會依照你的 AI 工具與安裝選項進行操作。本站只顯示命令，不會在你的電腦執行任何安裝。"/></p>
         </section>
         <section className="detail-section" id="prompt">
           <div className="detail-section-number">03 / HOW TO USE</div>
-          <h2>建議怎樣調用？</h2>
-          <p className="section-intro">下面是本站編寫的中文示例，已將任務、範圍和交付要求寫清楚。可直接複製，再改成你的實際需要。</p>
-          <div className="prompt-panel"><div className="prompt-panel-top"><span>中文調用範例 · 編輯建議</span><CopyButton value={skill.examplePrompt} label="複製示例"/></div><p>{skill.examplePrompt}</p></div>
-          <div className="usage-tip"><strong>調用小技巧</strong><p>安裝後，AI 工具可能根據任務自動選用 Skill，但不保證每次都觸發。需要明確使用時，建議在要求中直接寫出 Skill 名稱，並說明預期輸出。</p></div>
+          <h2><LocaleText text="建議怎樣調用？"/></h2>
+          <p className="section-intro"><LocaleText text="下面是本站編寫的中文示例，已將任務、範圍和交付要求寫清楚。可直接複製，再改成你的實際需要。"/></p>
+          <div className="prompt-panel"><div className="prompt-panel-top"><span><LocaleText text="中文調用範例 · 編輯建議"/></span><CopyButton value={skill.examplePrompt} label="複製示例" localizeValue/></div><p><LocaleText text={skill.examplePrompt}/></p></div>
+          <div className="usage-tip"><strong><LocaleText text="調用小技巧"/></strong><p><LocaleText text="安裝後，AI 工具可能根據任務自動選用 Skill，但不保證每次都觸發。需要明確使用時，建議在要求中直接寫出 Skill 名稱，並說明預期輸出。"/></p></div>
         </section>
         <section className="detail-section">
           <div className="detail-section-number">04 / BEFORE YOU START</div>
-          <h2>使用前要注意</h2>
-          <div className="caution-block"><span>!</span><p>{skill.caution}</p></div>
-          <p className="fine-print">本站未對本 Skill 進行獨立安全審計。內容是中文編輯摘要，不是原作者授權翻譯；請以作者文件為準。</p>
+          <h2><LocaleText text="使用前要注意"/></h2>
+          <div className="caution-block"><span>!</span><p><LocaleText text={skill.caution}/></p></div>
+          <p className="fine-print"><LocaleText text="本站未對本 Skill 進行獨立安全審計。內容是中文編輯摘要，不是原作者授權翻譯；請以作者文件為準。"/></p>
         </section>
       </div>
       <aside className="detail-sidebar">
         <div className="source-panel">
           <div className="sidebar-panel-label">SKILL PROFILE</div>
-          <h3>來源與資訊</h3>
-          <dl><div><dt>Skill 名稱</dt><dd>{skill.name}</dd></div><div><dt>資料夾</dt><dd>{skill.slug}</dd></div><div><dt>GitHub 倉庫</dt><dd>{skill.source}</dd></div><div><dt>分類</dt><dd>{skill.category}</dd></div><div><dt>中文內容</dt><dd>本站編輯摘要</dd></div><div><dt>原始檔案 SHA</dt><dd className="source-sha" title={skill.sha}>{skill.sha.slice(0,12)}…</dd></div><div><dt>來源最後核對</dt><dd>{skill.verifiedAt.slice(0,10)}</dd></div><div><dt>中文版本狀態</dt><dd>{skill.needsReview ? "原始內容更新，待複核" : "依目前來源整理"}</dd></div><div><dt>本站安全審核</dt><dd>尚未進行</dd></div></dl>
-          <a href={sourceFileUrl(skill)} className="source-link primary-source" target="_blank" rel="noopener noreferrer">查看原始 SKILL.md ↗</a>
-          <a href={githubUrl(skill)} className="source-link" target="_blank" rel="noopener noreferrer">開啟 GitHub 倉庫 ↗</a>
+          <h3><LocaleText text="來源與資訊"/></h3>
+          <dl><div><dt><LocaleText text="Skill 名稱"/></dt><dd>{skill.name}</dd></div><div><dt><LocaleText text="資料夾"/></dt><dd>{skill.slug}</dd></div><div><dt><LocaleText text="GitHub 倉庫"/></dt><dd>{skill.source}</dd></div><div><dt><LocaleText text="分類"/></dt><dd><LocaleText text={skill.category}/></dd></div><div><dt><LocaleText text="中文內容"/></dt><dd><LocaleText text="本站編輯摘要"/></dd></div><div><dt><LocaleText text="原始檔案 SHA"/></dt><dd className="source-sha" title={skill.sha}>{skill.sha.slice(0,12)}…</dd></div><div><dt><LocaleText text="來源最後核對"/></dt><dd>{skill.verifiedAt.slice(0,10)}</dd></div><div><dt><LocaleText text="中文版本狀態"/></dt><dd><LocaleText text={skill.needsReview ? "原始內容更新，待複核" : "依目前來源整理"}/></dd></div><div><dt><LocaleText text="本站安全審核"/></dt><dd><LocaleText text="尚未進行"/></dd></div></dl>
+          <a href={sourceFileUrl(skill)} className="source-link primary-source" target="_blank" rel="noopener noreferrer"><LocaleText text="查看原始 SKILL.md ↗"/></a>
+          <a href={githubUrl(skill)} className="source-link" target="_blank" rel="noopener noreferrer"><LocaleText text="開啟 GitHub 倉庫 ↗"/></a>
         </div>
-        <div className="sidebar-reminder"><span>給第一次使用 Skill 的你</span><p>Skill 是讓 AI 知道如何做某類任務的一份指引，並不等於立即取得外部帳號權限。</p><Link href="/about">閱讀使用指南 →</Link></div>
+        <div className="sidebar-reminder"><span><LocaleText text="給第一次使用 Skill 的你"/></span><p><LocaleText text="Skill 是讓 AI 知道如何做某類任務的一份指引，並不等於立即取得外部帳號權限。"/></p><Link href="/about"><LocaleText text="閱讀使用指南 →"/></Link></div>
       </aside>
     </div>
-    {related.length > 0 && <section className="related-section"><div className="related-header"><div><span className="section-label">DISCOVER MORE</span><h2>也可以看看這些 Skill</h2></div><Link href="/">返回全部技能 →</Link></div><div className="related-grid">{related.map((other)=><Link key={other.id} className="related-card" href={`/skills/${other.routeSlug}`}><span className="skill-code-name">{other.slug}</span><h3>{other.zhName}</h3><p>{other.summary}</p><span className="related-link">查看指南 ↗</span></Link>)}</div></section>}
+    {related.length > 0 && <section className="related-section"><div className="related-header"><div><span className="section-label">DISCOVER MORE</span><h2><LocaleText text="也可以看看這些 Skill"/></h2></div><Link href="/"><LocaleText text="返回全部技能 →"/></Link></div><div className="related-grid">{related.map((other)=><Link key={other.id} className="related-card" href={`/skills/${other.routeSlug}`}><span className="skill-code-name">{other.slug}</span><h3><LocaleText text={other.zhName}/></h3><p><LocaleText text={other.summary}/></p><span className="related-link"><LocaleText text="查看指南 ↗"/></span></Link>)}</div></section>}
   </main>;
 }

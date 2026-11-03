@@ -1,4 +1,5 @@
 import type { Skill } from "../data/skills";
+import { normalizeChineseSearch } from "./zh.ts";
 
 export type SkillFilter = {
   query?: string;
@@ -7,7 +8,7 @@ export type SkillFilter = {
 };
 
 function normalized(value: string): string {
-  return value.normalize("NFKC").trim().toLocaleLowerCase();
+  return normalizeChineseSearch(value.trim());
 }
 
 /** 即時關鍵字搜尋：多個空白分隔的字詞需要全部命中。無外部 API 依賴。 */

@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
 import "./intent.css";
+import "./language.css";
+import { LanguageProvider, LocaleText } from "@/components/language-provider";
+import { LanguageSwitch } from "@/components/language-switch";
 
 export const metadata: Metadata = {
   title: { default: "技集 · AI Skill 中文指南", template: "%s | 技集 Skill Atlas" },
@@ -12,6 +15,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="zh-Hant" data-scroll-behavior="smooth">
       <body>
+        <LanguageProvider>
         <a href="#main" className="skip-link">跳至主要內容</a>
         <header className="site-header">
           <div className="site-header-inner">
@@ -20,9 +24,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               <span className="brand-name">技集<span className="brand-en">skill atlas</span></span>
             </Link>
             <nav className="main-nav" aria-label="主要導覽">
-              <Link href="/" className="nav-link">探索技能</Link>
-              <Link href="/about" className="nav-link">使用指南</Link>
-              <a href="https://skills.sh/" target="_blank" rel="noopener noreferrer" className="nav-external">原始目錄 <span aria-hidden="true">↗</span></a>
+              <Link href="/" className="nav-link"><LocaleText text="探索技能"/></Link>
+              <Link href="/about" className="nav-link"><LocaleText text="使用指南"/></Link>
+              <LanguageSwitch/><a href="https://skills.sh/" target="_blank" rel="noopener noreferrer" className="nav-external"><LocaleText text="原始目錄"/> <span aria-hidden="true">↗</span></a>
             </nav>
           </div>
         </header>
@@ -31,16 +35,17 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <div className="container footer-grid">
             <div>
               <Link href="/" className="footer-brand">技集 <span>skill atlas</span></Link>
-              <p>用中文找到合適的 AI Skill，也知道怎樣使用它。</p>
+              <p><LocaleText text="用中文找到合適的 AI Skill，也知道怎樣使用它。"/></p>
             </div>
             <div className="footer-links">
-              <Link href="/">探索技能</Link>
-              <Link href="/about">關於與使用說明</Link>
+              <Link href="/"><LocaleText text="探索技能"/></Link>
+              <Link href="/about"><LocaleText text="關於與使用說明"/></Link>
               <a href="https://skills.sh/docs" target="_blank" rel="noopener noreferrer">skills.sh 官方文件 ↗</a>
             </div>
           </div>
-          <div className="container footer-bottom"><span>© 2026 技集 · 非 skills.sh 官方網站</span><span>資料為本站編輯整理，使用前請核對原作者指引。</span></div>
+          <div className="container footer-bottom"><span>© 2026 技集 · 非 skills.sh 官方網站</span><span><LocaleText text="資料為本站編輯整理，使用前請核對原作者指引。"/></span></div>
         </footer>
+        </LanguageProvider>
       </body>
     </html>
   );

@@ -1,6 +1,17 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { discoverNewSkills } from "./discover-core.mjs";
+import { github } from "./discover-github.mjs";
+
+test("retries a temporary 409 from a repository tree",async()=>{
+ let calls=0;
+ const result=await github("https://api.github.com/repos/example/repo/git/trees/HEAD?recursive=1",{
+  fetchImpl:async()=>{calls++; return calls===1 ? new Response('{}',{status:409}) : new Response('{"tree":[]}',{status:200});},
+  waitImpl:async()=>{}
+ });
+ assert.deepEqual(result,{tree:[]});
+ assert.equal(calls,2);
+});
 
 const a={full_name:"owner/design-skills",description:"Useful design skills",fork:false,archived:false};
 const b={full_name:"owner/test-skills",description:"Browser workflow tools",fork:false,archived:false};

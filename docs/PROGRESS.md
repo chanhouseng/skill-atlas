@@ -74,3 +74,8 @@
 - 依賴安裝改用 `npm ci --ignore-scripts`，避免在每週掃描期間執行套件 lifecycle script；仍以 lockfile 固定依賴。
 - 檢查開始時本機位於 `feat/phase3-natural-discovery`、工作目錄乾淨且沒有 Git remote；安全調整後有尚未提交的修改。預設分支 Actions/PR 權限和首次手動執行仍待驗證。
 - 本機 `npm ci --ignore-scripts` 因 Windows 檔案佔用未完成；補回依賴後單元測試 47/47 通過。乾淨環境安裝仍待 GitHub Actions 驗證。
+
+### 首次雲端執行問題（2026-11-03）
+
+- GitHub Actions 安裝依賴成功，候選掃描遇到外部倉庫目錄 HTTP 409 而停止；舊候選資料保留，後續同步和 PR 步驟未執行。同一網址稍後重新查詢成功，當時 409 的具體原因未確認。
+- 已為目錄查詢 409 加入有限次重試，其他錯誤仍按原規則處理；修復後雲端執行和 PR 行為待驗證。

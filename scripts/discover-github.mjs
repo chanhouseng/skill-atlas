@@ -14,23 +14,24 @@ const headers={
 };
 const wait=ms=>new Promise(done=>setTimeout(done,ms));
 
-async function github(url){
+export async function github(url,{fetchImpl=fetch,waitImpl=wait}={}){
  for(let attempt=0;attempt<3;attempt++){
   const controller=new AbortController();
   const timeout=setTimeout(()=>controller.abort(),22000);
   try{
-    const res=await fetch(url,{headers,signal:controller.signal});
+    const res=await fetchImpl(url,{headers,signal:controller.signal});
     if(res.ok)return res.json();
     if(res.status===403||res.status===401){
       const quota=res.headers.get("x-ratelimit-remaining");
       throw new Error(quota==="0"?"GitHub API rate limit exhausted; set GITHUB_TOKEN or retry later":"GitHub authorization failure HTTP "+res.status);
     }
-    if(![429,500,502,503,504].includes(res.status))throw new Error("GitHub HTTP "+res.status+" "+url);
+    const retryableConflict=res.status===409 && /^https:\/\/api\.github\.com\/repos\/[^/]+\/[^/]+\/git\/trees\//.test(url);
+    if(!retryableConflict && ![429,500,502,503,504].includes(res.status))throw new Error("GitHub HTTP "+res.status+" "+url);
     if(attempt===2)throw new Error("GitHub temporarily unavailable HTTP "+res.status);
   }catch(error){
     if(attempt===2||/rate limit|authorization|GitHub HTTP/.test(error.message))throw error;
   }finally{clearTimeout(timeout);}
-  await wait(850*(attempt+1));
+  await waitImpl(850*(attempt+1));
  }
  throw new Error("GitHub request failed");
 }
@@ -66,4 +67,4 @@ async function main(){
  catch(error){await unlink(tmp).catch(()=>{});throw error;}
  console.log("GitHub discovery completed:",JSON.stringify({scannedAt:found.scannedAt,repositories:found.scannedRepositories,new:found.newCandidates,pending:found.candidates.length}));
 }
-main().catch(error=>{console.error("Discovery aborted; previous candidates preserved:",error.message);process.exitCode=1;});
+if(process.argv[1] && path.resolve(process.argv[1])===fileURLToPath(import.meta.url)) main().catch(error=>{console.error("Discovery aborted; previous candidates preserved:",error.message);process.exitCode=1;});

@@ -56,6 +56,14 @@ test("refuses ambiguous candidate paths rather than guessing", async () => {
   const dupe=[...tree,{path:"another/alpha/SKILL.md",sha:sha1,type:"blob"}];
   await assert.rejects(syncCatalog({sources,previous:null,now:"now",fetchTree:async()=>dupe,fetchSkill:async()=>raw}),/ambiguous/i);
 });
+test("sync uses the explicitly reviewed path even with duplicate skill names",async()=>{
+ const dupe=[...tree,{path:"another/alpha/SKILL.md",sha:sha2,type:"blob"}];
+ const pinned={"demo/skills":[{slug:"alpha",path:"another/alpha/SKILL.md"}]};
+ const result=await syncCatalog({sources:pinned,previous:null,now:"now",fetchTree:async()=>dupe,fetchSkill:async()=>raw});
+ assert.equal(result.entries[0].path,"another/alpha/SKILL.md");
+ assert.equal(result.entries[0].sha,sha2);
+ await assert.rejects(syncCatalog({sources:{"demo/skills":[{slug:"alpha",path:"../alpha/SKILL.md"}]},previous:null,now:"now",fetchTree:async()=>dupe,fetchSkill:async()=>raw}),/invalid/i);
+});
 
 test("parses indented multi-line description from YAML",()=>{
   const md="---\nname: vercel-composition-patterns\ndescription:\n  React composition patterns that scale.\n  Use when building reusable components.\nlicense: MIT\n---";

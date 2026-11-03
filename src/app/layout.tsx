@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
+import "./intent.css";
 
 export const metadata: Metadata = {
   title: { default: "技集 · AI Skill 中文指南", template: "%s | 技集 Skill Atlas" },

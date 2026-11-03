@@ -6,6 +6,7 @@ import { MagnifyingGlass, ArrowUpRight, ArrowRight, X, Sparkle, SquaresFour, Fun
 import type { Skill } from "@/data/skills";
 import { categories } from "@/data/skills";
 import { filterSkills } from "@/lib/search";
+import { NaturalSkillFinder } from "@/components/natural-skill-finder";
 
 export function Catalog({ items, verifiedAt }: { items: Skill[]; verifiedAt: string }) {
   const [query, setQuery] = useState("");
@@ -63,6 +64,8 @@ export function Catalog({ items, verifiedAt }: { items: Skill[]; verifiedAt: str
         <div className="stat-item"><span className="stat-number">{categories.length.toString().padStart(2, "0")}</span><span>個主題分類</span></div>
         <div className="stat-item stat-long"><span className="stat-small-label">透明、可追溯</span><span>中文編輯摘要 · 原始來源連結 · 可複製調用範例</span></div>
       </section>
+
+      <NaturalSkillFinder items={items}/>
 
       <section id="directory" className="container directory">
         <div className="section-heading">

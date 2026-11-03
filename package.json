@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test": "node --test src/lib/search.test.mjs src/data/*.test.mjs scripts/catalog-sync.test.mjs",
+    "test": "node --test src/lib/*.test.mjs src/data/*.test.mjs scripts/catalog-sync.test.mjs",
     "sync:skills": "node scripts/sync-github.mjs",
     "qa:e2e": "node scripts/qa-phase2.mjs",
     "catalog:localize": "node scripts/compile-localizations.mjs",

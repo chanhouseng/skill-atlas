@@ -1,0 +1,125 @@
+#elayadesign/ai-design-skills
+landing-page-design|落地頁設計|規劃產品落地頁的內容結構、文案、字體、間距與動效，讓主要行動更清楚。|0|建立產品介紹頁；安排轉化流程|為一個面向大學生的 AI 工具網站設計介紹頁，先提出頁面順序、主標題和主要按鈕，再實作響應式畫面，不能虛構用戶見證。
+figma-designer|Figma 專業設計|在 Figma 建立可編輯的組件、變數、文字樣式與 Auto Layout 設計系統。|0|建立組件庫；建立 Figma 畫面|在已連接的 Figma 專案中設計學習 App 的首頁及按鈕組件，使用變數和 Auto Layout，完成後列出檔案位置與組件狀態。
+#anthropics/skills
+academy-guide|Claude 學習資源導航|根據 Claude 功能相關問題推薦合適的 Claude Academy 教學資源。|6|尋找 Claude 學習課程；指導新手入門|向一名沒有經驗的學生解釋如何入門 Claude，先回答操作問題，再只推薦與問題確實相符的 Claude Academy 課程。
+algorithmic-art|演算法藝術創作|使用 p5.js 與可重現的隨機參數生成原創幾何或粒子藝術。|5|生成粒子流場；編寫視覺程式|寫一個可調參數的 p5.js 粒子流場，使用固定亂數種子，提供修改參數的說明與執行方法。
+brand-guidelines|Anthropic 品牌規範|將 Anthropic 的官方品牌色彩與字體規範套用至指定作品。|0|套用 Anthropic 官方配色；保持品牌一致|將這份示範簡報按 Anthropic 的官方品牌規範整理，保留原始內容，並明確指出採用的字體與配色。
+canvas-design|平面作品構圖|以視覺設計原則製作原創 PNG 或 PDF 海報、封面等靜態作品。|5|設計活動海報；製作封面|設計一張中文開發者分享會海報，突出日期與地點，使用深藍色視覺主題並輸出適合社群分享的圖片。
+claude-api|Claude API 開發|協助根據 Claude API 與 SDK 的文件處理串流、工具調用、快取與模型遷移。|3|串接 Claude API；處理模型工具調用|以 Node.js 串接 Claude API，完成一個有錯誤處理的串流問答 API，金鑰從環境變數讀取並核對當前 SDK 文件。
+discernment-nudge|回答後的自我檢視|在提供重要建議之後加入精簡檢查問題，協助用戶核對關鍵假設。|6|檢查建議的假設；提醒補充資訊|針對這份產品建議，在結尾提出兩個能幫我驗證假設的追問，不要重複解釋或引入無關問題。
+doc-coauthoring|文件協作撰寫|以逐步討論、草稿與審查流程共同完成需求或方案文件。|4|共同撰寫 PRD；編輯技術方案|根據我已確認的功能共同整理 PRD，先區分已確定與待決事項，再給出業界常用章節及驗收標準。
+docx|Word 文件製作|處理 Word 文件的建立、閱讀、編輯與格式排版。|4|整理 DOCX 報告；修改 Word 格式|將我提供的報告排版成正式 DOCX，加入標題層級、摘要與頁碼，保留原文內容並核對版面。
+frontend-design|前端視覺設計|改善網站的視覺辨識度、字體、版面和互動，避免模板化效果。|0|建立特色網站；提升前端美感|把中文 Skill 目錄改成專業編輯式網頁，先提出專屬設計方向與色彩系統，再修改前端並驗證桌面及手機版。
+internal-comms|內部溝通文件|根據企業慣用格式編寫進度、公告、週報或事件報告。|4|寫團隊進度公告；整理事件報告|依照我提供的公司內部格式撰寫本週專案進度，清楚區分完成事項、風險與需要決策的問題。
+mcp-builder|MCP 伺服器開發|設計讓 LLM 安全使用外部服務的 MCP 工具與介面。|3|開發 MCP Server；封裝外部 API|設計一個只讀 GitHub 查詢 MCP Server，定義工具輸入輸出、錯誤處理與權限，並提供測試。
+pdf|PDF 文件處理|閱讀、合併、拆分、編輯與生成 PDF，包含特定情況下的 OCR。|4|製作 PDF 報告；提取 PDF 資料|將這份研究摘要製成 A4 PDF，保留章節與表格，最後逐頁檢查換行和溢出問題。
+pptx|PowerPoint 簡報製作|建立、閱讀及修改 PPTX 簡報，保留可編輯元素與排版。|4|製作展示簡報；修改 PPT 模板|依我提供的內容製作 8 頁產品展示 PPTX，突出問題、方案與驗收，檢查圖片和文字不溢出。
+skill-creator|Skill 建立與驗證|從零建立、調整並測試 SKILL.md，改善技能觸發與輸出品質。|7|建立新 Skill；測試技能觸發|建立一個網站動畫分析 Skill，先定義觸發條件、輸入輸出與測試用例，再提供 SKILL.md 與驗證方法。
+slack-gif-creator|Slack GIF 製作|建立適合 Slack 使用的輕量循環 GIF 動畫。|5|製作團隊表情 GIF；優化動畫大小|做一個代表程式成功部署的循環 GIF，適合 Slack 使用，控制畫面尺寸與檔案大小。
+theme-factory|作品主題工廠|為文件、簡報或 HTML 作品套用統一的字體與色彩主題。|0|統一簡報視覺；建立主題|為這份技術報告套用深藍與青綠的專業主題，保留原本資訊並統一字體層級。
+web-artifacts-builder|互動網頁作品|用 React、Tailwind 等工具建立具有多個互動組件的 Claude HTML Artifact。|0|製作互動原型；建立複雜 Artifact|製作一個可互動的學習進度展示 Artifact，包含分類、搜尋和切換狀態，先檢查功能再微調視覺。
+webapp-testing|網頁功能測試|透過 Playwright 操作本機網站，驗證流程、排查交互問題與截圖。|2|測試網頁表單；檢查前端功能|對我的本機 Skill 網站跑 Playwright，驗證搜尋、分類、詳細頁與複製，提供失敗重現步驟與截圖。
+xlsx|Excel 試算表處理|讀取、編輯和生成 Excel 工作簿、公式、表格與數據分析結果。|4|建立 Excel 時間表；處理表格|為我製作可編輯的每週學習時間表 XLSX，計算每科總學時並驗證公式。
+#openai/skills
+aspnet-core|ASP.NET Core 開發|按 .NET 官方指引建立及審查 ASP.NET Core 網頁、Web API 與中介軟體。|1|開發 .NET Web API；審查 MVC 程式|為這個 ASP.NET Core 專案新增有驗證的 REST API，遵守依賴注入、權限和測試規範，並說明修改檔案。
+chatgpt-apps|ChatGPT Apps SDK 開發|建立由 MCP 工具和互動 UI 組成的 ChatGPT App，處理元資料與整合。|3|開發 ChatGPT App；整合 MCP 與介面|建立一個可展示技能目錄的 ChatGPT App 原型，先核對最新 Apps SDK 文件，再設計工具與互動視圖。
+cli-creator|CLI 工具生成|根據 API 文件或現有腳本建立可重複使用的命令列工具。|1|建立命令列應用；包裝 API 操作|把這份 API 文件整理成 Node.js CLI，具備搜尋子命令、JSON 輸出、錯誤碼及登入憑據管理。
+cloudflare-deploy|Cloudflare 部署|協助把網站或應用部署到 Cloudflare Workers、Pages 等服務。|3|部署 Cloudflare Pages；管理 Workers|根據現有 Next.js 程式評估 Cloudflare 部署方案，先說明費用與限制，在獲得授權後才實際部署。
+define-goal|明確目標設定|將模糊想法變成具體可衡量的目標與成功條件。|6|設定學習目標；定義產品指標|把「提升網站使用率」轉成可衡量的階段目標，說明成功指標、觀測方法與時間範圍。
+figma-code-connect-components|Figma Code Connect 對應|把 Figma 設計組件映射到實際程式組件，建立設計與代碼對應。|0|建立 Code Connect；對應設計組件|將 Figma 的 Button 組件對應到 React Button，列出元件屬性與狀態，確認連線工具可用後再操作。
+figma-create-design-system-rules|Figma 設計規則生成|依現有程式碼及設計系統建立 Figma 到代碼的統一規範。|0|產生設計系統規則；統一設計代碼|根據我的 React 專案建立設計系統規則，對照現有變數、組件和版面，不要引入與原品牌衝突的數值。
+figma-create-new-file|新增 Figma 檔案|在已連線的 Figma 工作區建立空白設計或 FigJam 文件。|0|建立 Figma Design；新增 FigJam|在已授權的 Figma 工作區建立新的 APP 設計檔，命名為學習計劃介面，回報檔案連結。
+figma-generate-design|將頁面寫入 Figma|以設計系統組件與變數在 Figma 建立或更新完整頁面。|0|將網站轉成 Figma；建立可編輯頁面|把我提供的首頁結構寫入 Figma，使用既有變數與 Auto Layout，確認元素可以編輯且不重疊。
+figma-generate-library|Figma 組件庫生成|根據程式碼建立 Figma 變數、組件及明暗模式設計系統。|0|建立 Figma 元件庫；同步設計變數|根據專案 Tailwind Tokens 在 Figma 建立顏色、間距、按鈕組件與明暗模式，保留既有設計。
+figma-implement-design|Figma 設計實作|把 Figma 畫面與組件轉成外觀相符的正式應用程式碼。|1|將 Figma 轉 React；還原 UI|根據指定 Figma 節點實作 React 頁面，對照畫面尺寸、間距與互動狀態，最後用截圖驗證差異。
+figma-use|Figma 工具操作指引|指導 AI 在調用 Figma MCP 寫入或程式化讀取前正確使用工具。|0|操作 Figma MCP；修改設計節點|先閱讀 figma-use 的前置要求，再在獲授權的 Figma 檔案修改按鈕樣式，完成後列出實際變更。
+figma|Figma 設計資料連接|透過 Figma MCP 取得畫面、變數與素材，協助設計轉程式碼。|0|讀取 Figma 節點；取得設計素材|讀取我提供的 Figma 節點，整理文字、顏色、間距與素材，再提出實作方案，不要直接修改原檔。
+gh-address-comments|回應 GitHub PR 意見|讀取目前分支的 PR 評論，協助逐項核對與處理。|2|整理 PR 審查意見；回應程式評論|檢查目前 GitHub PR 的審查留言，先整理待處理項目及證據，修正已授權部分後提供回覆草稿。
+gh-fix-ci|修正 GitHub CI|使用 GitHub Actions 的檢查記錄分析 PR 失敗原因並規劃修復。|2|定位 CI 失敗；分析 GitHub Actions|檢查當前 PR 失敗的 GitHub Actions，列出錯誤日誌與根因，先提出最小修正及驗證方案。
+jupyter-notebook|Jupyter Notebook 開發|建立或修改 Jupyter 筆記本，用於研究、教學和資料分析。|6|建立 Python Notebook；整理實驗|為我建立展示搜尋演算法的 Notebook，提供逐步說明、可執行程式與小練習。
+linear|Linear 任務管理|透過 Linear 工具整理問題、專案和團隊工作流程。|6|建立 Linear Issue；整理看板|在已連接的 Linear 專案新增本週開發任務，標明優先級、負責人與驗收條件。
+migrate-to-codex|遷移到 Codex|把既有代理規則、Skills 與 MCP 設定整理成 Codex 可識別的配置。|7|遷移 AI 工具設定；整合 AGENTS.md|檢查這個專案原有的 Claude 設定，提出遷移到 Codex 的差異清單，先保留原檔再進行必要修改。
+netlify-deploy|Netlify 部署|以 Netlify CLI 發佈網站，處理預覽與正式環境設定。|3|部署 Netlify；建立預覽站點|評估把目前網站部署到 Netlify 的依賴與費用，使用者確認後再建立預覽部署並回報驗證網址。
+notion-knowledge-capture|Notion 知識收錄|將聊天、筆記與決策整理成互相關聯的 Notion 知識頁。|4|整理會議筆記；建立知識庫|將這份產品討論整理成 Notion 知識頁，區分決策、未決問題與下一步，建立易搜尋的標題。
+notion-meeting-intelligence|Notion 會議準備|從 Notion 內容提取背景資料，製作會議議程與會前摘要。|4|準備會議議程；整理會議資料|根據已連接的 Notion 專案資料，整理下一次開發會議議程，標示待決問題和相關文件。
+notion-research-documentation|Notion 多文件研究|跨 Notion 文件整理研究資料，形成帶來源的比較與報告。|4|彙整 Notion 資料；研究綜述|搜尋已連接的 Notion 中與學習產品相關的資料，歸納主要發現並附原始頁面連結。
+notion-spec-to-implementation|Notion 需求轉實作|把 Notion 規格轉成任務清單、實作計畫與進度追蹤。|6|從規格建立任務；跟進開發進度|依 Notion 的已確認 PRD 產生分批實作任務，附文件連結與驗收條件，將未確認項目保持待定。
+openai-docs|OpenAI 文件查證|查核 OpenAI API、Codex 與相關產品的最新官方文件。|6|閱讀 OpenAI 官方文件；核對 API 參數|查核 OpenAI 當前 API 文檔，解釋串流輸出和工具調用的用法，給出可執行示例及官方來源。
+playwright-interactive|互動瀏覽器除錯|使用持續的瀏覽器互動工作階段快速調試前端與 Electron 介面。|2|互動排查網頁；驗證 Electron|開啟本機 React 網站，透過可持續的瀏覽器工作階段重現搜尋問題，保存控制台錯誤與操作證據。
+playwright|Playwright 瀏覽器自動化|以 Playwright CLI 或封裝工具進行網頁導航、表單填寫與截圖。|2|測試瀏覽器流程；擷取頁面截圖|以 Playwright 驗證本機網站的搜尋、分類和詳細頁流程，輸出重現步驟與截圖。
+render-deploy|Render 雲端部署|分析專案並配置 Render 服務與部署方案。|3|部署 Render；建立部署 Blueprint|為這個 Node.js 應用產生 Render 部署設定，先檢查環境變數和費用，再決定是否實際部署。
+screenshot|系統截圖|在有合適工具及授權時擷取桌面或指定視窗的截圖。|5|擷取桌面視窗；截圖驗證|擷取我正在操作的程式視窗，用於 UI 驗收，檢查畫面中是否有需要隱藏的私人資料。
+security-best-practices|安全最佳實踐審查|針對指定語言及框架檢查安全實作風險並提出改進。|2|檢查認證與權限；安全程式審查|檢查 Express 專案的身份驗證與輸入驗證，列出有證據的風險與最小修復建議。
+security-ownership-map|安全程式碼責任圖|分析 Git 修改紀錄及敏感檔案，了解程式碼維護責任與單點風險。|2|分析 Git 負責人；找出維護單點|分析專案 Git 歷史與敏感程式區，建立維護責任與單點依賴報告，不公開任何私人資料。
+security-threat-model|專案威脅建模|根據程式碼整理信任邊界、資產、攻擊路徑及緩解方法。|2|建立威脅模型；審查攻擊面|為登入與文件上傳模組建立威脅模型，列出資產、信任邊界、攻擊情境及可驗證的保護措施。
+sentry|Sentry 錯誤監控|透過已授權的 Sentry 工具查看產品錯誤和健康指標。|2|追蹤線上錯誤；分析近期事件|只讀查詢已連接 Sentry 專案的近期錯誤，按影響人數與重現性排序，不變更線上設定。
+speech|文字轉語音|透過 OpenAI Audio API 產生旁白、朗讀或批量語音。|5|產生語音旁白；製作文字朗讀|將我提供的中文教學稿轉成自然語音，列出音訊設定與所需費用，不要在程式碼中寫入 API 金鑰。
+transcribe|音訊轉寫文字|將音訊或影片中的語音轉寫成文字，可支援分段及說話人標記。|5|轉寫會議錄音；字幕整理|轉寫我提供的會議音檔，分段加時間標記，不確定的人名請標示待核對。
+vercel-deploy|Vercel 網站部署|協助發佈網站到 Vercel，建立預覽或正式部署。|3|部署網站到 Vercel；產生預覽網址|先檢查 Next.js 專案部署需求，取得同意後再部署到 Vercel，並驗證網址與主要路由。
+winui-app|WinUI 桌面程式|依 Windows App SDK 與 WinUI 3 規範開發 C# Windows 桌面應用。|1|開發 WinUI 程式；設計 Windows 桌面 UI|以 WinUI 3 製作一個 Windows 學習計時 App，先建立主視窗和控制按鈕，再驗證基本操作。
+#mattpocock/skills
+code-review|程式碼變更審查|依專案規範和規格檢查 Git 變更，指出有證據的問題。|2|審查提交變更；檢查規範符合度|審查目前分支相對 main 的修改，按正確性與規範兩個方向列出有證據的問題和檔案位置。
+codebase-design|程式模組設計|用清楚的介面與模組邊界改善大型程式的可維護性。|1|設計深層模組；拆分程式責任|設計中文 Skill 資料同步模組的介面，明確每個模組的輸入、輸出和責任，不改變現有搜尋功能。
+diagnosing-bugs|系統化 Bug 診斷|以可重現的測試與證據找出程式錯誤或效能衰退原因。|2|定位程式 Bug；分析效能下降|搜尋頁輸入中文後結果異常，請先重現並搜集證據，定位根因，再以最小修改修復。
+domain-modeling|專案領域模型|建立或改善程式中的業務術語、Glossary 與架構決策記錄。|1|建立業務詞彙表；整理資料模型|為 Skill、來源、中文介紹和同步紀錄制定統一領域術語，整理到 Glossary，並說明各實體關係。
+grill-with-docs|文件式需求追問|透過深入提問完善方案，並同步補充決策與術語文件。|6|澄清產品設計；完善 ADR|依序追問中文 Skill 平台的核心需求，逐項補齊不清楚的地方並整理 ADR，不要一次提出太多問題。
+implement-spec|依規格落實程式|依先前整理的規格與任務清單進行功能開發。|1|按規格寫功能；完成驗收條件|根據已批准的 Spec 與 Tickets 實作搜尋功能，保持任務範圍不變，完成後列出測試證據。
+implement|按需求執行開發|根據清楚的需求規格或 Tickets 實際完成一批程式工作。|1|開發已確認需求；按批交付|按 docs/PRD.md 實作 Skill 搜尋的新篩選條件，不要擴大範圍，附單元測試。
+improve-codebase-architecture|改善既有架構|掃描程式庫可改善的模組邊界，產出可檢視的架構報告。|1|整理模組依賴；評估重構|審查現有 Next.js 專案的資料與 UI 耦合，先提供具體架構報告與可驗證的改善方案。
+pr|PR 變更說明|根據實際 Git 變更整理有用的 Pull Request 描述。|6|撰寫 PR 說明；整理測試|為目前分支撰寫 PR 內容，包含修改摘要、影響範圍、測試證據與未解決風險。
+prototype|快速驗證原型|建立用於驗證設計想法的臨時原型，不直接當正式產品。|1|驗證 UI 流程；製作臨時 Demo|製作可點擊的技能搜尋原型，只驗證搜尋與詳情交互，明確標示未接入正式資料。
+research|依可信來源研究|優先查找原始資料並把研究結論記錄到專案 Markdown。|6|技術可行性研究；查核 API 文件|查核 skills.sh 的最新 API 認證方式與限制，優先官方文件，整理成含來源的 Markdown 報告。
+retro|開發回顧|對已完成的一輪開發整理做得好、待改善與下次行動。|6|開發迭代回顧；整理經驗|對本次資料同步開發進行回顧，區分可用成果、遇到的問題與下批要改進的行動。
+tdd|測試驅動開發|以先失敗、再實作、最後重構的順序完成程式功能。|2|先寫測試再開發；減少回歸|為搜尋函數先寫失敗測試，涵蓋中文、英文和空查詢，再實作最小功能使測試通過。
+to-spec|討論轉規格|把已討論的需求整理成可實作的 Spec，並發佈到設定的任務追蹤系統。|6|建立需求規格；轉換討論記錄|把目前確認的 Skill 目錄需求整理成明確 Spec，保留尚未決定的項目，列出驗收條件。
+to-tickets|規格拆解任務|把規格拆成可交付的小任務，並標記任務間的依賴關係。|6|拆解開發任務；管理依賴|將新增來源更新功能分成可獨立驗收的小 Tickets，標明阻塞關係與預期成果。
+triage|問題回報分流|將 Issue 與外部 PR 分類、核實並轉成可執行的處理工作。|2|整理 Bug 回報；決定處理優先級|把這些網站問題依重現性和影響程度分級，提出每個問題的下一個驗證步驟。
+wayfinder|大型開發路線圖|將超過一個 Agent 工作階段的大型工作分解成待決問題與路線圖。|6|規劃大型專案；分階段決策|為技能目錄的資料同步與推薦功能制定跨階段路線圖，先列關鍵決策，再分批處理。
+wizard|互動式設定精靈|生成協助人類完成環境配置、憑據或部署操作的命令列引導精靈。|1|建立安裝精靈；設定 CI 憑據|設計一個互動式 Bash 精靈引導開發者配置 GitHub Token，保護機密值且提供取消流程。
+chief-of-staff|多代理工作統籌|在單個工作階段協調多個子代理完成持續性目標。|3|代理任務分工；協調長任務|將已批准的產品開發任務拆成設計、資料與測試工作，指定每部分的輸出及交接方式。
+claude-handoff|Claude 工作交接|把目前對話交接給新的後台代理，繼續既有任務。|6|交接 Claude 會話；延續開發|將已完成的程式修改、測試和待辦整理成新代理可接手的上下文，不要漏掉關鍵決策。
+software-factory|自動化軟件工廠設計|規劃以任務、代理及外部服務組成的軟件交付系統。|3|設計多代理流程；建立軟件工廠|整理專案從需求到測試的自動化工作流，定義工作節點、接口與人工審核關卡。
+scaffold-exercises|練習工程腳手架|建立含題目、解答與教學說明的練習資料夾與檢查結構。|6|產生程式練習；建立教材模板|為 Java 集合概念建立 3 題練習的檔案結構，分開題目、參考答案及解說，讓專案可測試。
+grill-me|深入需求訪談|透過逐步追問找出方案缺漏，完善產品需求與假設。|6|完善產品構思；深挖需求|以產品經理角度檢視我的 AI 學習網站需求，每次問一個重要問題，直到核心流程清楚。
+handoff|Agent 工作交接|把當前工作與上下文濃縮成另一個 Agent 可接手的文件。|6|整理 AI 工作成果；轉交開發|將當前 Git 分支的進度、測試、文件入口及未完成任務寫成簡潔交接報告。
+teach|循序漸進教學|根據學習者的基礎用概念、示例和練習教授新知識。|6|學習程式概念；安排練習|以大一學生程度逐步教我 Java HashMap，先講概念再給程式例子，附兩題練習與答案。
+wait-what|重新解釋未理解內容|當上一個解釋沒有被理解時，重新換一種更清楚的講法。|6|請 AI 重新解釋；修正溝通方式|上次對矩陣秩的解釋我仍不懂，請換一種具體例子，從符號定義重新逐步說明。
+writing-for-agents|面向代理撰寫指引|編寫容易被 AI 代理理解和遵守的指令文件，例如 AGENTS.md。|7|改善 AGENTS.md；撰寫技能規則|審查我現有的 AGENTS.md，重寫互相衝突的規則，保持任務邊界清晰並說明修改理由。
+#vercel-labs/agent-skills
+composition-patterns|React 組件組合模式|使用複合組件與 Context 等模式建立更可維護的 React 組件介面。|1|重構 React 組件；改善元件 API|把目前有多個布林屬性的 React Card 改為更清楚的組合式 API，保留原功能並檢查 React 19 相容性。
+deploy-to-vercel|Vercel 部署助手|協助將應用發佈到 Vercel，處理部署流程及驗證。|3|發佈 Vercel 專案；取得預覽|評估將本機網站部署到 Vercel 所需配置，在得到部署授權後才建立預覽並檢查主要路由。
+react-best-practices|React 效能最佳實踐|依 Vercel 工程規範優化 React 與 Next.js 程式的效能。|1|優化 React 程式；檢查 Next.js 效能|審查我的 Next.js 目錄網站，找出不必要的前端資料處理與渲染，提出可測量的改進。
+react-native-skills|React Native 開發規範|協助改善 React Native 與 Expo 的清單、動畫和原生模組效能。|1|優化 React Native App；改善滾動表現|針對 React Native 的大型清單頁做效能審查，重點是滾動、圖片與動畫，提供可驗證的優化。
+react-view-transitions|React 視圖過渡動畫|使用 React View Transition API 建立自然的頁面與元件轉場效果。|0|建立頁面轉場；改善 React 動畫|為 React 卡片列表到詳細頁的切換新增 View Transition 動畫，保留鍵盤可用性並支援減少動態偏好。
+vercel-cli-with-tokens|Vercel Token CLI 操作|在 Token 認證模式下使用 Vercel CLI 部署和管理專案。|3|Token 登入 Vercel；自動部署配置|說明如何以環境變數在 CI 安全使用 Vercel Token，先檢查權限和失效方式，不要把 Token 寫入倉庫。
+vercel-optimize|Vercel 成本效能優化|透過用量、設定與指標分析已部署 Vercel 專案的成本與效能。|3|降低 Vercel 成本；分析使用量|分析已部署專案的 Vercel 用量與函數效能，先提出資料需求，再給出具體降本建議。
+web-design-guidelines|網頁介面規範審查|依 Web Interface Guidelines 檢查 UI 的可讀性、可訪問性與互動問題。|0|審查 UI；檢查無障礙|審查中文 Skill 網站的可訪問性和版面，列出問題的元件位置與可重現證據，先不要修改程式。
+writing-guidelines|文件寫作規範|審查技術文件和介面文案的結構、語氣與可讀性。|4|潤飾技術文件；檢查文案一致|檢查這份 README 的語氣、術語與結構，保留內容事實，提出具體的可讀性改進。
+#remotion-dev/skills
+remotion-best-practices|Remotion 技能導航|根據 Remotion 影片任務選擇合適的子技能與實作路線。|5|選擇 Remotion 工具；規劃影片流程|我要用程式生成 5 秒循環動畫，請依 Remotion 技能導航找出要用的子技能及工作順序。
+remotion-captions|Remotion 字幕動畫|為 Remotion 影片加入轉寫字幕、時間軸與字幕動效。|5|製作動態字幕；處理語音時間|替我提供的 20 秒旁白製作同步字幕，確保時間正確、文字易讀並可調整位置。
+remotion-create|建立 Remotion 影片|初始化一個新的 Remotion 影片專案及基本場景。|5|新增 Remotion 工程；創建影片|建立一個 5 秒、1920×1080 的 Remotion 動畫專案，背景黑白簡潔，提供本機預覽方法。
+remotion-interactivity|Remotion 互動結構|安排 Remotion 標記結構，使影片組件適合互動或使用者控制。|5|設計互動影像；安排元件結構|替互動式影片設計可重用的畫面元件，整理狀態與事件，保持時間軸易於管理。
+remotion-maps|Remotion 地圖動畫|使用 Remotion 製作路線、地點及地圖視覺動畫。|5|製作地圖路線動畫；動態位置標示|為產品介紹影片製作地圖路線動畫，用資料標示起終點並控制鏡頭過渡。
+remotion-markup|Remotion 動畫版面規範|提供 Remotion 元件排版、動畫和視覺效果的最佳實踐。|5|改善影片場景；審查動畫|審查 Remotion 場景的文字、排版和動畫時間，提出具體修改，保持內容不變。
+remotion-multimedia|Remotion 多媒體處理|結合 Mediabunny 等工具管理 Remotion 影片相關媒體。|5|處理多媒體素材；分析影片|為 Remotion 專案整理音影片素材處理流程，說明媒體資訊取得方式與格式限制。
+remotion-render|Remotion 影片輸出|設定並導出 Remotion 影片，處理格式和渲染參數。|5|輸出 MP4；控制渲染參數|將我完成的 Remotion 動畫導出為 1080p MP4，檢查影格、時長與編碼參數。
+remotion-studio|Remotion 本機預覽|啟動並使用 Remotion Studio 預覽和調整影片。|5|預覽 Remotion；調試時間軸|開啟已有 Remotion 工程的 Studio 預覽，檢查每段動畫及畫面變化並指出問題。
+remotion-upgrade|Remotion 版本升級|依正式遷移方式升級 Remotion 與相關依賴，降低相容風險。|5|升級 Remotion；處理依賴|先檢查現有 Remotion 版本與破壞性變更，再制定可回退的升級步驟和回歸測試。
+#obra/superpowers
+brainstorming|需求探索與構思|在進入開發前釐清使用者真實意圖、範圍與重要取捨。|6|釐清新功能；制定產品方向|請幫我探索一個中文 Skill 網站想法，先理解目標與約束，不要在規格確認前擅自動手開發。
+diagnosing-superpowers|Superpowers 工作診斷|分析 Superpowers 流程執行不如預期的原因與改進方法。|7|診斷代理流程；檢查技能未觸發|分析這次 Superpowers 工作為何重複執行任務，結合日誌與現有文件提出可驗證的原因。
+dispatching-parallel-agents|平行代理任務安排|把互不依賴的工作拆分給多個 Agent 平行處理。|3|分配獨立任務；規劃多代理|把專案的文字整理和前端測試拆成互不衝突的代理工作，標明責任和整合步驟。
+executing-plans|按實作計畫執行|依已確認的計畫逐步實作、測試並記錄完成情況。|1|按計劃開發；核對驗收證據|根據已有實作計畫逐項落實功能，每完成一項先做測試並記錄結果，不得擅自超出範圍。
+finishing-a-development-branch|開發分支收尾|在測試通過後整理分支內容與合併、保留或交付選項。|2|完成開發分支；整理交付選項|檢查本分支的測試與未提交修改，給出合併前檢查和交付建議，不要未經授權直接推送。
+receiving-code-review|處理程式碼審查|核對審查意見的正確性，再實施有證據的修正。|2|回應審查反饋；核實 Bug|逐項驗證 Reviewer 提出的問題，區分有效缺陷與誤判，再修復確認的部分。
+requesting-code-review|要求程式碼審查|在主要功能完成時整理變更並安排獨立驗收或審查。|2|提交程式審查；核對規格|為這批開發整理可審查的 diff、測試結果和風險，請審查者按規格檢查。
+subagent-driven-development|子代理驅動開發|依獨立任務派出實作及審核代理，逐關驗證成果。|3|組織多代理開發；逐任務審查|將批准的計畫拆成互不衝突的工作，讓各代理實作和檢查，每項通過驗證後才繼續。
+systematic-debugging|系統化除錯|以重現、蒐證與定位根因的步驟處理故障。|2|找出 Bug 根因；修復回歸|網頁某些網址返回 500，請先重現、查日誌、定位根因，再做最小修復和回歸測試。
+test-driven-development|測試驅動實作|先寫會失敗的測試，再編寫最小程式碼使其通過。|2|以測試帶動實作；避免回歸|為新增的同步功能先建立失敗測試，涵蓋網絡失敗與資料缺失，再實作並驗證。
+using-git-worktrees|Git Worktree 隔離開發|利用獨立 Git 工作樹避免不同任務互相改動相同程式。|1|建立開發工作樹；隔離多代理|為資料同步功能建立獨立 Worktree，保留 main 分支不變，列出如何返回原工作目錄。
+verification-before-completion|交付前證據驗證|要求聲稱完成前實際執行測試並核對結果。|2|交付前驗收；核對測試輸出|在交付本次功能前執行測試、型別檢查與建置，用實際輸出說明哪些通過、哪些未驗證。
+writing-plans|詳細實作計畫|把需求整理成具體檔案、步驟、測試與驗收條件的開發計畫。|6|撰寫開發計畫；拆解實作步驟|根據已確認的產品規格撰寫可直接執行的計畫，為每個任務列出檔案、步驟與測試。
+#vercel-labs/skills
+find-skills|Skill 搜尋與發現|根據自然語言需求找到可能存在的 Agent Skills 及其安裝方法。|7|搜尋合適 Skill；發現新工具|我要從網站截圖還原前端，請搜尋相符的 Skill，對照來源、功能與安裝條件，列出最適合的候選。

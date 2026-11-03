@@ -1,0 +1,2108 @@
+{
+  "elayadesign/ai-design-skills/landing-page-design": {
+    "zhName": "落地頁設計",
+    "summary": "規劃產品落地頁的內容結構、文案、字體、間距與動效，讓主要行動更清楚。",
+    "category": "網頁與視覺設計",
+    "scenarios": [
+      "建立產品介紹頁",
+      "安排轉化流程"
+    ],
+    "examplePrompt": "請使用 landing-page-design Skill，為一個面向大學生的 AI 工具網站設計介紹頁，先提出頁面順序、主標題和主要按鈕，再實作響應式畫面，不能虛構用戶見證。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "landing page",
+      "建立產品介紹頁",
+      "安排轉化流程"
+    ],
+    "featured": true,
+    "reviewedSha": "519a6f2cd6c942c2fb36a906b8ef7d11f78ba6d1"
+  },
+  "elayadesign/ai-design-skills/figma-designer": {
+    "zhName": "Figma 專業設計",
+    "summary": "在 Figma 建立可編輯的組件、變數、文字樣式與 Auto Layout 設計系統。",
+    "category": "網頁與視覺設計",
+    "scenarios": [
+      "建立組件庫",
+      "建立 Figma 畫面"
+    ],
+    "examplePrompt": "請使用 figma-designer Skill，在已連接的 Figma 專案中設計學習 App 的首頁及按鈕組件，使用變數和 Auto Layout，完成後列出檔案位置與組件狀態。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "必須先具備可用且已授權的 Figma 工具連線；僅有 Skill 並不代表已能編輯設計檔。",
+    "tags": [
+      "figma designer",
+      "建立組件庫",
+      "建立 Figma 畫面"
+    ],
+    "featured": true,
+    "reviewedSha": "d9aba588919e3dccee89355df8fa8501c2e92eae"
+  },
+  "anthropics/skills/academy-guide": {
+    "zhName": "Claude 學習資源導航",
+    "summary": "根據 Claude 功能相關問題推薦合適的 Claude Academy 教學資源。",
+    "category": "學習與協作",
+    "scenarios": [
+      "尋找 Claude 學習課程",
+      "指導新手入門"
+    ],
+    "examplePrompt": "請使用 academy-guide Skill，向一名沒有經驗的學生解釋如何入門 Claude，先回答操作問題，再只推薦與問題確實相符的 Claude Academy 課程。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "academy guide",
+      "尋找 Claude 學習課程",
+      "指導新手入門"
+    ],
+    "featured": false,
+    "reviewedSha": "cefeaeb20cc29a803af0335d7c7155b066d8770f"
+  },
+  "anthropics/skills/algorithmic-art": {
+    "zhName": "演算法藝術創作",
+    "summary": "使用 p5.js 與可重現的隨機參數生成原創幾何或粒子藝術。",
+    "category": "影音與創作",
+    "scenarios": [
+      "生成粒子流場",
+      "編寫視覺程式"
+    ],
+    "examplePrompt": "請使用 algorithmic-art Skill，寫一個可調參數的 p5.js 粒子流場，使用固定亂數種子，提供修改參數的說明與執行方法。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "部分功能需要媒體檔案、渲染依賴或 API；先確認輸出格式、素材授權及環境。",
+    "tags": [
+      "algorithmic art",
+      "生成粒子流場",
+      "編寫視覺程式"
+    ],
+    "featured": false,
+    "reviewedSha": "634f6fa42e4e697fa6afd293acd7fb8246574876"
+  },
+  "anthropics/skills/brand-guidelines": {
+    "zhName": "Anthropic 品牌規範",
+    "summary": "將 Anthropic 的官方品牌色彩與字體規範套用至指定作品。",
+    "category": "網頁與視覺設計",
+    "scenarios": [
+      "套用 Anthropic 官方配色",
+      "保持品牌一致"
+    ],
+    "examplePrompt": "請使用 brand-guidelines Skill，將這份示範簡報按 Anthropic 的官方品牌規範整理，保留原始內容，並明確指出採用的字體與配色。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "brand guidelines",
+      "套用 Anthropic 官方配色",
+      "保持品牌一致"
+    ],
+    "featured": false,
+    "reviewedSha": "47c72c607bdb5dd81bdea5de2b5e4f3992a5fd59"
+  },
+  "anthropics/skills/canvas-design": {
+    "zhName": "平面作品構圖",
+    "summary": "以視覺設計原則製作原創 PNG 或 PDF 海報、封面等靜態作品。",
+    "category": "影音與創作",
+    "scenarios": [
+      "設計活動海報",
+      "製作封面"
+    ],
+    "examplePrompt": "請使用 canvas-design Skill，設計一張中文開發者分享會海報，突出日期與地點，使用深藍色視覺主題並輸出適合社群分享的圖片。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "部分功能需要媒體檔案、渲染依賴或 API；先確認輸出格式、素材授權及環境。",
+    "tags": [
+      "canvas design",
+      "設計活動海報",
+      "製作封面"
+    ],
+    "featured": false,
+    "reviewedSha": "9f63fee82de84cd4230e1d0e322247b61eb4c94c"
+  },
+  "anthropics/skills/claude-api": {
+    "zhName": "Claude API 開發",
+    "summary": "協助根據 Claude API 與 SDK 的文件處理串流、工具調用、快取與模型遷移。",
+    "category": "Agent 與自動化",
+    "scenarios": [
+      "串接 Claude API",
+      "處理模型工具調用"
+    ],
+    "examplePrompt": "請使用 claude-api Skill，以 Node.js 串接 Claude API，完成一個有錯誤處理的串流問答 API，金鑰從環境變數讀取並核對當前 SDK 文件。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "claude api",
+      "串接 Claude API",
+      "處理模型工具調用"
+    ],
+    "featured": false,
+    "reviewedSha": "fe7e28a55c713933ff98e017112e53c61d8f5537"
+  },
+  "anthropics/skills/discernment-nudge": {
+    "zhName": "回答後的自我檢視",
+    "summary": "在提供重要建議之後加入精簡檢查問題，協助用戶核對關鍵假設。",
+    "category": "學習與協作",
+    "scenarios": [
+      "檢查建議的假設",
+      "提醒補充資訊"
+    ],
+    "examplePrompt": "請使用 discernment-nudge Skill，針對這份產品建議，在結尾提出兩個能幫我驗證假設的追問，不要重複解釋或引入無關問題。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "discernment nudge",
+      "檢查建議的假設",
+      "提醒補充資訊"
+    ],
+    "featured": false,
+    "reviewedSha": "49ebbcad692ffdf70e518087468609a5c4ab9e22"
+  },
+  "anthropics/skills/doc-coauthoring": {
+    "zhName": "文件協作撰寫",
+    "summary": "以逐步討論、草稿與審查流程共同完成需求或方案文件。",
+    "category": "文件與辦公",
+    "scenarios": [
+      "共同撰寫 PRD",
+      "編輯技術方案"
+    ],
+    "examplePrompt": "請使用 doc-coauthoring Skill，根據我已確認的功能共同整理 PRD，先區分已確定與待決事項，再給出業界常用章節及驗收標準。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "doc coauthoring",
+      "共同撰寫 PRD",
+      "編輯技術方案"
+    ],
+    "featured": false,
+    "reviewedSha": "a5a69839ef4a161131d80b6daef10037a9686f4a"
+  },
+  "anthropics/skills/docx": {
+    "zhName": "Word 文件製作",
+    "summary": "處理 Word 文件的建立、閱讀、編輯與格式排版。",
+    "category": "文件與辦公",
+    "scenarios": [
+      "整理 DOCX 報告",
+      "修改 Word 格式"
+    ],
+    "examplePrompt": "請使用 docx Skill，將我提供的報告排版成正式 DOCX，加入標題層級、摘要與頁碼，保留原文內容並核對版面。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "docx",
+      "整理 DOCX 報告",
+      "修改 Word 格式"
+    ],
+    "featured": false,
+    "reviewedSha": "fb954a460a1ea2294e9595e87fecce8df043eeba"
+  },
+  "anthropics/skills/frontend-design": {
+    "zhName": "前端視覺設計",
+    "summary": "改善網站的視覺辨識度、字體、版面和互動，避免模板化效果。",
+    "category": "網頁與視覺設計",
+    "scenarios": [
+      "建立特色網站",
+      "提升前端美感"
+    ],
+    "examplePrompt": "請使用 frontend-design Skill，把中文 Skill 目錄改成專業編輯式網頁，先提出專屬設計方向與色彩系統，再修改前端並驗證桌面及手機版。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "frontend design",
+      "建立特色網站",
+      "提升前端美感"
+    ],
+    "featured": true,
+    "reviewedSha": "a5333457c414d20d625f307df945842c0952ecc3"
+  },
+  "anthropics/skills/internal-comms": {
+    "zhName": "內部溝通文件",
+    "summary": "根據企業慣用格式編寫進度、公告、週報或事件報告。",
+    "category": "文件與辦公",
+    "scenarios": [
+      "寫團隊進度公告",
+      "整理事件報告"
+    ],
+    "examplePrompt": "請使用 internal-comms Skill，依照我提供的公司內部格式撰寫本週專案進度，清楚區分完成事項、風險與需要決策的問題。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "internal comms",
+      "寫團隊進度公告",
+      "整理事件報告"
+    ],
+    "featured": false,
+    "reviewedSha": "56ea935b74f371bfeb4c7d3c19d5139df866e73b"
+  },
+  "anthropics/skills/mcp-builder": {
+    "zhName": "MCP 伺服器開發",
+    "summary": "設計讓 LLM 安全使用外部服務的 MCP 工具與介面。",
+    "category": "Agent 與自動化",
+    "scenarios": [
+      "開發 MCP Server",
+      "封裝外部 API"
+    ],
+    "examplePrompt": "請使用 mcp-builder Skill，設計一個只讀 GitHub 查詢 MCP Server，定義工具輸入輸出、錯誤處理與權限，並提供測試。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "mcp builder",
+      "開發 MCP Server",
+      "封裝外部 API"
+    ],
+    "featured": true,
+    "reviewedSha": "d61a9056202a0f8b2d064c896e62f415c45b1bf1"
+  },
+  "anthropics/skills/pdf": {
+    "zhName": "PDF 文件處理",
+    "summary": "閱讀、合併、拆分、編輯與生成 PDF，包含特定情況下的 OCR。",
+    "category": "文件與辦公",
+    "scenarios": [
+      "製作 PDF 報告",
+      "提取 PDF 資料"
+    ],
+    "examplePrompt": "請使用 pdf Skill，將這份研究摘要製成 A4 PDF，保留章節與表格，最後逐頁檢查換行和溢出問題。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "pdf",
+      "製作 PDF 報告",
+      "提取 PDF 資料"
+    ],
+    "featured": true,
+    "reviewedSha": "d3e046a5ae107a6cb23cfb16c219837094ab35d3"
+  },
+  "anthropics/skills/pptx": {
+    "zhName": "PowerPoint 簡報製作",
+    "summary": "建立、閱讀及修改 PPTX 簡報，保留可編輯元素與排版。",
+    "category": "文件與辦公",
+    "scenarios": [
+      "製作展示簡報",
+      "修改 PPT 模板"
+    ],
+    "examplePrompt": "請使用 pptx Skill，依我提供的內容製作 8 頁產品展示 PPTX，突出問題、方案與驗收，檢查圖片和文字不溢出。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "pptx",
+      "製作展示簡報",
+      "修改 PPT 模板"
+    ],
+    "featured": true,
+    "reviewedSha": "41cd2306977f269bb1d8169a9643b35053aa66bd"
+  },
+  "anthropics/skills/skill-creator": {
+    "zhName": "Skill 建立與驗證",
+    "summary": "從零建立、調整並測試 SKILL.md，改善技能觸發與輸出品質。",
+    "category": "Skill 工具",
+    "scenarios": [
+      "建立新 Skill",
+      "測試技能觸發"
+    ],
+    "examplePrompt": "請使用 skill-creator Skill，建立一個網站動畫分析 Skill，先定義觸發條件、輸入輸出與測試用例，再提供 SKILL.md 與驗證方法。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "skill creator",
+      "建立新 Skill",
+      "測試技能觸發"
+    ],
+    "featured": true,
+    "reviewedSha": "65b3a402dbd09b8e83f9d637c6b553875189085c"
+  },
+  "anthropics/skills/slack-gif-creator": {
+    "zhName": "Slack GIF 製作",
+    "summary": "建立適合 Slack 使用的輕量循環 GIF 動畫。",
+    "category": "影音與創作",
+    "scenarios": [
+      "製作團隊表情 GIF",
+      "優化動畫大小"
+    ],
+    "examplePrompt": "請使用 slack-gif-creator Skill，做一個代表程式成功部署的循環 GIF，適合 Slack 使用，控制畫面尺寸與檔案大小。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "部分功能需要媒體檔案、渲染依賴或 API；先確認輸出格式、素材授權及環境。",
+    "tags": [
+      "slack gif",
+      "製作團隊表情 GIF",
+      "優化動畫大小"
+    ],
+    "featured": false,
+    "reviewedSha": "16660d8ceb77af47986bba1c9176c2ff3f287a91"
+  },
+  "anthropics/skills/theme-factory": {
+    "zhName": "作品主題工廠",
+    "summary": "為文件、簡報或 HTML 作品套用統一的字體與色彩主題。",
+    "category": "網頁與視覺設計",
+    "scenarios": [
+      "統一簡報視覺",
+      "建立主題"
+    ],
+    "examplePrompt": "請使用 theme-factory Skill，為這份技術報告套用深藍與青綠的專業主題，保留原本資訊並統一字體層級。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "theme factory",
+      "統一簡報視覺",
+      "建立主題"
+    ],
+    "featured": false,
+    "reviewedSha": "90dfceaf2ecdc191a4dcfb0069768a9560638998"
+  },
+  "anthropics/skills/web-artifacts-builder": {
+    "zhName": "互動網頁作品",
+    "summary": "用 React、Tailwind 等工具建立具有多個互動組件的 Claude HTML Artifact。",
+    "category": "網頁與視覺設計",
+    "scenarios": [
+      "製作互動原型",
+      "建立複雜 Artifact"
+    ],
+    "examplePrompt": "請使用 web-artifacts-builder Skill，製作一個可互動的學習進度展示 Artifact，包含分類、搜尋和切換狀態，先檢查功能再微調視覺。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "web artifacts",
+      "製作互動原型",
+      "建立複雜 Artifact"
+    ],
+    "featured": false,
+    "reviewedSha": "8b39b19f259b4216ecb07574741dd8eaa9863a07"
+  },
+  "anthropics/skills/webapp-testing": {
+    "zhName": "網頁功能測試",
+    "summary": "透過 Playwright 操作本機網站，驗證流程、排查交互問題與截圖。",
+    "category": "測試與品質",
+    "scenarios": [
+      "測試網頁表單",
+      "檢查前端功能"
+    ],
+    "examplePrompt": "請使用 webapp-testing Skill，對我的本機 Skill 網站跑 Playwright，驗證搜尋、分類、詳細頁與複製，提供失敗重現步驟與截圖。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "需要實際的程式碼、日誌或測試環境才能驗證；不能只依文字建議就判定問題已修復。",
+    "tags": [
+      "webapp testing",
+      "測試網頁表單",
+      "檢查前端功能"
+    ],
+    "featured": true,
+    "reviewedSha": "4726215301db64a0cc4d41fc3219c61f37a30f4a"
+  },
+  "anthropics/skills/xlsx": {
+    "zhName": "Excel 試算表處理",
+    "summary": "讀取、編輯和生成 Excel 工作簿、公式、表格與數據分析結果。",
+    "category": "文件與辦公",
+    "scenarios": [
+      "建立 Excel 時間表",
+      "處理表格"
+    ],
+    "examplePrompt": "請使用 xlsx Skill，為我製作可編輯的每週學習時間表 XLSX，計算每科總學時並驗證公式。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "xlsx",
+      "建立 Excel 時間表",
+      "處理表格"
+    ],
+    "featured": true,
+    "reviewedSha": "9da54804cc8c938586f89363c8da3b3a6e2a563d"
+  },
+  "openai/skills/aspnet-core": {
+    "zhName": "ASP.NET Core 開發",
+    "summary": "按 .NET 官方指引建立及審查 ASP.NET Core 網頁、Web API 與中介軟體。",
+    "category": "程式開發",
+    "scenarios": [
+      "開發 .NET Web API",
+      "審查 MVC 程式"
+    ],
+    "examplePrompt": "請使用 aspnet-core Skill，為這個 ASP.NET Core 專案新增有驗證的 REST API，遵守依賴注入、權限和測試規範，並說明修改檔案。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "aspnet core",
+      "開發 .NET Web API",
+      "審查 MVC 程式"
+    ],
+    "featured": false,
+    "reviewedSha": "c71ed6e705c44038fbcd2e37a3e12c3a81683fdf"
+  },
+  "openai/skills/chatgpt-apps": {
+    "zhName": "ChatGPT Apps SDK 開發",
+    "summary": "建立由 MCP 工具和互動 UI 組成的 ChatGPT App，處理元資料與整合。",
+    "category": "Agent 與自動化",
+    "scenarios": [
+      "開發 ChatGPT App",
+      "整合 MCP 與介面"
+    ],
+    "examplePrompt": "請使用 chatgpt-apps Skill，建立一個可展示技能目錄的 ChatGPT App 原型，先核對最新 Apps SDK 文件，再設計工具與互動視圖。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "chatgpt apps",
+      "開發 ChatGPT App",
+      "整合 MCP 與介面"
+    ],
+    "featured": true,
+    "reviewedSha": "6280a08c57db44ab622dcccbd853e01005edfcbd"
+  },
+  "openai/skills/cli-creator": {
+    "zhName": "CLI 工具生成",
+    "summary": "根據 API 文件或現有腳本建立可重複使用的命令列工具。",
+    "category": "程式開發",
+    "scenarios": [
+      "建立命令列應用",
+      "包裝 API 操作"
+    ],
+    "examplePrompt": "請使用 cli-creator Skill，把這份 API 文件整理成 Node.js CLI，具備搜尋子命令、JSON 輸出、錯誤碼及登入憑據管理。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "cli creator",
+      "建立命令列應用",
+      "包裝 API 操作"
+    ],
+    "featured": false,
+    "reviewedSha": "60e5a9a03f89cf66a60aa798bfc6f3c3fa5ed8c4"
+  },
+  "openai/skills/cloudflare-deploy": {
+    "zhName": "Cloudflare 部署",
+    "summary": "協助把網站或應用部署到 Cloudflare Workers、Pages 等服務。",
+    "category": "Agent 與自動化",
+    "scenarios": [
+      "部署 Cloudflare Pages",
+      "管理 Workers"
+    ],
+    "examplePrompt": "請使用 cloudflare-deploy Skill，根據現有 Next.js 程式評估 Cloudflare 部署方案，先說明費用與限制，在獲得授權後才實際部署。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "部署會涉及外部帳號、設定或費用，應先確認權限與方案；本站不會代為部署。",
+    "tags": [
+      "cloudflare deploy",
+      "部署 Cloudflare Pages",
+      "管理 Workers"
+    ],
+    "featured": true,
+    "reviewedSha": "e2d73abb7e5a550af3d9e40797a28259bddba97d"
+  },
+  "openai/skills/define-goal": {
+    "zhName": "明確目標設定",
+    "summary": "將模糊想法變成具體可衡量的目標與成功條件。",
+    "category": "學習與協作",
+    "scenarios": [
+      "設定學習目標",
+      "定義產品指標"
+    ],
+    "examplePrompt": "請使用 define-goal Skill，把「提升網站使用率」轉成可衡量的階段目標，說明成功指標、觀測方法與時間範圍。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "define goal",
+      "設定學習目標",
+      "定義產品指標"
+    ],
+    "featured": false,
+    "reviewedSha": "87f111bd700e0d993465f7ac741847b5daee57d6"
+  },
+  "openai/skills/figma-code-connect-components": {
+    "zhName": "Figma Code Connect 對應",
+    "summary": "把 Figma 設計組件映射到實際程式組件，建立設計與代碼對應。",
+    "category": "網頁與視覺設計",
+    "scenarios": [
+      "建立 Code Connect",
+      "對應設計組件"
+    ],
+    "examplePrompt": "請使用 figma-code-connect-components Skill，將 Figma 的 Button 組件對應到 React Button，列出元件屬性與狀態，確認連線工具可用後再操作。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "必須先具備可用且已授權的 Figma 工具連線；僅有 Skill 並不代表已能編輯設計檔。",
+    "tags": [
+      "figma code",
+      "建立 Code Connect",
+      "對應設計組件"
+    ],
+    "featured": false,
+    "reviewedSha": "d417e16baf15bad3f1dd147d562c8b2578e4b4bd"
+  },
+  "openai/skills/figma-create-design-system-rules": {
+    "zhName": "Figma 設計規則生成",
+    "summary": "依現有程式碼及設計系統建立 Figma 到代碼的統一規範。",
+    "category": "網頁與視覺設計",
+    "scenarios": [
+      "產生設計系統規則",
+      "統一設計代碼"
+    ],
+    "examplePrompt": "請使用 figma-create-design-system-rules Skill，根據我的 React 專案建立設計系統規則，對照現有變數、組件和版面，不要引入與原品牌衝突的數值。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "必須先具備可用且已授權的 Figma 工具連線；僅有 Skill 並不代表已能編輯設計檔。",
+    "tags": [
+      "figma create",
+      "產生設計系統規則",
+      "統一設計代碼"
+    ],
+    "featured": false,
+    "reviewedSha": "42cc4ce838276cb68a14bbb29c5a6f1e19b6e50d"
+  },
+  "openai/skills/figma-create-new-file": {
+    "zhName": "新增 Figma 檔案",
+    "summary": "在已連線的 Figma 工作區建立空白設計或 FigJam 文件。",
+    "category": "網頁與視覺設計",
+    "scenarios": [
+      "建立 Figma Design",
+      "新增 FigJam"
+    ],
+    "examplePrompt": "請使用 figma-create-new-file Skill，在已授權的 Figma 工作區建立新的 APP 設計檔，命名為學習計劃介面，回報檔案連結。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "必須先具備可用且已授權的 Figma 工具連線；僅有 Skill 並不代表已能編輯設計檔。",
+    "tags": [
+      "figma create",
+      "建立 Figma Design",
+      "新增 FigJam"
+    ],
+    "featured": false,
+    "reviewedSha": "8f74967b9bb4c26b3b8e2a8d102f004d6962ae0d"
+  },
+  "openai/skills/figma-generate-design": {
+    "zhName": "將頁面寫入 Figma",
+    "summary": "以設計系統組件與變數在 Figma 建立或更新完整頁面。",
+    "category": "網頁與視覺設計",
+    "scenarios": [
+      "將網站轉成 Figma",
+      "建立可編輯頁面"
+    ],
+    "examplePrompt": "請使用 figma-generate-design Skill，把我提供的首頁結構寫入 Figma，使用既有變數與 Auto Layout，確認元素可以編輯且不重疊。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "必須先具備可用且已授權的 Figma 工具連線；僅有 Skill 並不代表已能編輯設計檔。",
+    "tags": [
+      "figma generate",
+      "將網站轉成 Figma",
+      "建立可編輯頁面"
+    ],
+    "featured": true,
+    "reviewedSha": "f71d7e71600e84e95639ca2b3e2b8578ac50c3ea"
+  },
+  "openai/skills/figma-generate-library": {
+    "zhName": "Figma 組件庫生成",
+    "summary": "根據程式碼建立 Figma 變數、組件及明暗模式設計系統。",
+    "category": "網頁與視覺設計",
+    "scenarios": [
+      "建立 Figma 元件庫",
+      "同步設計變數"
+    ],
+    "examplePrompt": "請使用 figma-generate-library Skill，根據專案 Tailwind Tokens 在 Figma 建立顏色、間距、按鈕組件與明暗模式，保留既有設計。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "必須先具備可用且已授權的 Figma 工具連線；僅有 Skill 並不代表已能編輯設計檔。",
+    "tags": [
+      "figma generate",
+      "建立 Figma 元件庫",
+      "同步設計變數"
+    ],
+    "featured": false,
+    "reviewedSha": "0c162901c29dba36094c324cd9ffabd2a6b33498"
+  },
+  "openai/skills/figma-implement-design": {
+    "zhName": "Figma 設計實作",
+    "summary": "把 Figma 畫面與組件轉成外觀相符的正式應用程式碼。",
+    "category": "程式開發",
+    "scenarios": [
+      "將 Figma 轉 React",
+      "還原 UI"
+    ],
+    "examplePrompt": "請使用 figma-implement-design Skill，根據指定 Figma 節點實作 React 頁面，對照畫面尺寸、間距與互動狀態，最後用截圖驗證差異。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "必須先具備可用且已授權的 Figma 工具連線；僅有 Skill 並不代表已能編輯設計檔。",
+    "tags": [
+      "figma implement",
+      "將 Figma 轉 React",
+      "還原 UI"
+    ],
+    "featured": false,
+    "reviewedSha": "9aacde6657a913db819d7938f3fd1888ff643c6a"
+  },
+  "openai/skills/figma-use": {
+    "zhName": "Figma 工具操作指引",
+    "summary": "指導 AI 在調用 Figma MCP 寫入或程式化讀取前正確使用工具。",
+    "category": "網頁與視覺設計",
+    "scenarios": [
+      "操作 Figma MCP",
+      "修改設計節點"
+    ],
+    "examplePrompt": "請使用 figma-use Skill，先閱讀 figma-use 的前置要求，再在獲授權的 Figma 檔案修改按鈕樣式，完成後列出實際變更。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "必須先具備可用且已授權的 Figma 工具連線；僅有 Skill 並不代表已能編輯設計檔。",
+    "tags": [
+      "figma use",
+      "操作 Figma MCP",
+      "修改設計節點"
+    ],
+    "featured": false,
+    "reviewedSha": "4b0e23f53d8160e1623177f518535d1588a53c69"
+  },
+  "openai/skills/figma": {
+    "zhName": "Figma 設計資料連接",
+    "summary": "透過 Figma MCP 取得畫面、變數與素材，協助設計轉程式碼。",
+    "category": "網頁與視覺設計",
+    "scenarios": [
+      "讀取 Figma 節點",
+      "取得設計素材"
+    ],
+    "examplePrompt": "請使用 figma Skill，讀取我提供的 Figma 節點，整理文字、顏色、間距與素材，再提出實作方案，不要直接修改原檔。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "必須先具備可用且已授權的 Figma 工具連線；僅有 Skill 並不代表已能編輯設計檔。",
+    "tags": [
+      "figma",
+      "讀取 Figma 節點",
+      "取得設計素材"
+    ],
+    "featured": false,
+    "reviewedSha": "b4f18d2969fe827778b13b5a0fb08a158ec091b1"
+  },
+  "openai/skills/gh-address-comments": {
+    "zhName": "回應 GitHub PR 意見",
+    "summary": "讀取目前分支的 PR 評論，協助逐項核對與處理。",
+    "category": "測試與品質",
+    "scenarios": [
+      "整理 PR 審查意見",
+      "回應程式評論"
+    ],
+    "examplePrompt": "請使用 gh-address-comments Skill，檢查目前 GitHub PR 的審查留言，先整理待處理項目及證據，修正已授權部分後提供回覆草稿。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "需要實際的程式碼、日誌或測試環境才能驗證；不能只依文字建議就判定問題已修復。",
+    "tags": [
+      "gh address",
+      "整理 PR 審查意見",
+      "回應程式評論"
+    ],
+    "featured": false,
+    "reviewedSha": "0ee19e080dc9f0b082157080d1e65511ddc49e7e"
+  },
+  "openai/skills/gh-fix-ci": {
+    "zhName": "修正 GitHub CI",
+    "summary": "使用 GitHub Actions 的檢查記錄分析 PR 失敗原因並規劃修復。",
+    "category": "測試與品質",
+    "scenarios": [
+      "定位 CI 失敗",
+      "分析 GitHub Actions"
+    ],
+    "examplePrompt": "請使用 gh-fix-ci Skill，檢查當前 PR 失敗的 GitHub Actions，列出錯誤日誌與根因，先提出最小修正及驗證方案。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "需要實際的程式碼、日誌或測試環境才能驗證；不能只依文字建議就判定問題已修復。",
+    "tags": [
+      "gh fix",
+      "定位 CI 失敗",
+      "分析 GitHub Actions"
+    ],
+    "featured": false,
+    "reviewedSha": "76bdeb6a7bff93cbe924c0652f1fd7a3c3ffc46c"
+  },
+  "openai/skills/jupyter-notebook": {
+    "zhName": "Jupyter Notebook 開發",
+    "summary": "建立或修改 Jupyter 筆記本，用於研究、教學和資料分析。",
+    "category": "學習與協作",
+    "scenarios": [
+      "建立 Python Notebook",
+      "整理實驗"
+    ],
+    "examplePrompt": "請使用 jupyter-notebook Skill，為我建立展示搜尋演算法的 Notebook，提供逐步說明、可執行程式與小練習。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "jupyter notebook",
+      "建立 Python Notebook",
+      "整理實驗"
+    ],
+    "featured": true,
+    "reviewedSha": "e1d1748cac9e9313c8229763751714628d1f6853"
+  },
+  "openai/skills/linear": {
+    "zhName": "Linear 任務管理",
+    "summary": "透過 Linear 工具整理問題、專案和團隊工作流程。",
+    "category": "學習與協作",
+    "scenarios": [
+      "建立 Linear Issue",
+      "整理看板"
+    ],
+    "examplePrompt": "請使用 linear Skill，在已連接的 Linear 專案新增本週開發任務，標明優先級、負責人與驗收條件。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "需要相應服務的有效連線與權限；請避免公開帳號資料或機密資訊。",
+    "tags": [
+      "linear",
+      "建立 Linear Issue",
+      "整理看板"
+    ],
+    "featured": false,
+    "reviewedSha": "6982ccbe4835ed207f6c7c0b2f011d903dbe2960"
+  },
+  "openai/skills/migrate-to-codex": {
+    "zhName": "遷移到 Codex",
+    "summary": "把既有代理規則、Skills 與 MCP 設定整理成 Codex 可識別的配置。",
+    "category": "Skill 工具",
+    "scenarios": [
+      "遷移 AI 工具設定",
+      "整合 AGENTS.md"
+    ],
+    "examplePrompt": "請使用 migrate-to-codex Skill，檢查這個專案原有的 Claude 設定，提出遷移到 Codex 的差異清單，先保留原檔再進行必要修改。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "migrate to",
+      "遷移 AI 工具設定",
+      "整合 AGENTS.md"
+    ],
+    "featured": false,
+    "reviewedSha": "b1c001b70e8cf326b8196e153b87811a43b23d48"
+  },
+  "openai/skills/netlify-deploy": {
+    "zhName": "Netlify 部署",
+    "summary": "以 Netlify CLI 發佈網站，處理預覽與正式環境設定。",
+    "category": "Agent 與自動化",
+    "scenarios": [
+      "部署 Netlify",
+      "建立預覽站點"
+    ],
+    "examplePrompt": "請使用 netlify-deploy Skill，評估把目前網站部署到 Netlify 的依賴與費用，使用者確認後再建立預覽部署並回報驗證網址。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "部署會涉及外部帳號、設定或費用，應先確認權限與方案；本站不會代為部署。",
+    "tags": [
+      "netlify deploy",
+      "部署 Netlify",
+      "建立預覽站點"
+    ],
+    "featured": false,
+    "reviewedSha": "52075090a6644b104fc34837c9923b403d949369"
+  },
+  "openai/skills/notion-knowledge-capture": {
+    "zhName": "Notion 知識收錄",
+    "summary": "將聊天、筆記與決策整理成互相關聯的 Notion 知識頁。",
+    "category": "文件與辦公",
+    "scenarios": [
+      "整理會議筆記",
+      "建立知識庫"
+    ],
+    "examplePrompt": "請使用 notion-knowledge-capture Skill，將這份產品討論整理成 Notion 知識頁，區分決策、未決問題與下一步，建立易搜尋的標題。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "需要相應服務的有效連線與權限；請避免公開帳號資料或機密資訊。",
+    "tags": [
+      "notion knowledge",
+      "整理會議筆記",
+      "建立知識庫"
+    ],
+    "featured": false,
+    "reviewedSha": "5d347f66e6b494328a81f3ecb4fd7865f95b0067"
+  },
+  "openai/skills/notion-meeting-intelligence": {
+    "zhName": "Notion 會議準備",
+    "summary": "從 Notion 內容提取背景資料，製作會議議程與會前摘要。",
+    "category": "文件與辦公",
+    "scenarios": [
+      "準備會議議程",
+      "整理會議資料"
+    ],
+    "examplePrompt": "請使用 notion-meeting-intelligence Skill，根據已連接的 Notion 專案資料，整理下一次開發會議議程，標示待決問題和相關文件。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "需要相應服務的有效連線與權限；請避免公開帳號資料或機密資訊。",
+    "tags": [
+      "notion meeting",
+      "準備會議議程",
+      "整理會議資料"
+    ],
+    "featured": false,
+    "reviewedSha": "efc716839ee614cf57efb3858fcfb538e0c4a8d9"
+  },
+  "openai/skills/notion-research-documentation": {
+    "zhName": "Notion 多文件研究",
+    "summary": "跨 Notion 文件整理研究資料，形成帶來源的比較與報告。",
+    "category": "文件與辦公",
+    "scenarios": [
+      "彙整 Notion 資料",
+      "研究綜述"
+    ],
+    "examplePrompt": "請使用 notion-research-documentation Skill，搜尋已連接的 Notion 中與學習產品相關的資料，歸納主要發現並附原始頁面連結。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "需要相應服務的有效連線與權限；請避免公開帳號資料或機密資訊。",
+    "tags": [
+      "notion research",
+      "彙整 Notion 資料",
+      "研究綜述"
+    ],
+    "featured": false,
+    "reviewedSha": "4bd40dbe0eb8d9d8920e3a4d705b38b4887623c7"
+  },
+  "openai/skills/notion-spec-to-implementation": {
+    "zhName": "Notion 需求轉實作",
+    "summary": "把 Notion 規格轉成任務清單、實作計畫與進度追蹤。",
+    "category": "學習與協作",
+    "scenarios": [
+      "從規格建立任務",
+      "跟進開發進度"
+    ],
+    "examplePrompt": "請使用 notion-spec-to-implementation Skill，依 Notion 的已確認 PRD 產生分批實作任務，附文件連結與驗收條件，將未確認項目保持待定。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "需要相應服務的有效連線與權限；請避免公開帳號資料或機密資訊。",
+    "tags": [
+      "notion spec",
+      "從規格建立任務",
+      "跟進開發進度"
+    ],
+    "featured": false,
+    "reviewedSha": "d6a0a0e0fb358f56e1d4893c54a25c6c2e04fc65"
+  },
+  "openai/skills/openai-docs": {
+    "zhName": "OpenAI 文件查證",
+    "summary": "查核 OpenAI API、Codex 與相關產品的最新官方文件。",
+    "category": "學習與協作",
+    "scenarios": [
+      "閱讀 OpenAI 官方文件",
+      "核對 API 參數"
+    ],
+    "examplePrompt": "請使用 openai-docs Skill，查核 OpenAI 當前 API 文檔，解釋串流輸出和工具調用的用法，給出可執行示例及官方來源。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "openai docs",
+      "閱讀 OpenAI 官方文件",
+      "核對 API 參數"
+    ],
+    "featured": false,
+    "reviewedSha": "ec6a2b06e4bca7b08e27c7be3ae512bc97008e8c"
+  },
+  "openai/skills/playwright-interactive": {
+    "zhName": "互動瀏覽器除錯",
+    "summary": "使用持續的瀏覽器互動工作階段快速調試前端與 Electron 介面。",
+    "category": "測試與品質",
+    "scenarios": [
+      "互動排查網頁",
+      "驗證 Electron"
+    ],
+    "examplePrompt": "請使用 playwright-interactive Skill，開啟本機 React 網站，透過可持續的瀏覽器工作階段重現搜尋問題，保存控制台錯誤與操作證據。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "需要實際的程式碼、日誌或測試環境才能驗證；不能只依文字建議就判定問題已修復。",
+    "tags": [
+      "playwright interactive",
+      "互動排查網頁",
+      "驗證 Electron"
+    ],
+    "featured": false,
+    "reviewedSha": "7d85f8284014c8c2690918a596a4b5bef7cb86e1"
+  },
+  "openai/skills/playwright": {
+    "zhName": "Playwright 瀏覽器自動化",
+    "summary": "以 Playwright CLI 或封裝工具進行網頁導航、表單填寫與截圖。",
+    "category": "測試與品質",
+    "scenarios": [
+      "測試瀏覽器流程",
+      "擷取頁面截圖"
+    ],
+    "examplePrompt": "請使用 playwright Skill，以 Playwright 驗證本機網站的搜尋、分類和詳細頁流程，輸出重現步驟與截圖。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "需要實際的程式碼、日誌或測試環境才能驗證；不能只依文字建議就判定問題已修復。",
+    "tags": [
+      "playwright",
+      "測試瀏覽器流程",
+      "擷取頁面截圖"
+    ],
+    "featured": true,
+    "reviewedSha": "77c01afb31aa602d0b002ae2438c2b67f0335fcb"
+  },
+  "openai/skills/render-deploy": {
+    "zhName": "Render 雲端部署",
+    "summary": "分析專案並配置 Render 服務與部署方案。",
+    "category": "Agent 與自動化",
+    "scenarios": [
+      "部署 Render",
+      "建立部署 Blueprint"
+    ],
+    "examplePrompt": "請使用 render-deploy Skill，為這個 Node.js 應用產生 Render 部署設定，先檢查環境變數和費用，再決定是否實際部署。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "部署會涉及外部帳號、設定或費用，應先確認權限與方案；本站不會代為部署。",
+    "tags": [
+      "render deploy",
+      "部署 Render",
+      "建立部署 Blueprint"
+    ],
+    "featured": false,
+    "reviewedSha": "a0f78c13b07df3def82c16bccf4a1c17c4d8e30d"
+  },
+  "openai/skills/screenshot": {
+    "zhName": "系統截圖",
+    "summary": "在有合適工具及授權時擷取桌面或指定視窗的截圖。",
+    "category": "影音與創作",
+    "scenarios": [
+      "擷取桌面視窗",
+      "截圖驗證"
+    ],
+    "examplePrompt": "請使用 screenshot Skill，擷取我正在操作的程式視窗，用於 UI 驗收，檢查畫面中是否有需要隱藏的私人資料。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "部分功能需要媒體檔案、渲染依賴或 API；先確認輸出格式、素材授權及環境。",
+    "tags": [
+      "screenshot",
+      "擷取桌面視窗",
+      "截圖驗證"
+    ],
+    "featured": false,
+    "reviewedSha": "1d967bfb1d7d38874147b5810f2a19677bc3161b"
+  },
+  "openai/skills/security-best-practices": {
+    "zhName": "安全最佳實踐審查",
+    "summary": "針對指定語言及框架檢查安全實作風險並提出改進。",
+    "category": "測試與品質",
+    "scenarios": [
+      "檢查認證與權限",
+      "安全程式審查"
+    ],
+    "examplePrompt": "請使用 security-best-practices Skill，檢查 Express 專案的身份驗證與輸入驗證，列出有證據的風險與最小修復建議。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "需要實際的程式碼、日誌或測試環境才能驗證；不能只依文字建議就判定問題已修復。",
+    "tags": [
+      "security best",
+      "檢查認證與權限",
+      "安全程式審查"
+    ],
+    "featured": false,
+    "reviewedSha": "45ccbd8d671c4c4cc3e7e0645a16a3f80ec50de7"
+  },
+  "openai/skills/security-ownership-map": {
+    "zhName": "安全程式碼責任圖",
+    "summary": "分析 Git 修改紀錄及敏感檔案，了解程式碼維護責任與單點風險。",
+    "category": "測試與品質",
+    "scenarios": [
+      "分析 Git 負責人",
+      "找出維護單點"
+    ],
+    "examplePrompt": "請使用 security-ownership-map Skill，分析專案 Git 歷史與敏感程式區，建立維護責任與單點依賴報告，不公開任何私人資料。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "需要實際的程式碼、日誌或測試環境才能驗證；不能只依文字建議就判定問題已修復。",
+    "tags": [
+      "security ownership",
+      "分析 Git 負責人",
+      "找出維護單點"
+    ],
+    "featured": false,
+    "reviewedSha": "0164d0d8809825dc5bccc99e87cafb8345a6be72"
+  },
+  "openai/skills/security-threat-model": {
+    "zhName": "專案威脅建模",
+    "summary": "根據程式碼整理信任邊界、資產、攻擊路徑及緩解方法。",
+    "category": "測試與品質",
+    "scenarios": [
+      "建立威脅模型",
+      "審查攻擊面"
+    ],
+    "examplePrompt": "請使用 security-threat-model Skill，為登入與文件上傳模組建立威脅模型，列出資產、信任邊界、攻擊情境及可驗證的保護措施。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "需要實際的程式碼、日誌或測試環境才能驗證；不能只依文字建議就判定問題已修復。",
+    "tags": [
+      "security threat",
+      "建立威脅模型",
+      "審查攻擊面"
+    ],
+    "featured": true,
+    "reviewedSha": "abd3c1c95d49c4e0e0664f198f4bf168c6291aec"
+  },
+  "openai/skills/sentry": {
+    "zhName": "Sentry 錯誤監控",
+    "summary": "透過已授權的 Sentry 工具查看產品錯誤和健康指標。",
+    "category": "測試與品質",
+    "scenarios": [
+      "追蹤線上錯誤",
+      "分析近期事件"
+    ],
+    "examplePrompt": "請使用 sentry Skill，只讀查詢已連接 Sentry 專案的近期錯誤，按影響人數與重現性排序，不變更線上設定。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "需要相應服務的有效連線與權限；請避免公開帳號資料或機密資訊。",
+    "tags": [
+      "sentry",
+      "追蹤線上錯誤",
+      "分析近期事件"
+    ],
+    "featured": false,
+    "reviewedSha": "c94f7efa9d513f381d5fcd07912d56581ec3dc2a"
+  },
+  "openai/skills/speech": {
+    "zhName": "文字轉語音",
+    "summary": "透過 OpenAI Audio API 產生旁白、朗讀或批量語音。",
+    "category": "影音與創作",
+    "scenarios": [
+      "產生語音旁白",
+      "製作文字朗讀"
+    ],
+    "examplePrompt": "請使用 speech Skill，將我提供的中文教學稿轉成自然語音，列出音訊設定與所需費用，不要在程式碼中寫入 API 金鑰。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "部分功能需要媒體檔案、渲染依賴或 API；先確認輸出格式、素材授權及環境。",
+    "tags": [
+      "speech",
+      "產生語音旁白",
+      "製作文字朗讀"
+    ],
+    "featured": false,
+    "reviewedSha": "54727b1f84831739e7262b4db8271ada026d20c7"
+  },
+  "openai/skills/transcribe": {
+    "zhName": "音訊轉寫文字",
+    "summary": "將音訊或影片中的語音轉寫成文字，可支援分段及說話人標記。",
+    "category": "影音與創作",
+    "scenarios": [
+      "轉寫會議錄音",
+      "字幕整理"
+    ],
+    "examplePrompt": "請使用 transcribe Skill，轉寫我提供的會議音檔，分段加時間標記，不確定的人名請標示待核對。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "部分功能需要媒體檔案、渲染依賴或 API；先確認輸出格式、素材授權及環境。",
+    "tags": [
+      "transcribe",
+      "轉寫會議錄音",
+      "字幕整理"
+    ],
+    "featured": false,
+    "reviewedSha": "757576f9bbd1782f14fcc28ca85159139a2b8fa5"
+  },
+  "openai/skills/vercel-deploy": {
+    "zhName": "Vercel 網站部署",
+    "summary": "協助發佈網站到 Vercel，建立預覽或正式部署。",
+    "category": "Agent 與自動化",
+    "scenarios": [
+      "部署網站到 Vercel",
+      "產生預覽網址"
+    ],
+    "examplePrompt": "請使用 vercel-deploy Skill，先檢查 Next.js 專案部署需求，取得同意後再部署到 Vercel，並驗證網址與主要路由。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "部署會涉及外部帳號、設定或費用，應先確認權限與方案；本站不會代為部署。",
+    "tags": [
+      "vercel deploy",
+      "部署網站到 Vercel",
+      "產生預覽網址"
+    ],
+    "featured": false,
+    "reviewedSha": "a7e6faf3b999d31e8224e232d39fbf58952b7a5b"
+  },
+  "openai/skills/winui-app": {
+    "zhName": "WinUI 桌面程式",
+    "summary": "依 Windows App SDK 與 WinUI 3 規範開發 C# Windows 桌面應用。",
+    "category": "程式開發",
+    "scenarios": [
+      "開發 WinUI 程式",
+      "設計 Windows 桌面 UI"
+    ],
+    "examplePrompt": "請使用 winui-app Skill，以 WinUI 3 製作一個 Windows 學習計時 App，先建立主視窗和控制按鈕，再驗證基本操作。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "winui app",
+      "開發 WinUI 程式",
+      "設計 Windows 桌面 UI"
+    ],
+    "featured": false,
+    "reviewedSha": "28e67e8677f0ab74ac921ec85dd80888f7d53fa7"
+  },
+  "mattpocock/skills/code-review": {
+    "zhName": "程式碼變更審查",
+    "summary": "依專案規範和規格檢查 Git 變更，指出有證據的問題。",
+    "category": "測試與品質",
+    "scenarios": [
+      "審查提交變更",
+      "檢查規範符合度"
+    ],
+    "examplePrompt": "請使用 code-review Skill，審查目前分支相對 main 的修改，按正確性與規範兩個方向列出有證據的問題和檔案位置。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "需要實際的程式碼、日誌或測試環境才能驗證；不能只依文字建議就判定問題已修復。",
+    "tags": [
+      "code review",
+      "審查提交變更",
+      "檢查規範符合度"
+    ],
+    "featured": true,
+    "reviewedSha": "83183e0ad36fd0eef25d37c7e483284b7e34c1f0"
+  },
+  "mattpocock/skills/codebase-design": {
+    "zhName": "程式模組設計",
+    "summary": "用清楚的介面與模組邊界改善大型程式的可維護性。",
+    "category": "程式開發",
+    "scenarios": [
+      "設計深層模組",
+      "拆分程式責任"
+    ],
+    "examplePrompt": "請使用 codebase-design Skill，設計中文 Skill 資料同步模組的介面，明確每個模組的輸入、輸出和責任，不改變現有搜尋功能。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "codebase design",
+      "設計深層模組",
+      "拆分程式責任"
+    ],
+    "featured": false,
+    "reviewedSha": "3f63c8146dd2604b419c929e9876b90c30d410e9"
+  },
+  "mattpocock/skills/diagnosing-bugs": {
+    "zhName": "系統化 Bug 診斷",
+    "summary": "以可重現的測試與證據找出程式錯誤或效能衰退原因。",
+    "category": "測試與品質",
+    "scenarios": [
+      "定位程式 Bug",
+      "分析效能下降"
+    ],
+    "examplePrompt": "請使用 diagnosing-bugs Skill，搜尋頁輸入中文後結果異常，請先重現並搜集證據，定位根因，再以最小修改修復。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "需要實際的程式碼、日誌或測試環境才能驗證；不能只依文字建議就判定問題已修復。",
+    "tags": [
+      "diagnosing bugs",
+      "定位程式 Bug",
+      "分析效能下降"
+    ],
+    "featured": false,
+    "reviewedSha": "d039541ddd1c46e6ddbd662fe99d49b686fc5e12"
+  },
+  "mattpocock/skills/domain-modeling": {
+    "zhName": "專案領域模型",
+    "summary": "建立或改善程式中的業務術語、Glossary 與架構決策記錄。",
+    "category": "程式開發",
+    "scenarios": [
+      "建立業務詞彙表",
+      "整理資料模型"
+    ],
+    "examplePrompt": "請使用 domain-modeling Skill，為 Skill、來源、中文介紹和同步紀錄制定統一領域術語，整理到 Glossary，並說明各實體關係。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "domain modeling",
+      "建立業務詞彙表",
+      "整理資料模型"
+    ],
+    "featured": false,
+    "reviewedSha": "a4438c6879c517d1a08e2b5fbca049b632688dfe"
+  },
+  "mattpocock/skills/grill-with-docs": {
+    "zhName": "文件式需求追問",
+    "summary": "透過深入提問完善方案，並同步補充決策與術語文件。",
+    "category": "學習與協作",
+    "scenarios": [
+      "澄清產品設計",
+      "完善 ADR"
+    ],
+    "examplePrompt": "請使用 grill-with-docs Skill，依序追問中文 Skill 平台的核心需求，逐項補齊不清楚的地方並整理 ADR，不要一次提出太多問題。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "grill with",
+      "澄清產品設計",
+      "完善 ADR"
+    ],
+    "featured": false,
+    "reviewedSha": "62b9efb6f991d1b229adee7506962f13ced0c499"
+  },
+  "mattpocock/skills/implement-spec": {
+    "zhName": "依規格落實程式",
+    "summary": "依先前整理的規格與任務清單進行功能開發。",
+    "category": "程式開發",
+    "scenarios": [
+      "按規格寫功能",
+      "完成驗收條件"
+    ],
+    "examplePrompt": "請使用 implement-spec Skill，根據已批准的 Spec 與 Tickets 實作搜尋功能，保持任務範圍不變，完成後列出測試證據。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "implement spec",
+      "按規格寫功能",
+      "完成驗收條件"
+    ],
+    "featured": false,
+    "reviewedSha": "73d36c23958bd04423ba3ded1c90ff0d0b858b72"
+  },
+  "mattpocock/skills/implement": {
+    "zhName": "按需求執行開發",
+    "summary": "根據清楚的需求規格或 Tickets 實際完成一批程式工作。",
+    "category": "程式開發",
+    "scenarios": [
+      "開發已確認需求",
+      "按批交付"
+    ],
+    "examplePrompt": "請使用 implement Skill，按 docs/PRD.md 實作 Skill 搜尋的新篩選條件，不要擴大範圍，附單元測試。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "implement",
+      "開發已確認需求",
+      "按批交付"
+    ],
+    "featured": false,
+    "reviewedSha": "bd49e472984c7b99aac40286fdae749bb955a842"
+  },
+  "mattpocock/skills/improve-codebase-architecture": {
+    "zhName": "改善既有架構",
+    "summary": "掃描程式庫可改善的模組邊界，產出可檢視的架構報告。",
+    "category": "程式開發",
+    "scenarios": [
+      "整理模組依賴",
+      "評估重構"
+    ],
+    "examplePrompt": "請使用 improve-codebase-architecture Skill，審查現有 Next.js 專案的資料與 UI 耦合，先提供具體架構報告與可驗證的改善方案。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "improve codebase",
+      "整理模組依賴",
+      "評估重構"
+    ],
+    "featured": false,
+    "reviewedSha": "f1eabb568464f03ae79a3346fc1918fdde6d8285"
+  },
+  "mattpocock/skills/pr": {
+    "zhName": "PR 變更說明",
+    "summary": "根據實際 Git 變更整理有用的 Pull Request 描述。",
+    "category": "學習與協作",
+    "scenarios": [
+      "撰寫 PR 說明",
+      "整理測試"
+    ],
+    "examplePrompt": "請使用 pr Skill，為目前分支撰寫 PR 內容，包含修改摘要、影響範圍、測試證據與未解決風險。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "pr",
+      "撰寫 PR 說明",
+      "整理測試"
+    ],
+    "featured": false,
+    "reviewedSha": "84dd4fb2f068e9f6282690235d20dd505b418119"
+  },
+  "mattpocock/skills/prototype": {
+    "zhName": "快速驗證原型",
+    "summary": "建立用於驗證設計想法的臨時原型，不直接當正式產品。",
+    "category": "程式開發",
+    "scenarios": [
+      "驗證 UI 流程",
+      "製作臨時 Demo"
+    ],
+    "examplePrompt": "請使用 prototype Skill，製作可點擊的技能搜尋原型，只驗證搜尋與詳情交互，明確標示未接入正式資料。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "prototype",
+      "驗證 UI 流程",
+      "製作臨時 Demo"
+    ],
+    "featured": false,
+    "reviewedSha": "a0044501fe0d385b4d8575b610188ede9b236ccf"
+  },
+  "mattpocock/skills/research": {
+    "zhName": "依可信來源研究",
+    "summary": "優先查找原始資料並把研究結論記錄到專案 Markdown。",
+    "category": "學習與協作",
+    "scenarios": [
+      "技術可行性研究",
+      "查核 API 文件"
+    ],
+    "examplePrompt": "請使用 research Skill，查核 skills.sh 的最新 API 認證方式與限制，優先官方文件，整理成含來源的 Markdown 報告。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "research",
+      "技術可行性研究",
+      "查核 API 文件"
+    ],
+    "featured": false,
+    "reviewedSha": "ffc9eb89849cc4cf74962ce93d786ffd17c6a5dc"
+  },
+  "mattpocock/skills/retro": {
+    "zhName": "開發回顧",
+    "summary": "對已完成的一輪開發整理做得好、待改善與下次行動。",
+    "category": "學習與協作",
+    "scenarios": [
+      "開發迭代回顧",
+      "整理經驗"
+    ],
+    "examplePrompt": "請使用 retro Skill，對本次資料同步開發進行回顧，區分可用成果、遇到的問題與下批要改進的行動。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "retro",
+      "開發迭代回顧",
+      "整理經驗"
+    ],
+    "featured": false,
+    "reviewedSha": "12149acf2dd23b4514dec57b04a6293eaa1352fa"
+  },
+  "mattpocock/skills/tdd": {
+    "zhName": "測試驅動開發",
+    "summary": "以先失敗、再實作、最後重構的順序完成程式功能。",
+    "category": "測試與品質",
+    "scenarios": [
+      "先寫測試再開發",
+      "減少回歸"
+    ],
+    "examplePrompt": "請使用 tdd Skill，為搜尋函數先寫失敗測試，涵蓋中文、英文和空查詢，再實作最小功能使測試通過。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "需要實際的程式碼、日誌或測試環境才能驗證；不能只依文字建議就判定問題已修復。",
+    "tags": [
+      "tdd",
+      "先寫測試再開發",
+      "減少回歸"
+    ],
+    "featured": true,
+    "reviewedSha": "01eadaa34e7c9a63a67d6dc3cce1cc81b0e49985"
+  },
+  "mattpocock/skills/to-spec": {
+    "zhName": "討論轉規格",
+    "summary": "把已討論的需求整理成可實作的 Spec，並發佈到設定的任務追蹤系統。",
+    "category": "學習與協作",
+    "scenarios": [
+      "建立需求規格",
+      "轉換討論記錄"
+    ],
+    "examplePrompt": "請使用 to-spec Skill，把目前確認的 Skill 目錄需求整理成明確 Spec，保留尚未決定的項目，列出驗收條件。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "to spec",
+      "建立需求規格",
+      "轉換討論記錄"
+    ],
+    "featured": false,
+    "reviewedSha": "3f52599ae2a4347aee5a07432c2707518e691a7f"
+  },
+  "mattpocock/skills/to-tickets": {
+    "zhName": "規格拆解任務",
+    "summary": "把規格拆成可交付的小任務，並標記任務間的依賴關係。",
+    "category": "學習與協作",
+    "scenarios": [
+      "拆解開發任務",
+      "管理依賴"
+    ],
+    "examplePrompt": "請使用 to-tickets Skill，將新增來源更新功能分成可獨立驗收的小 Tickets，標明阻塞關係與預期成果。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "to tickets",
+      "拆解開發任務",
+      "管理依賴"
+    ],
+    "featured": false,
+    "reviewedSha": "9b77a01db9460c99c22d03c910c349f890f12c0e"
+  },
+  "mattpocock/skills/triage": {
+    "zhName": "問題回報分流",
+    "summary": "將 Issue 與外部 PR 分類、核實並轉成可執行的處理工作。",
+    "category": "測試與品質",
+    "scenarios": [
+      "整理 Bug 回報",
+      "決定處理優先級"
+    ],
+    "examplePrompt": "請使用 triage Skill，把這些網站問題依重現性和影響程度分級，提出每個問題的下一個驗證步驟。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "需要實際的程式碼、日誌或測試環境才能驗證；不能只依文字建議就判定問題已修復。",
+    "tags": [
+      "triage",
+      "整理 Bug 回報",
+      "決定處理優先級"
+    ],
+    "featured": false,
+    "reviewedSha": "3fd5617e906cf9b71a6b17424791adb905fc248b"
+  },
+  "mattpocock/skills/wayfinder": {
+    "zhName": "大型開發路線圖",
+    "summary": "將超過一個 Agent 工作階段的大型工作分解成待決問題與路線圖。",
+    "category": "學習與協作",
+    "scenarios": [
+      "規劃大型專案",
+      "分階段決策"
+    ],
+    "examplePrompt": "請使用 wayfinder Skill，為技能目錄的資料同步與推薦功能制定跨階段路線圖，先列關鍵決策，再分批處理。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "wayfinder",
+      "規劃大型專案",
+      "分階段決策"
+    ],
+    "featured": false,
+    "reviewedSha": "975d6bf9c0a49d18a651f3335e0b4dcf8650fe31"
+  },
+  "mattpocock/skills/wizard": {
+    "zhName": "互動式設定精靈",
+    "summary": "生成協助人類完成環境配置、憑據或部署操作的命令列引導精靈。",
+    "category": "程式開發",
+    "scenarios": [
+      "建立安裝精靈",
+      "設定 CI 憑據"
+    ],
+    "examplePrompt": "請使用 wizard Skill，設計一個互動式 Bash 精靈引導開發者配置 GitHub Token，保護機密值且提供取消流程。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "wizard",
+      "建立安裝精靈",
+      "設定 CI 憑據"
+    ],
+    "featured": false,
+    "reviewedSha": "c4294ad8298b9b95fc727496b1b802b1f7363fba"
+  },
+  "mattpocock/skills/chief-of-staff": {
+    "zhName": "多代理工作統籌",
+    "summary": "在單個工作階段協調多個子代理完成持續性目標。",
+    "category": "Agent 與自動化",
+    "scenarios": [
+      "代理任務分工",
+      "協調長任務"
+    ],
+    "examplePrompt": "請使用 chief-of-staff Skill，將已批准的產品開發任務拆成設計、資料與測試工作，指定每部分的輸出及交接方式。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "chief of",
+      "代理任務分工",
+      "協調長任務"
+    ],
+    "featured": false,
+    "reviewedSha": "22f0b6626f07bfdfa78b70d006742dfa2260e9c4"
+  },
+  "mattpocock/skills/claude-handoff": {
+    "zhName": "Claude 工作交接",
+    "summary": "把目前對話交接給新的後台代理，繼續既有任務。",
+    "category": "學習與協作",
+    "scenarios": [
+      "交接 Claude 會話",
+      "延續開發"
+    ],
+    "examplePrompt": "請使用 claude-handoff Skill，將已完成的程式修改、測試和待辦整理成新代理可接手的上下文，不要漏掉關鍵決策。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "claude handoff",
+      "交接 Claude 會話",
+      "延續開發"
+    ],
+    "featured": false,
+    "reviewedSha": "77f82fc59c89c3a83ed5a92521dc2869f0533724"
+  },
+  "mattpocock/skills/software-factory": {
+    "zhName": "自動化軟件工廠設計",
+    "summary": "規劃以任務、代理及外部服務組成的軟件交付系統。",
+    "category": "Agent 與自動化",
+    "scenarios": [
+      "設計多代理流程",
+      "建立軟件工廠"
+    ],
+    "examplePrompt": "請使用 software-factory Skill，整理專案從需求到測試的自動化工作流，定義工作節點、接口與人工審核關卡。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "software factory",
+      "設計多代理流程",
+      "建立軟件工廠"
+    ],
+    "featured": false,
+    "reviewedSha": "c60583aa2030d3eea42a3bbb85126c79c8a6eaea"
+  },
+  "mattpocock/skills/scaffold-exercises": {
+    "zhName": "練習工程腳手架",
+    "summary": "建立含題目、解答與教學說明的練習資料夾與檢查結構。",
+    "category": "學習與協作",
+    "scenarios": [
+      "產生程式練習",
+      "建立教材模板"
+    ],
+    "examplePrompt": "請使用 scaffold-exercises Skill，為 Java 集合概念建立 3 題練習的檔案結構，分開題目、參考答案及解說，讓專案可測試。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "scaffold exercises",
+      "產生程式練習",
+      "建立教材模板"
+    ],
+    "featured": false,
+    "reviewedSha": "d87df28e7d8abb4e57ecc6e47d71c274d16054c7"
+  },
+  "mattpocock/skills/grill-me": {
+    "zhName": "深入需求訪談",
+    "summary": "透過逐步追問找出方案缺漏，完善產品需求與假設。",
+    "category": "學習與協作",
+    "scenarios": [
+      "完善產品構思",
+      "深挖需求"
+    ],
+    "examplePrompt": "請使用 grill-me Skill，以產品經理角度檢視我的 AI 學習網站需求，每次問一個重要問題，直到核心流程清楚。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "grill me",
+      "完善產品構思",
+      "深挖需求"
+    ],
+    "featured": false,
+    "reviewedSha": "3947ff9c4ad980d14fc07fccbf659d47c114e81d"
+  },
+  "mattpocock/skills/handoff": {
+    "zhName": "Agent 工作交接",
+    "summary": "把當前工作與上下文濃縮成另一個 Agent 可接手的文件。",
+    "category": "學習與協作",
+    "scenarios": [
+      "整理 AI 工作成果",
+      "轉交開發"
+    ],
+    "examplePrompt": "請使用 handoff Skill，將當前 Git 分支的進度、測試、文件入口及未完成任務寫成簡潔交接報告。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "handoff",
+      "整理 AI 工作成果",
+      "轉交開發"
+    ],
+    "featured": false,
+    "reviewedSha": "a224edc643a20ddb989f9bca1547440169159810"
+  },
+  "mattpocock/skills/teach": {
+    "zhName": "循序漸進教學",
+    "summary": "根據學習者的基礎用概念、示例和練習教授新知識。",
+    "category": "學習與協作",
+    "scenarios": [
+      "學習程式概念",
+      "安排練習"
+    ],
+    "examplePrompt": "請使用 teach Skill，以大一學生程度逐步教我 Java HashMap，先講概念再給程式例子，附兩題練習與答案。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "teach",
+      "學習程式概念",
+      "安排練習"
+    ],
+    "featured": false,
+    "reviewedSha": "493fa3bae0dada971c4dfb965790e56920b1dced"
+  },
+  "mattpocock/skills/wait-what": {
+    "zhName": "重新解釋未理解內容",
+    "summary": "當上一個解釋沒有被理解時，重新換一種更清楚的講法。",
+    "category": "學習與協作",
+    "scenarios": [
+      "請 AI 重新解釋",
+      "修正溝通方式"
+    ],
+    "examplePrompt": "請使用 wait-what Skill，上次對矩陣秩的解釋我仍不懂，請換一種具體例子，從符號定義重新逐步說明。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "wait what",
+      "請 AI 重新解釋",
+      "修正溝通方式"
+    ],
+    "featured": false,
+    "reviewedSha": "9b15cd1a7dda0854ca093e29e3e0de57e241b2ac"
+  },
+  "mattpocock/skills/writing-for-agents": {
+    "zhName": "面向代理撰寫指引",
+    "summary": "編寫容易被 AI 代理理解和遵守的指令文件，例如 AGENTS.md。",
+    "category": "Skill 工具",
+    "scenarios": [
+      "改善 AGENTS.md",
+      "撰寫技能規則"
+    ],
+    "examplePrompt": "請使用 writing-for-agents Skill，審查我現有的 AGENTS.md，重寫互相衝突的規則，保持任務邊界清晰並說明修改理由。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "writing for",
+      "改善 AGENTS.md",
+      "撰寫技能規則"
+    ],
+    "featured": false,
+    "reviewedSha": "a37608daf6e835e767deecfb498facecaaba82ba"
+  },
+  "vercel-labs/agent-skills/composition-patterns": {
+    "zhName": "React 組件組合模式",
+    "summary": "使用複合組件與 Context 等模式建立更可維護的 React 組件介面。",
+    "category": "程式開發",
+    "scenarios": [
+      "重構 React 組件",
+      "改善元件 API"
+    ],
+    "examplePrompt": "請使用 vercel-composition-patterns Skill，把目前有多個布林屬性的 React Card 改為更清楚的組合式 API，保留原功能並檢查 React 19 相容性。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "composition patterns",
+      "重構 React 組件",
+      "改善元件 API"
+    ],
+    "featured": false,
+    "reviewedSha": "d07025bf943345bc1cf15eb923594f889ff881f0"
+  },
+  "vercel-labs/agent-skills/deploy-to-vercel": {
+    "zhName": "Vercel 部署助手",
+    "summary": "協助將應用發佈到 Vercel，處理部署流程及驗證。",
+    "category": "Agent 與自動化",
+    "scenarios": [
+      "發佈 Vercel 專案",
+      "取得預覽"
+    ],
+    "examplePrompt": "請使用 deploy-to-vercel Skill，評估將本機網站部署到 Vercel 所需配置，在得到部署授權後才建立預覽並檢查主要路由。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "部署會涉及外部帳號、設定或費用，應先確認權限與方案；本站不會代為部署。",
+    "tags": [
+      "deploy to",
+      "發佈 Vercel 專案",
+      "取得預覽"
+    ],
+    "featured": false,
+    "reviewedSha": "f3bb68ba31294f0edf81fdb326ddc2666a24e0e0"
+  },
+  "vercel-labs/agent-skills/react-best-practices": {
+    "zhName": "React 效能最佳實踐",
+    "summary": "依 Vercel 工程規範優化 React 與 Next.js 程式的效能。",
+    "category": "程式開發",
+    "scenarios": [
+      "優化 React 程式",
+      "檢查 Next.js 效能"
+    ],
+    "examplePrompt": "請使用 vercel-react-best-practices Skill，審查我的 Next.js 目錄網站，找出不必要的前端資料處理與渲染，提出可測量的改進。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "react best",
+      "優化 React 程式",
+      "檢查 Next.js 效能"
+    ],
+    "featured": true,
+    "reviewedSha": "237988de4a66dd8a71d30a2c24ebe1a86b58d04e"
+  },
+  "vercel-labs/agent-skills/react-native-skills": {
+    "zhName": "React Native 開發規範",
+    "summary": "協助改善 React Native 與 Expo 的清單、動畫和原生模組效能。",
+    "category": "程式開發",
+    "scenarios": [
+      "優化 React Native App",
+      "改善滾動表現"
+    ],
+    "examplePrompt": "請使用 vercel-react-native-skills Skill，針對 React Native 的大型清單頁做效能審查，重點是滾動、圖片與動畫，提供可驗證的優化。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "react native",
+      "優化 React Native App",
+      "改善滾動表現"
+    ],
+    "featured": false,
+    "reviewedSha": "73401865dd7440a43c5243b107a3763e0d2f4aae"
+  },
+  "vercel-labs/agent-skills/react-view-transitions": {
+    "zhName": "React 視圖過渡動畫",
+    "summary": "使用 React View Transition API 建立自然的頁面與元件轉場效果。",
+    "category": "網頁與視覺設計",
+    "scenarios": [
+      "建立頁面轉場",
+      "改善 React 動畫"
+    ],
+    "examplePrompt": "請使用 vercel-react-view-transitions Skill，為 React 卡片列表到詳細頁的切換新增 View Transition 動畫，保留鍵盤可用性並支援減少動態偏好。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "react view",
+      "建立頁面轉場",
+      "改善 React 動畫"
+    ],
+    "featured": false,
+    "reviewedSha": "665db73fe55b2504d1123857f14606472cdefd0a"
+  },
+  "vercel-labs/agent-skills/vercel-cli-with-tokens": {
+    "zhName": "Vercel Token CLI 操作",
+    "summary": "在 Token 認證模式下使用 Vercel CLI 部署和管理專案。",
+    "category": "Agent 與自動化",
+    "scenarios": [
+      "Token 登入 Vercel",
+      "自動部署配置"
+    ],
+    "examplePrompt": "請使用 vercel-cli-with-tokens Skill，說明如何以環境變數在 CI 安全使用 Vercel Token，先檢查權限和失效方式，不要把 Token 寫入倉庫。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "部署會涉及外部帳號、設定或費用，應先確認權限與方案；本站不會代為部署。",
+    "tags": [
+      "vercel cli",
+      "Token 登入 Vercel",
+      "自動部署配置"
+    ],
+    "featured": false,
+    "reviewedSha": "814423d0c40f56853e0f4f2f64d03a02266dadf4"
+  },
+  "vercel-labs/agent-skills/vercel-optimize": {
+    "zhName": "Vercel 成本效能優化",
+    "summary": "透過用量、設定與指標分析已部署 Vercel 專案的成本與效能。",
+    "category": "Agent 與自動化",
+    "scenarios": [
+      "降低 Vercel 成本",
+      "分析使用量"
+    ],
+    "examplePrompt": "請使用 vercel-optimize Skill，分析已部署專案的 Vercel 用量與函數效能，先提出資料需求，再給出具體降本建議。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "vercel optimize",
+      "降低 Vercel 成本",
+      "分析使用量"
+    ],
+    "featured": false,
+    "reviewedSha": "c8a6d6d7075b2cc3f7921da89de86e6926f78985"
+  },
+  "vercel-labs/agent-skills/web-design-guidelines": {
+    "zhName": "網頁介面規範審查",
+    "summary": "依 Web Interface Guidelines 檢查 UI 的可讀性、可訪問性與互動問題。",
+    "category": "網頁與視覺設計",
+    "scenarios": [
+      "審查 UI",
+      "檢查無障礙"
+    ],
+    "examplePrompt": "請使用 web-design-guidelines Skill，審查中文 Skill 網站的可訪問性和版面，列出問題的元件位置與可重現證據，先不要修改程式。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "web design",
+      "審查 UI",
+      "檢查無障礙"
+    ],
+    "featured": true,
+    "reviewedSha": "ceae92ab319216a68274168fba9b63b998b65997"
+  },
+  "vercel-labs/agent-skills/writing-guidelines": {
+    "zhName": "文件寫作規範",
+    "summary": "審查技術文件和介面文案的結構、語氣與可讀性。",
+    "category": "文件與辦公",
+    "scenarios": [
+      "潤飾技術文件",
+      "檢查文案一致"
+    ],
+    "examplePrompt": "請使用 writing-guidelines Skill，檢查這份 README 的語氣、術語與結構，保留內容事實，提出具體的可讀性改進。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "writing guidelines",
+      "潤飾技術文件",
+      "檢查文案一致"
+    ],
+    "featured": false,
+    "reviewedSha": "63facf310252a990d154bed12b3dcdd295ba771a"
+  },
+  "remotion-dev/skills/remotion-best-practices": {
+    "zhName": "Remotion 技能導航",
+    "summary": "根據 Remotion 影片任務選擇合適的子技能與實作路線。",
+    "category": "影音與創作",
+    "scenarios": [
+      "選擇 Remotion 工具",
+      "規劃影片流程"
+    ],
+    "examplePrompt": "請使用 remotion-best-practices Skill，我要用程式生成 5 秒循環動畫，請依 Remotion 技能導航找出要用的子技能及工作順序。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "部分功能需要媒體檔案、渲染依賴或 API；先確認輸出格式、素材授權及環境。",
+    "tags": [
+      "remotion best",
+      "選擇 Remotion 工具",
+      "規劃影片流程"
+    ],
+    "featured": true,
+    "reviewedSha": "9adb9f6b0029586d2590a6bbae024693b16ec921"
+  },
+  "remotion-dev/skills/remotion-captions": {
+    "zhName": "Remotion 字幕動畫",
+    "summary": "為 Remotion 影片加入轉寫字幕、時間軸與字幕動效。",
+    "category": "影音與創作",
+    "scenarios": [
+      "製作動態字幕",
+      "處理語音時間"
+    ],
+    "examplePrompt": "請使用 remotion-captions Skill，替我提供的 20 秒旁白製作同步字幕，確保時間正確、文字易讀並可調整位置。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "部分功能需要媒體檔案、渲染依賴或 API；先確認輸出格式、素材授權及環境。",
+    "tags": [
+      "remotion captions",
+      "製作動態字幕",
+      "處理語音時間"
+    ],
+    "featured": false,
+    "reviewedSha": "e3603180e50a5c11898bec266ccc3dd3b93ca2b7"
+  },
+  "remotion-dev/skills/remotion-create": {
+    "zhName": "建立 Remotion 影片",
+    "summary": "初始化一個新的 Remotion 影片專案及基本場景。",
+    "category": "影音與創作",
+    "scenarios": [
+      "新增 Remotion 工程",
+      "創建影片"
+    ],
+    "examplePrompt": "請使用 remotion-create Skill，建立一個 5 秒、1920×1080 的 Remotion 動畫專案，背景黑白簡潔，提供本機預覽方法。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "部分功能需要媒體檔案、渲染依賴或 API；先確認輸出格式、素材授權及環境。",
+    "tags": [
+      "remotion create",
+      "新增 Remotion 工程",
+      "創建影片"
+    ],
+    "featured": false,
+    "reviewedSha": "01d8117a5adc638f4e7871ae82131d37237505f7"
+  },
+  "remotion-dev/skills/remotion-interactivity": {
+    "zhName": "Remotion 互動結構",
+    "summary": "安排 Remotion 標記結構，使影片組件適合互動或使用者控制。",
+    "category": "影音與創作",
+    "scenarios": [
+      "設計互動影像",
+      "安排元件結構"
+    ],
+    "examplePrompt": "請使用 remotion-interactivity Skill，替互動式影片設計可重用的畫面元件，整理狀態與事件，保持時間軸易於管理。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "部分功能需要媒體檔案、渲染依賴或 API；先確認輸出格式、素材授權及環境。",
+    "tags": [
+      "remotion interactivity",
+      "設計互動影像",
+      "安排元件結構"
+    ],
+    "featured": false,
+    "reviewedSha": "6f2f4547149bda5f6f2e5369cdbe1b7e6b61a8e4"
+  },
+  "remotion-dev/skills/remotion-maps": {
+    "zhName": "Remotion 地圖動畫",
+    "summary": "使用 Remotion 製作路線、地點及地圖視覺動畫。",
+    "category": "影音與創作",
+    "scenarios": [
+      "製作地圖路線動畫",
+      "動態位置標示"
+    ],
+    "examplePrompt": "請使用 remotion-maps Skill，為產品介紹影片製作地圖路線動畫，用資料標示起終點並控制鏡頭過渡。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "部分功能需要媒體檔案、渲染依賴或 API；先確認輸出格式、素材授權及環境。",
+    "tags": [
+      "remotion maps",
+      "製作地圖路線動畫",
+      "動態位置標示"
+    ],
+    "featured": false,
+    "reviewedSha": "10b9269e6e0ec81bd0110dd795099b5ff8998c94"
+  },
+  "remotion-dev/skills/remotion-markup": {
+    "zhName": "Remotion 動畫版面規範",
+    "summary": "提供 Remotion 元件排版、動畫和視覺效果的最佳實踐。",
+    "category": "影音與創作",
+    "scenarios": [
+      "改善影片場景",
+      "審查動畫"
+    ],
+    "examplePrompt": "請使用 remotion-markup Skill，審查 Remotion 場景的文字、排版和動畫時間，提出具體修改，保持內容不變。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "部分功能需要媒體檔案、渲染依賴或 API；先確認輸出格式、素材授權及環境。",
+    "tags": [
+      "remotion markup",
+      "改善影片場景",
+      "審查動畫"
+    ],
+    "featured": false,
+    "reviewedSha": "23c694bded034ca0bddc098e38b59ccd95967bf2"
+  },
+  "remotion-dev/skills/remotion-multimedia": {
+    "zhName": "Remotion 多媒體處理",
+    "summary": "結合 Mediabunny 等工具管理 Remotion 影片相關媒體。",
+    "category": "影音與創作",
+    "scenarios": [
+      "處理多媒體素材",
+      "分析影片"
+    ],
+    "examplePrompt": "請使用 remotion-multimedia Skill，為 Remotion 專案整理音影片素材處理流程，說明媒體資訊取得方式與格式限制。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "部分功能需要媒體檔案、渲染依賴或 API；先確認輸出格式、素材授權及環境。",
+    "tags": [
+      "remotion multimedia",
+      "處理多媒體素材",
+      "分析影片"
+    ],
+    "featured": false,
+    "reviewedSha": "f5c3f1f8cbf83a46cf5eecb78ada67b1fcd92d5f"
+  },
+  "remotion-dev/skills/remotion-render": {
+    "zhName": "Remotion 影片輸出",
+    "summary": "設定並導出 Remotion 影片，處理格式和渲染參數。",
+    "category": "影音與創作",
+    "scenarios": [
+      "輸出 MP4",
+      "控制渲染參數"
+    ],
+    "examplePrompt": "請使用 remotion-render Skill，將我完成的 Remotion 動畫導出為 1080p MP4，檢查影格、時長與編碼參數。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "部分功能需要媒體檔案、渲染依賴或 API；先確認輸出格式、素材授權及環境。",
+    "tags": [
+      "remotion render",
+      "輸出 MP4",
+      "控制渲染參數"
+    ],
+    "featured": false,
+    "reviewedSha": "67700b89473c0bd92b5ae588e6484946c8224085"
+  },
+  "remotion-dev/skills/remotion-studio": {
+    "zhName": "Remotion 本機預覽",
+    "summary": "啟動並使用 Remotion Studio 預覽和調整影片。",
+    "category": "影音與創作",
+    "scenarios": [
+      "預覽 Remotion",
+      "調試時間軸"
+    ],
+    "examplePrompt": "請使用 remotion-studio Skill，開啟已有 Remotion 工程的 Studio 預覽，檢查每段動畫及畫面變化並指出問題。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "部分功能需要媒體檔案、渲染依賴或 API；先確認輸出格式、素材授權及環境。",
+    "tags": [
+      "remotion studio",
+      "預覽 Remotion",
+      "調試時間軸"
+    ],
+    "featured": false,
+    "reviewedSha": "311cc237ffad3ee826d2e3be6ea0a7755f474689"
+  },
+  "remotion-dev/skills/remotion-upgrade": {
+    "zhName": "Remotion 版本升級",
+    "summary": "依正式遷移方式升級 Remotion 與相關依賴，降低相容風險。",
+    "category": "影音與創作",
+    "scenarios": [
+      "升級 Remotion",
+      "處理依賴"
+    ],
+    "examplePrompt": "請使用 remotion-upgrade Skill，先檢查現有 Remotion 版本與破壞性變更，再制定可回退的升級步驟和回歸測試。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "部分功能需要媒體檔案、渲染依賴或 API；先確認輸出格式、素材授權及環境。",
+    "tags": [
+      "remotion upgrade",
+      "升級 Remotion",
+      "處理依賴"
+    ],
+    "featured": false,
+    "reviewedSha": "3f06e753b757863ec3abae805ea7bdc53725c5c9"
+  },
+  "obra/superpowers/brainstorming": {
+    "zhName": "需求探索與構思",
+    "summary": "在進入開發前釐清使用者真實意圖、範圍與重要取捨。",
+    "category": "學習與協作",
+    "scenarios": [
+      "釐清新功能",
+      "制定產品方向"
+    ],
+    "examplePrompt": "請使用 brainstorming Skill，請幫我探索一個中文 Skill 網站想法，先理解目標與約束，不要在規格確認前擅自動手開發。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "brainstorming",
+      "釐清新功能",
+      "制定產品方向"
+    ],
+    "featured": false,
+    "reviewedSha": "7f5eef02f894c4f24cea313660c0465ce9c084ed"
+  },
+  "obra/superpowers/diagnosing-superpowers": {
+    "zhName": "Superpowers 工作診斷",
+    "summary": "分析 Superpowers 流程執行不如預期的原因與改進方法。",
+    "category": "Skill 工具",
+    "scenarios": [
+      "診斷代理流程",
+      "檢查技能未觸發"
+    ],
+    "examplePrompt": "請使用 diagnosing-superpowers Skill，分析這次 Superpowers 工作為何重複執行任務，結合日誌與現有文件提出可驗證的原因。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "diagnosing superpowers",
+      "診斷代理流程",
+      "檢查技能未觸發"
+    ],
+    "featured": false,
+    "reviewedSha": "dda2692d528574c410b118a6de545d6afc7eb047"
+  },
+  "obra/superpowers/dispatching-parallel-agents": {
+    "zhName": "平行代理任務安排",
+    "summary": "把互不依賴的工作拆分給多個 Agent 平行處理。",
+    "category": "Agent 與自動化",
+    "scenarios": [
+      "分配獨立任務",
+      "規劃多代理"
+    ],
+    "examplePrompt": "請使用 dispatching-parallel-agents Skill，把專案的文字整理和前端測試拆成互不衝突的代理工作，標明責任和整合步驟。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "dispatching parallel",
+      "分配獨立任務",
+      "規劃多代理"
+    ],
+    "featured": false,
+    "reviewedSha": "3fa091b348bbe0a18eaa0e17e9092c97f7005cbe"
+  },
+  "obra/superpowers/executing-plans": {
+    "zhName": "按實作計畫執行",
+    "summary": "依已確認的計畫逐步實作、測試並記錄完成情況。",
+    "category": "程式開發",
+    "scenarios": [
+      "按計劃開發",
+      "核對驗收證據"
+    ],
+    "examplePrompt": "請使用 executing-plans Skill，根據已有實作計畫逐項落實功能，每完成一項先做測試並記錄結果，不得擅自超出範圍。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "executing plans",
+      "按計劃開發",
+      "核對驗收證據"
+    ],
+    "featured": false,
+    "reviewedSha": "ac77129d7c695734105004b6da10169de8d13df3"
+  },
+  "obra/superpowers/finishing-a-development-branch": {
+    "zhName": "開發分支收尾",
+    "summary": "在測試通過後整理分支內容與合併、保留或交付選項。",
+    "category": "測試與品質",
+    "scenarios": [
+      "完成開發分支",
+      "整理交付選項"
+    ],
+    "examplePrompt": "請使用 finishing-a-development-branch Skill，檢查本分支的測試與未提交修改，給出合併前檢查和交付建議，不要未經授權直接推送。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "需要實際的程式碼、日誌或測試環境才能驗證；不能只依文字建議就判定問題已修復。",
+    "tags": [
+      "finishing a",
+      "完成開發分支",
+      "整理交付選項"
+    ],
+    "featured": false,
+    "reviewedSha": "fa8aecaf8813f1b19d19996f7957d1b0121f2d9c"
+  },
+  "obra/superpowers/receiving-code-review": {
+    "zhName": "處理程式碼審查",
+    "summary": "核對審查意見的正確性，再實施有證據的修正。",
+    "category": "測試與品質",
+    "scenarios": [
+      "回應審查反饋",
+      "核實 Bug"
+    ],
+    "examplePrompt": "請使用 receiving-code-review Skill，逐項驗證 Reviewer 提出的問題，區分有效缺陷與誤判，再修復確認的部分。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "需要實際的程式碼、日誌或測試環境才能驗證；不能只依文字建議就判定問題已修復。",
+    "tags": [
+      "receiving code",
+      "回應審查反饋",
+      "核實 Bug"
+    ],
+    "featured": false,
+    "reviewedSha": "950da7b74bf6dbed6b8726d12ddadd65a9f5fda7"
+  },
+  "obra/superpowers/requesting-code-review": {
+    "zhName": "要求程式碼審查",
+    "summary": "在主要功能完成時整理變更並安排獨立驗收或審查。",
+    "category": "測試與品質",
+    "scenarios": [
+      "提交程式審查",
+      "核對規格"
+    ],
+    "examplePrompt": "請使用 requesting-code-review Skill，為這批開發整理可審查的 diff、測試結果和風險，請審查者按規格檢查。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "需要實際的程式碼、日誌或測試環境才能驗證；不能只依文字建議就判定問題已修復。",
+    "tags": [
+      "requesting code",
+      "提交程式審查",
+      "核對規格"
+    ],
+    "featured": false,
+    "reviewedSha": "68d338a58ecdd8b77bfbb519b781ef223dbbb842"
+  },
+  "obra/superpowers/subagent-driven-development": {
+    "zhName": "子代理驅動開發",
+    "summary": "依獨立任務派出實作及審核代理，逐關驗證成果。",
+    "category": "Agent 與自動化",
+    "scenarios": [
+      "組織多代理開發",
+      "逐任務審查"
+    ],
+    "examplePrompt": "請使用 subagent-driven-development Skill，將批准的計畫拆成互不衝突的工作，讓各代理實作和檢查，每項通過驗證後才繼續。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "subagent driven",
+      "組織多代理開發",
+      "逐任務審查"
+    ],
+    "featured": false,
+    "reviewedSha": "ea170ed101d61a52fdee0ade8368ec0723980a5c"
+  },
+  "obra/superpowers/systematic-debugging": {
+    "zhName": "系統化除錯",
+    "summary": "以重現、蒐證與定位根因的步驟處理故障。",
+    "category": "測試與品質",
+    "scenarios": [
+      "找出 Bug 根因",
+      "修復回歸"
+    ],
+    "examplePrompt": "請使用 systematic-debugging Skill，網頁某些網址返回 500，請先重現、查日誌、定位根因，再做最小修復和回歸測試。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "需要實際的程式碼、日誌或測試環境才能驗證；不能只依文字建議就判定問題已修復。",
+    "tags": [
+      "systematic debugging",
+      "找出 Bug 根因",
+      "修復回歸"
+    ],
+    "featured": true,
+    "reviewedSha": "62fc752aaef59a8bbed5d305f4cadc60f8ae07ed"
+  },
+  "obra/superpowers/test-driven-development": {
+    "zhName": "測試驅動實作",
+    "summary": "先寫會失敗的測試，再編寫最小程式碼使其通過。",
+    "category": "測試與品質",
+    "scenarios": [
+      "以測試帶動實作",
+      "避免回歸"
+    ],
+    "examplePrompt": "請使用 test-driven-development Skill，為新增的同步功能先建立失敗測試，涵蓋網絡失敗與資料缺失，再實作並驗證。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "需要實際的程式碼、日誌或測試環境才能驗證；不能只依文字建議就判定問題已修復。",
+    "tags": [
+      "test driven",
+      "以測試帶動實作",
+      "避免回歸"
+    ],
+    "featured": false,
+    "reviewedSha": "46838cc9e893c06259e3bdad0fc2425b36242f15"
+  },
+  "obra/superpowers/using-git-worktrees": {
+    "zhName": "Git Worktree 隔離開發",
+    "summary": "利用獨立 Git 工作樹避免不同任務互相改動相同程式。",
+    "category": "程式開發",
+    "scenarios": [
+      "建立開發工作樹",
+      "隔離多代理"
+    ],
+    "examplePrompt": "請使用 using-git-worktrees Skill，為資料同步功能建立獨立 Worktree，保留 main 分支不變，列出如何返回原工作目錄。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "using git",
+      "建立開發工作樹",
+      "隔離多代理"
+    ],
+    "featured": false,
+    "reviewedSha": "1381dacb3516b94382dd6ec736ede21ee8ede2b3"
+  },
+  "obra/superpowers/verification-before-completion": {
+    "zhName": "交付前證據驗證",
+    "summary": "要求聲稱完成前實際執行測試並核對結果。",
+    "category": "測試與品質",
+    "scenarios": [
+      "交付前驗收",
+      "核對測試輸出"
+    ],
+    "examplePrompt": "請使用 verification-before-completion Skill，在交付本次功能前執行測試、型別檢查與建置，用實際輸出說明哪些通過、哪些未驗證。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "需要實際的程式碼、日誌或測試環境才能驗證；不能只依文字建議就判定問題已修復。",
+    "tags": [
+      "verification before",
+      "交付前驗收",
+      "核對測試輸出"
+    ],
+    "featured": false,
+    "reviewedSha": "7d45333cc4a49c57a80df6c1fe2fa777a207afbc"
+  },
+  "obra/superpowers/writing-plans": {
+    "zhName": "詳細實作計畫",
+    "summary": "把需求整理成具體檔案、步驟、測試與驗收條件的開發計畫。",
+    "category": "學習與協作",
+    "scenarios": [
+      "撰寫開發計畫",
+      "拆解實作步驟"
+    ],
+    "examplePrompt": "請使用 writing-plans Skill，根據已確認的產品規格撰寫可直接執行的計畫，為每個任務列出檔案、步驟與測試。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "writing plans",
+      "撰寫開發計畫",
+      "拆解實作步驟"
+    ],
+    "featured": false,
+    "reviewedSha": "4cf0275d88d67aa4ef09f4bbca9970ed6ff74a00"
+  },
+  "vercel-labs/skills/find-skills": {
+    "zhName": "Skill 搜尋與發現",
+    "summary": "根據自然語言需求找到可能存在的 Agent Skills 及其安裝方法。",
+    "category": "Skill 工具",
+    "scenarios": [
+      "搜尋合適 Skill",
+      "發現新工具"
+    ],
+    "examplePrompt": "請使用 find-skills Skill，我要從網站截圖還原前端，請搜尋相符的 Skill，對照來源、功能與安裝條件，列出最適合的候選。請先核對任務限制與所需工具，按照技能指引進行，最後簡短回報實際成果與驗證方式。",
+    "caution": "這是來自第三方倉庫的技能指引，安裝前請閱讀原始 SKILL.md 並評估依賴及權限。本站未做獨立安全審核。",
+    "tags": [
+      "find skills",
+      "搜尋合適 Skill",
+      "發現新工具"
+    ],
+    "featured": true,
+    "reviewedSha": "a41bdd074bb587afd861332cf2f473f3154de4d7"
+  }
+}

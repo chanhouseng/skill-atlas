@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Catalog } from "@/components/catalog";
-import { skills } from "@/data/skills";
+import { skills, lastSyncAt } from "@/data/skills";
 
 export const metadata: Metadata = {
   title: "技集 · AI Skill 中文指南",
@@ -8,5 +8,5 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
-  return <main id="main"><Catalog items={skills} /></main>;
+  return <main id="main"><Catalog items={skills} verifiedAt={lastSyncAt} /></main>;
 }

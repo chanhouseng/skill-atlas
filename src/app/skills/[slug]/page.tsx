@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CopyButton } from "@/components/copy-button";
-import { getSkillBySlug, githubUrl, installCommand, skills, skillsShUrl } from "@/data/skills";
+import { getSkillBySlug, githubUrl, installCommand, skills, sourceFileUrl } from "@/data/skills";
 
 type Props = { params: Promise<{slug: string}> };
 export const instant = false;
-export function generateStaticParams() { return skills.map((skill) => ({slug: skill.slug})); }
+export function generateStaticParams() { return skills.map((skill) => ({slug: skill.routeSlug})); }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const {slug} = await params;
@@ -19,14 +19,14 @@ export default async function SkillDetail({ params }: Props) {
   const {slug} = await params;
   const skill = getSkillBySlug(slug);
   if (!skill) notFound();
-  const related = skills.filter((other) => other.category === skill.category && other.slug !== skill.slug).slice(0,3);
+  const related = skills.filter((other) => other.category === skill.category && other.id !== skill.id).slice(0,3);
   return <main id="main" className="container detail-page">
     <nav aria-label="麵包屑" className="breadcrumbs"><Link href="/">技能目錄</Link><span>/</span><span>{skill.category}</span><span>/</span><span>{skill.slug}</span></nav>
     <section className="detail-head">
       <div className="detail-heading-left">
-        <div className="detail-overline"><span className="detail-category">{skill.category}</span><span className="detail-origin">原始來源可查證</span></div>
+        <div className="detail-overline"><span className="detail-category">{skill.category}</span><span className="detail-origin">已核對 GitHub SKILL.md · {skill.verifiedAt.slice(0,10)}</span></div>
         <h1>{skill.zhName}</h1>
-        <p className="detail-slug">{skill.slug}</p>
+        <p className="detail-slug">{skill.name}</p>{skill.needsReview && <p className="source-update-warning">原始 Skill 有新版本，這份中文介紹仍待重新核對。</p>}
         <p className="detail-subtitle">{skill.summary}</p>
         <div className="detail-tag-list">{skill.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
       </div>
@@ -66,13 +66,13 @@ export default async function SkillDetail({ params }: Props) {
         <div className="source-panel">
           <div className="sidebar-panel-label">SKILL PROFILE</div>
           <h3>來源與資訊</h3>
-          <dl><div><dt>原始名稱</dt><dd>{skill.slug}</dd></div><div><dt>GitHub 倉庫</dt><dd>{skill.source}</dd></div><div><dt>分類</dt><dd>{skill.category}</dd></div><div><dt>中文內容</dt><dd>本站編輯摘要</dd></div><div><dt>本站安全審核</dt><dd>尚未進行</dd></div></dl>
-          <a href={skillsShUrl(skill)} className="source-link primary-source" target="_blank" rel="noopener noreferrer">在 skills.sh 查看 ↗</a>
+          <dl><div><dt>Skill 名稱</dt><dd>{skill.name}</dd></div><div><dt>資料夾</dt><dd>{skill.slug}</dd></div><div><dt>GitHub 倉庫</dt><dd>{skill.source}</dd></div><div><dt>分類</dt><dd>{skill.category}</dd></div><div><dt>中文內容</dt><dd>本站編輯摘要</dd></div><div><dt>原始檔案 SHA</dt><dd className="source-sha" title={skill.sha}>{skill.sha.slice(0,12)}…</dd></div><div><dt>來源最後核對</dt><dd>{skill.verifiedAt.slice(0,10)}</dd></div><div><dt>中文版本狀態</dt><dd>{skill.needsReview ? "原始內容更新，待複核" : "依目前來源整理"}</dd></div><div><dt>本站安全審核</dt><dd>尚未進行</dd></div></dl>
+          <a href={sourceFileUrl(skill)} className="source-link primary-source" target="_blank" rel="noopener noreferrer">查看原始 SKILL.md ↗</a>
           <a href={githubUrl(skill)} className="source-link" target="_blank" rel="noopener noreferrer">開啟 GitHub 倉庫 ↗</a>
         </div>
         <div className="sidebar-reminder"><span>給第一次使用 Skill 的你</span><p>Skill 是讓 AI 知道如何做某類任務的一份指引，並不等於立即取得外部帳號權限。</p><Link href="/about">閱讀使用指南 →</Link></div>
       </aside>
     </div>
-    {related.length > 0 && <section className="related-section"><div className="related-header"><div><span className="section-label">DISCOVER MORE</span><h2>也可以看看這些 Skill</h2></div><Link href="/">返回全部技能 →</Link></div><div className="related-grid">{related.map((other)=><Link key={other.slug} className="related-card" href={`/skills/${other.slug}`}><span className="skill-code-name">{other.slug}</span><h3>{other.zhName}</h3><p>{other.summary}</p><span className="related-link">查看指南 ↗</span></Link>)}</div></section>}
+    {related.length > 0 && <section className="related-section"><div className="related-header"><div><span className="section-label">DISCOVER MORE</span><h2>也可以看看這些 Skill</h2></div><Link href="/">返回全部技能 →</Link></div><div className="related-grid">{related.map((other)=><Link key={other.id} className="related-card" href={`/skills/${other.routeSlug}`}><span className="skill-code-name">{other.slug}</span><h3>{other.zhName}</h3><p>{other.summary}</p><span className="related-link">查看指南 ↗</span></Link>)}</div></section>}
   </main>;
 }

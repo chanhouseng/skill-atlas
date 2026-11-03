@@ -7,7 +7,7 @@ import type { Skill } from "@/data/skills";
 import { categories } from "@/data/skills";
 import { filterSkills } from "@/lib/search";
 
-export function Catalog({ items }: { items: Skill[] }) {
+export function Catalog({ items, verifiedAt }: { items: Skill[]; verifiedAt: string }) {
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("全部");
   const [featured, setFeatured] = useState(false);
@@ -59,7 +59,7 @@ export function Catalog({ items }: { items: Skill[] }) {
       </section>
 
       <section className="container quick-stats" aria-label="目錄說明">
-        <div className="stat-item"><span className="stat-number">{items.length.toString().padStart(2, "0")}</span><span>個首批精選 Skill</span></div>
+        <div className="stat-item"><span className="stat-number">{items.length.toString().padStart(2, "0")}</span><span>個已核對來源 Skill</span></div>
         <div className="stat-item"><span className="stat-number">{categories.length.toString().padStart(2, "0")}</span><span>個主題分類</span></div>
         <div className="stat-item stat-long"><span className="stat-small-label">透明、可追溯</span><span>中文編輯摘要 · 原始來源連結 · 可複製調用範例</span></div>
       </section>
@@ -67,7 +67,7 @@ export function Catalog({ items }: { items: Skill[] }) {
       <section id="directory" className="container directory">
         <div className="section-heading">
           <div><span className="section-label">EXPLORE SKILLS</span><h2>探索技能庫<span className="title-punct">.</span></h2><p>挑選真正適合你目前任務的 Skill。</p></div>
-          <div className="catalog-note"><span className="note-dot"/><span>首批精選資料 · 非即時排行榜</span></div>
+          <div className="catalog-note"><span className="note-dot"/><span>來源更新：{verifiedAt.slice(0,10)} · 非即時排行榜</span></div>
         </div>
 
         <div className="directory-layout">
@@ -98,7 +98,7 @@ export function Catalog({ items }: { items: Skill[] }) {
               {categories.map((cat) => <button type="button" key={cat} aria-pressed={category === cat} className={category === cat ? "mobile-category active" : "mobile-category"} onClick={() => {setCategory(cat); resetLimit();}}>{cat}</button>)}
             </div>
 
-            {filtered.length ? <div className="skill-grid">{filtered.slice(0, limit).map((skill) => <Link key={skill.slug} href={`/skills/${skill.slug}`} className="skill-card">
+            {filtered.length ? <div className="skill-grid">{filtered.slice(0, limit).map((skill) => <Link key={skill.id} href={`/skills/${skill.routeSlug}`} className="skill-card">
               <div className="skill-card-head"><span className="skill-mark">{skill.slug.slice(0,1).toUpperCase()}</span><ArrowUpRight size={19} className="card-arrow" weight="regular"/></div>
               <div className="skill-meta">{skill.category}</div>
               <h3>{skill.zhName}</h3><div className="skill-code-name">{skill.slug}</div><p>{skill.summary}</p>

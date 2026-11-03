@@ -1,6 +1,6 @@
-# 技集中文目錄第一批 Implementation Plan
+﻿# 技集中文目錄第一批 Implementation Plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [x]`) syntax for tracking.
 
 **Goal:** 交付可本機運行、能搜尋、瀏覽、查看教學並複製命令的中文 Skill 目錄。
 
@@ -28,25 +28,26 @@
 ### Task 1: 資料與搜尋
 **Files:** `src/data/skills.ts`、`src/lib/search.ts`、`src/lib/search.test.ts`
 **Interfaces:** `Skill` 型別；`skills` 陣列；`filterSkills(skills, options)`
-- [ ] 建立具真實來源的種子資料和型別。
-- [ ] 編寫搜尋、分類、空查詢等測試。
-- [ ] 執行測試，檢查中文與英文情況。
+- [x] 建立具真實來源的種子資料和型別。
+- [x] 編寫搜尋、分類、空查詢等測試。
+- [x] 執行測試，檢查中文與英文情況。
 
 ### Task 2: 首頁目錄
 **Files:** `src/app/page.tsx`、`src/components/catalog.tsx`、`src/app/globals.css`
 **Interfaces:** 消耗 `skills` 與 `filterSkills`
-- [ ] 建立主導覽、搜尋與分類、卡片、空狀態。
-- [ ] 測試本機首頁 200，確認分類與搜尋交互。
+- [x] 建立主導覽、搜尋與分類、卡片、空狀態。
+- [x] 測試本機首頁 200，確認分類與搜尋交互。
 
 ### Task 3: 詳細頁與複製
 **Files:** `src/app/skills/[slug]/page.tsx`、`src/components/copy-button.tsx`
 **Interfaces:** 使用 `getSkillBySlug`
-- [ ] 建立中文用途、場景、安裝與最佳調用指南。
-- [ ] 驗證命令複製成功與回退，來源連結可追溯。
-- [ ] 驗證未知 slug 404。
+- [x] 建立中文用途、場景、安裝與最佳調用指南。
+- [x] 驗證命令複製成功與回退，來源連結可追溯。
+- [x] 驗證未知 slug 404。
 
 ### Task 4: 文件、品質與驗收
 **Files:** `src/app/about/page.tsx`、`README.md`、`docs/PROGRESS.md`
-- [ ] 執行 lint、TypeScript、build 與測試。
-- [ ] 本機啟動並檢查可開首頁、詳細頁、404。
-- [ ] 紀錄完成與未完部分，交給使用者驗收後停止。
+- [x] 執行 lint、TypeScript、build 與測試。
+- [x] 本機啟動並檢查可開首頁、詳細頁、404。
+- [x] 紀錄完成與未完部分，交給使用者驗收後停止。
+

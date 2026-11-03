@@ -1,6 +1,7 @@
 /**
  * Parse GitHub SKILL.md strictly as untrusted text. This module never executes source content.
  */
+export const supportsExplicitSourcePaths = true;
 function cleanYamlValue(value) {
   const v = value.trim();
   if ((v.startsWith('"') && v.endsWith('"')) || (v.startsWith("'") && v.endsWith("'"))) {
@@ -34,13 +35,14 @@ export function extractMetadata(markdown) {
 
 const sourcePattern=/^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/;
 const slugPattern=/^[a-z0-9][a-z0-9-]*$/;
-function findPath(tree,slug,repo) {
+function findPath(tree,slug,repo,selectedPath) {
   const paths=tree.filter(file=>file.type==="blob" && file.path.endsWith("/"+slug+"/SKILL.md") && !file.path.includes("/.system/"));
-  if (paths.length===0) throw new Error("missing SKILL.md for "+repo+"/"+slug);
-  if (paths.length!==1) throw new Error("ambiguous SKILL.md paths for "+repo+"/"+slug);
-  if (!/^[A-Za-z0-9_.\/-]+$/.test(paths[0].path)) throw new Error("invalid source file path");
-  if (!/^[0-9a-f]{40}$/.test(paths[0].sha)) throw new Error("invalid source SHA");
-  return paths[0];
+  const selected=selectedPath?paths.filter(file=>file.path===selectedPath):paths;
+  if (selected.length===0) throw new Error("missing SKILL.md for "+repo+"/"+slug);
+  if (selected.length!==1) throw new Error("ambiguous SKILL.md paths for "+repo+"/"+slug);
+  if (!/^[A-Za-z0-9_.\/-]+$/.test(selected[0].path)) throw new Error("invalid source file path");
+  if (!/^[0-9a-f]{40}$/.test(selected[0].sha)) throw new Error("invalid source SHA");
+  return selected[0];
 }
 async function mapLimit(items,max,fn) {
   const results=new Array(items.length);
@@ -61,11 +63,14 @@ export async function syncCatalog({sources,previous,now,fetchTree,fetchSkill}) {
   for (const [repo,slugs] of Object.entries(sources)) {
     if(!sourcePattern.test(repo)) throw new Error("invalid source "+repo);
     if (!Array.isArray(slugs)||!slugs.length) throw new Error("empty source "+repo);
-    for(const slug of slugs) {
-      if(!slugPattern.test(slug)) throw new Error("invalid slug "+slug);
+    for(const item of slugs) {
+      const slug=typeof item==='string'?item:item?.slug;
+      const selectedPath=typeof item==='string'?undefined:item?.path;
+      if(typeof slug!=='string'||!slugPattern.test(slug)) throw new Error("invalid slug "+slug);
+      if(typeof item!=='string' && (typeof selectedPath!=='string'||!/^[A-Za-z0-9_.\/-]+$/.test(selectedPath)||!selectedPath.endsWith('/'+slug+'/SKILL.md')||selectedPath.split('/').some(part=>!part||part==='.'||part==='..'||part==='.system')))throw new Error('invalid source file path');
       const id=repo+"/"+slug;
       if(requested.some(item=>item.id===id)) throw new Error("duplicate "+id);
-      requested.push({id,repo,slug});
+      requested.push({id,repo,slug,selectedPath});
     }
   }
   await mapLimit(Object.keys(sources),3,async(repo)=>{
@@ -74,8 +79,8 @@ export async function syncCatalog({sources,previous,now,fetchTree,fetchSkill}) {
     repoTrees.set(repo,tree);
   });
   let cached=0,changed=0,newItems=0;
-  const entries=await mapLimit(requested,6,async({id,repo,slug})=>{
-    const file=findPath(repoTrees.get(repo),slug,repo);
+  const entries=await mapLimit(requested,6,async({id,repo,slug,selectedPath})=>{
+    const file=findPath(repoTrees.get(repo),slug,repo,selectedPath);
     const oldEntry=old.get(id);
     if (oldEntry && oldEntry.sha===file.sha && oldEntry.path===file.path && oldEntry.description && oldEntry.name) {
       cached++;

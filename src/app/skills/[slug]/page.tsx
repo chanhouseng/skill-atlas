@@ -5,6 +5,7 @@ import { CopyButton } from "@/components/copy-button";
 import { getSkillBySlug, githubUrl, installCommand, skills, skillsShUrl } from "@/data/skills";
 
 type Props = { params: Promise<{slug: string}> };
+export const instant = false;
 export function generateStaticParams() { return skills.map((skill) => ({slug: skill.slug})); }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

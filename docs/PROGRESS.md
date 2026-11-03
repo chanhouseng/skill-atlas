@@ -16,7 +16,7 @@
 - `npm run typecheck`：通過。
 - `npm run lint`：通過。
 - `npm run build`：通過，首頁與 38 個 Skill 詳細頁已預渲染／部分預渲染。
-- 本機 HTTP：首頁 200；兩個 Skill 詳細頁 200；關於頁 200；不存在的 Skill 返回 404。
+- 本機 HTTP：首頁 200；兩個 Skill 詳細頁 200；關於頁 200；不存在的 Skill 返回真正的 HTTP 404（已修正 Next.js 16 路由警告及狀態碼問題）。
 - Chrome + Playwright（真實瀏覽器）：390px 手機視窗與 1440px 桌面均無橫向溢出。
 - Playwright：React 搜尋取得 3 個結果、手機版「文件與辦公」分類得到 5 個結果；進入 PDF 詳細頁並成功複製 `npx skills add anthropics/skills --skill pdf`；404 文字正常。
 - 截圖證據：`docs/qa-mobile-playwright.png`、`docs/qa-desktop-playwright.png`、`docs/qa-detail-playwright.png`。

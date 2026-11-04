@@ -25,6 +25,7 @@ jobs:
       - name: Install locked dependencies without package lifecycle scripts
         run: npm ci --ignore-scripts
       - name: Search newly discovered SKILL.md candidates
+        id: discovery
         run: npm run discover:skills
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -34,6 +35,11 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Run catalog validation
         run: npm run test
+      - name: Verify pending review branch has not changed
+        run: node scripts/discover-github.mjs --check-weekly-head
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          EXPECTED_WEEKLY_HEAD: ${{ steps.discovery.outputs.weekly_head }}
       - name: Open review PR without auto-publishing candidates
         uses: peter-evans/create-pull-request@22a9089034f40e5a961c8808d113e2c98fb63676 # v7
         with:

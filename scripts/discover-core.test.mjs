@@ -1,7 +1,32 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { discoverNewSkills } from "./discover-core.mjs";
-import { github } from "./discover-github.mjs";
+import * as discovery from "./discover-github.mjs";
+const {github}=discovery;
+
+test('existing weekly PR candidates are preserved along with main candidates',async()=>{
+ const branch=[{id:'b/repo:skills/b/SKILL.md',source:'b/repo',path:'skills/b/SKILL.md',firstSeen:'old'}];
+ const base=[{id:'a/repo:skills/a/SKILL.md',source:'a/repo',path:'skills/a/SKILL.md'}];
+ const api=async url=>url.includes('/git/ref/')?{object:{sha:'a'.repeat(40)}}:{encoding:'base64',content:Buffer.from(JSON.stringify({candidates:branch})).toString('base64')};
+ const result=await discovery.loadPreviousCandidates(base,'owner/repo',api);
+ assert.deepEqual(result.candidates.map(x=>x.id),[base[0].id,branch[0].id]);
+ assert.equal(result.head,'a'.repeat(40));
+});
+test('previous candidates are not silently truncated above 800',async()=>{
+ const previous=Array.from({length:801},(_,i)=>({id:'old/repo:skills/s'+i+'/SKILL.md',source:'old/repo',path:'skills/s'+i+'/SKILL.md',firstSeen:'old'}));
+ const result=await discoverNewSkills({queries:['q'],search:async()=>[],tree:async()=>[],previous,now:'new'});
+ assert.equal(result.candidates.length,801);
+});
+test('only repositories with at least 3000 stars are searched',async()=>{
+ const result=await discoverNewSkills({queries:['q'],search:async()=>[{...a,stargazers_count:2999},{...b,stargazers_count:3000}],tree:async()=>tree('x'),now:'new'});
+ assert.deepEqual(result.candidates.map(x=>x.source),['owner/test-skills']);
+});
+test('a missing weekly branch is allowed, but inaccessible or invalid snapshots abort',async()=>{
+ const missing=await discovery.loadPreviousCandidates([],'owner/repo',async()=>{throw Object.assign(new Error('missing'),{status:404})});
+ assert.equal(missing.head,'none');
+ await assert.rejects(discovery.loadPreviousCandidates([],'owner/repo',async()=>{throw Object.assign(new Error('forbidden'),{status:403})}),/forbidden/);
+ await assert.rejects(discovery.loadPreviousCandidates([],'owner/repo',async url=>url.includes('/git/ref/')?{object:{sha:'a'.repeat(40)}}:{encoding:'base64',content:Buffer.from('{}').toString('base64')}),/candidate/i);
+});
 
 test("retries a temporary 409 from a repository tree",async()=>{
  let calls=0;
@@ -13,8 +38,8 @@ test("retries a temporary 409 from a repository tree",async()=>{
  assert.equal(calls,2);
 });
 
-const a={full_name:"owner/design-skills",description:"Useful design skills",fork:false,archived:false};
-const b={full_name:"owner/test-skills",description:"Browser workflow tools",fork:false,archived:false};
+const a={full_name:"owner/design-skills",description:"Useful design skills",fork:false,archived:false,stargazers_count:3000};
+const b={full_name:"owner/test-skills",description:"Browser workflow tools",fork:false,archived:false,stargazers_count:3000};
 const tree=(slug)=>[{path:`skills/${slug}/SKILL.md`,type:"blob",mode:"100644",sha:"a".repeat(40)}];
 
 test("discovery skips symbolic links and retains regular files and unscanned candidates",async()=>{

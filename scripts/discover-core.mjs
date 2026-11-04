@@ -4,7 +4,7 @@ const shaPattern=/^[a-f0-9]{40}$/;
 function uniqRepositories(results){
  const repos=new Map();
  for(const item of results){
-  if(!item||!repoPattern.test(item.full_name||"")||item.fork||item.archived||item.disabled)continue;
+  if(!item||!repoPattern.test(item.full_name||"")||item.fork||item.archived||item.disabled||!Number.isSafeInteger(item.stargazers_count)||item.stargazers_count<3000)continue;
   const key=item.full_name.toLowerCase();
   if(!repos.has(key))repos.set(key,item);
  }
@@ -54,6 +54,6 @@ export async function discoverNewSkills({queries,search,tree,existing=[],previou
  const active=scans.flat().filter(item=>!known.has(item.source+":"+item.path));
  const merged=new Map(previous.filter(item=>!known.has(item.source+":"+item.path)&&!links.has(item.id)).map(item=>[item.id,item]));
  for(const item of active)merged.set(item.id,item);
- const candidates=[...merged.values()].sort((a,b)=>b.firstSeen.localeCompare(a.firstSeen)||a.id.localeCompare(b.id)).slice(0,800);
+ const candidates=[...merged.values()].sort((a,b)=>b.firstSeen.localeCompare(a.firstSeen)||a.id.localeCompare(b.id));
  return {scannedAt:now,scannedRepositories:repos.length,searchQueries:queries.length,newCandidates:active.filter(item=>!old.has(item.id)).length,candidates};
 }

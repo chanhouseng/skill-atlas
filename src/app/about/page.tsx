@@ -4,20 +4,21 @@ import { skills, lastSyncAt } from "@/data/skills";
 export const metadata = { title: "使用指南與資料來源" };
 
 export default function AboutPage() {
-  const repoCount = new Set(skills.map(s=>s.source)).size;
+  const githubSkills=skills.filter(s=>s.sourceKind!=="local");
+  const repoCount = new Set(githubSkills.map(s=>s.source)).size;
   return <main id="main" className="container about-page">
     <div className="breadcrumbs"><Link href="/"><LocaleText text="首頁"/></Link><span>/</span><span><LocaleText text="使用指南"/></span></div>
     <div className="about-hero"><span className="section-label">ABOUT SKILL ATLAS</span><h1><LocaleText text="找到 Skill，只是第一步。"/></h1><p><LocaleText text="更重要的是理解它能幫你做甚麼，如何安裝、何時調用，以及需要注意哪些限制。"/></p></div>
     <div className="about-layout">
       <section className="about-section"><h2><LocaleText text="如何使用技集"/></h2>
         <div className="guide-step"><span>01</span><div><h3><LocaleText text="先說出你的需求"/></h3><p><LocaleText text="在首頁輸入「網頁」「React」「PDF」等詞，或按類別查看。目前提供關鍵字搜尋與規則式需求推薦，並非生成式 AI 搜尋。"/></p></div></div>
-        <div className="guide-step"><span>02</span><div><h3><LocaleText text="閱讀中文解說與來源"/></h3><p><LocaleText text="詳細頁列出適用場景、注意事項與原始 GitHub SKILL.md 連結。中文內容是本站根據公開來源編輯的摘要，不是官方翻譯。"/></p></div></div>
-        <div className="guide-step"><span>03</span><div><h3><LocaleText text="自行安裝與調用"/></h3><p><LocaleText text="複製安裝指令到自己的終端機，依照工具官方說明完成安裝。本站也提供可修改的中文調用示例，不會替你操作任何 AI 工具。"/></p></div></div>
+        <div className="guide-step"><span>02</span><div><h3><LocaleText text="閱讀中文解說與來源"/></h3><p><LocaleText text="詳細頁列出適用場景和注意事項；公開來源的 Skill 附有 GitHub 連結，本機 Skill 則標示沒有公開來源。中文內容是本站編輯摘要。"/></p></div></div>
+        <div className="guide-step"><span>03</span><div><h3><LocaleText text="自行安裝與調用"/></h3><p><LocaleText text="有公開來源的 Skill 可參考其安裝指令；本機 Skill 不提供下載或安裝連結。本站提供可修改的中文調用示例，不會替你操作任何 AI 工具。"/></p></div></div>
         <div className="guide-step"><span>04</span><div><h3><LocaleText text="查看來源更新情況"/></h3><p><LocaleText text="本站定期由維護者手動核對 GitHub 原始檔案的 SHA。若作者更新後中文說明尚未重新審閱，詳細頁會顯示提醒。"/></p></div></div>
       </section>
       <aside className="about-note">
         <h3><LocaleText text="目前收錄情況"/></h3>
-        <p><LocaleText text="共 "/>{skills.length}<LocaleText text=" 個有原始檔案證據的 Skill，來自 "/>{repoCount}<LocaleText text=" 個公開 GitHub 倉庫。最近完成來源核對："/>{lastSyncAt.slice(0,10)}。</p>
+        <p><LocaleText text="共 "/>{skills.length}<LocaleText text=" 個 Skill，其中 "/>{githubSkills.length}<LocaleText text=" 個來自 "/>{repoCount}<LocaleText text=" 個公開 GitHub 倉庫；另有 "/>{skills.length-githubSkills.length}<LocaleText text=" 個本機 Skill 介紹，沒有公開來源。GitHub 來源最近核對："/>{lastSyncAt.slice(0,10)}。</p>
         <p><LocaleText text="來源資料儲存在本站快照中，並非即時安裝量排行榜；不能根據收錄推斷 Skill 已完成獨立安全審計。"/></p>
         <div className="note-divider" />
         <h3><LocaleText text="本站不會做的事"/></h3>

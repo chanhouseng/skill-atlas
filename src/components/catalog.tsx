@@ -62,9 +62,9 @@ export function Catalog({ items, verifiedAt }: { items: Skill[]; verifiedAt: str
       </section>
 
       <section className="container quick-stats" aria-label={t("目錄說明")}>
-        <div className="stat-item"><span className="stat-number">{items.length.toString().padStart(2, "0")}</span><span>{t("個已核對來源 Skill")}</span></div>
+        <div className="stat-item"><span className="stat-number">{items.length.toString().padStart(2, "0")}</span><span>{t("個 Skill")}</span></div>
         <div className="stat-item"><span className="stat-number">{categories.length.toString().padStart(2, "0")}</span><span>{t("個主題分類")}</span></div>
-        <div className="stat-item stat-long"><span className="stat-small-label">{t("透明、可追溯")}</span><span>{t("中文編輯摘要 · 原始來源連結 · 可複製調用範例")}</span></div>
+        <div className="stat-item stat-long"><span className="stat-small-label">{t("資料來源清楚標示")}</span><span>{t("中文編輯摘要 · 來源資訊 · 可複製調用範例")}</span></div>
       </section>
 
       <NaturalSkillFinder items={items}/>

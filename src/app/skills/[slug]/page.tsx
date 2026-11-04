@@ -20,12 +20,16 @@ export default async function SkillDetail({ params }: Props) {
   const {slug} = await params;
   const skill = getSkillBySlug(slug);
   if (!skill) notFound();
+  const isLocal=skill.sourceKind==="local";
+  const command=installCommand(skill);
+  const source=sourceFileUrl(skill);
+  const repository=githubUrl(skill);
   const related = skills.filter((other) => other.category === skill.category && other.id !== skill.id).slice(0,3);
   return <main id="main" className="container detail-page">
     <nav aria-label="麵包屑" className="breadcrumbs"><Link href="/"><LocaleText text="技能目錄"/></Link><span>/</span><span><LocaleText text={skill.category}/></span><span>/</span><span>{skill.slug}</span></nav>
     <section className="detail-head">
       <div className="detail-heading-left">
-        <div className="detail-overline"><span className="detail-category"><LocaleText text={skill.category}/></span><span className="detail-origin"><LocaleText text="已核對 GitHub SKILL.md · "/>{skill.verifiedAt.slice(0,10)}</span></div>
+        <div className="detail-overline"><span className="detail-category"><LocaleText text={skill.category}/></span><span className="detail-origin">{isLocal ? <LocaleText text="本機 Skill · 無公開來源"/> : <><LocaleText text="已核對 GitHub SKILL.md · "/>{skill.verifiedAt.slice(0,10)}</>}</span></div>
         <h1><LocaleText text={skill.zhName}/></h1>
         <p className="detail-slug">{skill.name}</p>{skill.needsReview && <p className="source-update-warning"><LocaleText text="原始 Skill 有新版本，這份中文介紹仍待重新核對。"/></p>}
         <p className="detail-subtitle"><LocaleText text={skill.summary}/></p>
@@ -44,10 +48,10 @@ export default async function SkillDetail({ params }: Props) {
         </section>
         <section className="detail-section" id="install">
           <div className="detail-section-number">02 / INSTALL</div>
-          <h2><LocaleText text="安裝這個 Skill"/></h2>
+          {command ? <><h2><LocaleText text="安裝這個 Skill"/></h2>
           <p className="section-intro"><LocaleText text="在自己的終端機執行以下指令。需要預先安裝 Node.js，使用前請先檢查原始倉庫內容。"/></p>
-          <div className="code-panel"><div className="code-panel-top"><span><LocaleText text="終端機指令"/></span><CopyButton value={installCommand(skill)} label="複製指令"/></div><pre><code>$ {installCommand(skill)}</code></pre></div>
-          <p className="info-paragraph"><LocaleText text="CLI 會依照你的 AI 工具與安裝選項進行操作。本站只顯示命令，不會在你的電腦執行任何安裝。"/></p>
+          <div className="code-panel"><div className="code-panel-top"><span><LocaleText text="終端機指令"/></span><CopyButton value={command} label="複製指令"/></div><pre><code>$ {command}</code></pre></div>
+          <p className="info-paragraph"><LocaleText text="CLI 會依照你的 AI 工具與安裝選項進行操作。本站只顯示命令，不會在你的電腦執行任何安裝。"/></p></> : <><h2><LocaleText text="使用本機 Skill"/></h2><p className="section-intro"><LocaleText text="這是本機 Skill 的介紹，沒有公開來源或安裝連結。請在已安裝此 Skill 的 AI 工具中使用。"/></p></>}
         </section>
         <section className="detail-section" id="prompt">
           <div className="detail-section-number">03 / HOW TO USE</div>
@@ -67,9 +71,9 @@ export default async function SkillDetail({ params }: Props) {
         <div className="source-panel">
           <div className="sidebar-panel-label">SKILL PROFILE</div>
           <h3><LocaleText text="來源與資訊"/></h3>
-          <dl><div><dt><LocaleText text="Skill 名稱"/></dt><dd>{skill.name}</dd></div><div><dt><LocaleText text="資料夾"/></dt><dd>{skill.slug}</dd></div><div><dt><LocaleText text="GitHub 倉庫"/></dt><dd>{skill.source}</dd></div><div><dt><LocaleText text="分類"/></dt><dd><LocaleText text={skill.category}/></dd></div><div><dt><LocaleText text="中文內容"/></dt><dd><LocaleText text="本站編輯摘要"/></dd></div><div><dt><LocaleText text="原始檔案 SHA"/></dt><dd className="source-sha" title={skill.sha}>{skill.sha.slice(0,12)}…</dd></div><div><dt><LocaleText text="來源最後核對"/></dt><dd>{skill.verifiedAt.slice(0,10)}</dd></div><div><dt><LocaleText text="中文版本狀態"/></dt><dd><LocaleText text={skill.needsReview ? "原始內容更新，待複核" : "依目前來源整理"}/></dd></div><div><dt><LocaleText text="本站安全審核"/></dt><dd><LocaleText text="尚未進行"/></dd></div></dl>
-          <a href={sourceFileUrl(skill)} className="source-link primary-source" target="_blank" rel="noopener noreferrer"><LocaleText text="查看原始 SKILL.md ↗"/></a>
-          <a href={githubUrl(skill)} className="source-link" target="_blank" rel="noopener noreferrer"><LocaleText text="開啟 GitHub 倉庫 ↗"/></a>
+          <dl><div><dt><LocaleText text="Skill 名稱"/></dt><dd>{skill.name}</dd></div><div><dt><LocaleText text="資料夾"/></dt><dd>{skill.slug}</dd></div>{isLocal ? <div><dt><LocaleText text="來源"/></dt><dd><LocaleText text="本機 Skill，無公開來源"/></dd></div> : <><div><dt><LocaleText text="GitHub 倉庫"/></dt><dd>{skill.source}</dd></div><div><dt><LocaleText text="原始檔案 SHA"/></dt><dd className="source-sha" title={skill.sha}>{skill.sha.slice(0,12)}…</dd></div><div><dt><LocaleText text="來源最後核對"/></dt><dd>{skill.verifiedAt.slice(0,10)}</dd></div><div><dt><LocaleText text="中文版本狀態"/></dt><dd><LocaleText text={skill.needsReview ? "原始內容更新，待複核" : "依目前來源整理"}/></dd></div></>}<div><dt><LocaleText text="分類"/></dt><dd><LocaleText text={skill.category}/></dd></div><div><dt><LocaleText text="中文內容"/></dt><dd><LocaleText text="本站編輯摘要"/></dd></div><div><dt><LocaleText text="本站安全審核"/></dt><dd><LocaleText text="尚未進行"/></dd></div></dl>
+          {source && <a href={source} className="source-link primary-source" target="_blank" rel="noopener noreferrer"><LocaleText text="查看原始 SKILL.md ↗"/></a>}
+          {repository && <a href={repository} className="source-link" target="_blank" rel="noopener noreferrer"><LocaleText text="開啟 GitHub 倉庫 ↗"/></a>}
         </div>
         <div className="sidebar-reminder"><span><LocaleText text="給第一次使用 Skill 的你"/></span><p><LocaleText text="Skill 是讓 AI 知道如何做某類任務的一份指引，並不等於立即取得外部帳號權限。"/></p><Link href="/about"><LocaleText text="閱讀使用指南 →"/></Link></div>
       </aside>

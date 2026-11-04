@@ -37,6 +37,7 @@ export interface SkillLocalization {
   reviewedSha:string;
 }
 export interface Skill extends SkillLocalization,VerifiedRecord {
+  sourceKind?: "github" | "local";
   routeSlug:string;
   sourceFileUrl:string;
   needsReview:boolean;

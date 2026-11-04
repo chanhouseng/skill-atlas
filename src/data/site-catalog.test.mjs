@@ -3,7 +3,16 @@ import assert from "node:assert/strict";
 import { skills, getSkillBySlug, installCommand, sourceFileUrl } from "./skills.ts";
 test("catalog has at least 100 verified localized Skills",()=>{
   assert.ok(skills.length>=100,"expected 100+, got "+skills.length);
-  assert.ok(skills.every(s=>s.sourceFileUrl.includes("/SKILL.md") && /^[0-9a-f]{40}$/.test(s.sha)));
+  assert.ok(skills.filter(s=>s.sourceKind!=="local").every(s=>s.sourceFileUrl.includes("/SKILL.md") && /^[0-9a-f]{40}$/.test(s.sha)));
+});
+test("local-only skills are searchable catalog entries without fabricated install commands or source links",()=>{
+ for(const slug of ["website-style-blueprint-extractor","screenshot-to-website-prompt"]){
+  const skill=getSkillBySlug(slug);
+  assert.ok(skill);
+  assert.equal(skill.sourceKind,"local");
+  assert.equal(installCommand(skill),null);
+  assert.equal(sourceFileUrl(skill),null);
+ }
 });
 test("canonical ids stay unique across source repositories",()=>{
   assert.equal(new Set(skills.map(s=>s.id)).size,skills.length);

@@ -32,10 +32,12 @@ export async function discoverNewSkills({queries,search,tree,existing=[],previou
  const repos=uniqRepositories(results).slice(0,Math.max(0,maxRepos));
  const known=new Set(existing.map(x=>x.source+":"+x.path));
  const old=new Map(previous.map(x=>[x.id,x]));
+ const links=new Set();
  const scans=await mapLimit(repos,3,async(repo)=>{
   const files=await tree(repo.full_name);
   if(!Array.isArray(files))throw new Error("Invalid GitHub repository tree "+repo.full_name);
-  const eligible=files.filter(f=>f.type==="blob"&&pathPattern.test(f.path||"")&&shaPattern.test(f.sha||"")&&!f.path.includes("/.system/")&&!f.path.split("/").some(segment=>segment==="."||segment==="..")).slice(0,maxPerRepo);
+  for(const file of files)if(file.type==='blob'&&file.mode==='120000')links.add(repo.full_name+':'+file.path);
+  const eligible=files.filter(f=>f.type==="blob"&&["100644","100755"].includes(f.mode)&&pathPattern.test(f.path||"")&&shaPattern.test(f.sha||"")&&!f.path.includes("/.system/")&&!f.path.split("/").some(segment=>segment==="."||segment==="..")).slice(0,maxPerRepo);
   return eligible.map(file=>{
     const id=repo.full_name+":"+file.path;
     const last=old.get(id);
@@ -50,7 +52,7 @@ export async function discoverNewSkills({queries,search,tree,existing=[],previou
   });
  });
  const active=scans.flat().filter(item=>!known.has(item.source+":"+item.path));
- const merged=new Map(previous.filter(item=>!known.has(item.source+":"+item.path)).map(item=>[item.id,item]));
+ const merged=new Map(previous.filter(item=>!known.has(item.source+":"+item.path)&&!links.has(item.id)).map(item=>[item.id,item]));
  for(const item of active)merged.set(item.id,item);
  const candidates=[...merged.values()].sort((a,b)=>b.firstSeen.localeCompare(a.firstSeen)||a.id.localeCompare(b.id)).slice(0,800);
  return {scannedAt:now,scannedRepositories:repos.length,searchQueries:queries.length,newCandidates:active.filter(item=>!old.has(item.id)).length,candidates};

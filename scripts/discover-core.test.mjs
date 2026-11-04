@@ -15,7 +15,17 @@ test("retries a temporary 409 from a repository tree",async()=>{
 
 const a={full_name:"owner/design-skills",description:"Useful design skills",fork:false,archived:false};
 const b={full_name:"owner/test-skills",description:"Browser workflow tools",fork:false,archived:false};
-const tree=(slug)=>[{path:`skills/${slug}/SKILL.md`,type:"blob",sha:"a".repeat(40)}];
+const tree=(slug)=>[{path:`skills/${slug}/SKILL.md`,type:"blob",mode:"100644",sha:"a".repeat(40)}];
+
+test("discovery skips symbolic links and retains regular files and unscanned candidates",async()=>{
+ const link='owner/design-skills:.antigravitycli/skills/career-ops/SKILL.md';
+ const previous=[{id:link,source:a.full_name,path:'.antigravitycli/skills/career-ops/SKILL.md',firstSeen:'old'}, {id:'other/repo:skills/old/SKILL.md',source:'other/repo',path:'skills/old/SKILL.md',firstSeen:'old'}];
+ const result=await discoverNewSkills({queries:['q'],search:async()=>[a],tree:async()=>[
+  {path:'.antigravitycli/skills/career-ops/SKILL.md',type:'blob',mode:'120000',sha:'a'.repeat(40)},
+  {path:'.agents/skills/career-ops/SKILL.md',type:'blob',mode:'100644',sha:'b'.repeat(40)}
+ ],previous,now:'new',maxPerRepo:1});
+ assert.deepEqual(result.candidates.map(c=>c.id).sort(),['other/repo:skills/old/SKILL.md','owner/design-skills:.agents/skills/career-ops/SKILL.md']);
+});
 
 test("finds SKILL.md and produces pending, source-linked candidates only",async()=>{
  const result=await discoverNewSkills({

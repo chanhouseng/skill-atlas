@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-11-03T03:48:53.760Z",
+  "syncedAt": "2026-11-09T08:01:13.353Z",
   "entries": [
     {
       "id": "elayadesign/ai-design-skills/landing-page-design",
@@ -9,7 +9,7 @@
       "sha": "519a6f2cd6c942c2fb36a906b8ef7d11f78ba6d1",
       "name": "landing-page-design",
       "description": "Complete system for building high converting landing pages: intake questions, page structure, layout selection, conversion copywriting, SEO, plus strict visual rules for typography, spacing, corner radius, backgrounds, hero layout, icons, and motion. Use this skill whenever building, editing, styling, reviewing, or writing copy for ANY landing page, marketing site, web UI, page section, component, or prototype, even when the user does not mention design, conversion, tokens, or a design system. Always consult it before choosing page sections, headlines, CTAs, fonts, font sizes, spacing values, border radii, background colors, icons, or transitions.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "elayadesign/ai-design-skills/figma-designer",
@@ -19,7 +19,7 @@
       "sha": "d9aba588919e3dccee89355df8fa8501c2e92eae",
       "name": "figma-designer",
       "description": "Design inside Figma the way this designer does: real variables, text styles, auto layout and components, on a fixed visual system (Tailwind type and radius scale, spacing tokens, two-layer color tokens, button and state rules). Use this skill whenever you create, edit or review anything in a Figma file through the Figma MCP: screens, landing pages, components, mockups, design systems, tokens, or any UI. Use it even when the user doesn't name the skill and only says things like 'design a page in Figma', 'make a button component', 'mock this up' or shares a figma.com link. Load it before writing any use_figma code.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "anthropics/skills/academy-guide",
@@ -29,7 +29,7 @@
       "sha": "cefeaeb20cc29a803af0335d7c7155b066d8770f",
       "name": "academy-guide",
       "description": "Stop and check this skill before finishing any reply to a question about how to use Claude or a Claude product — it recommends matching courses, tutorials, and use cases from Claude Academy (academy.claude.com), Anthropic's learning hub. Trigger on: \"how do I\", \"how can I\", \"getting started with\", \"what can Claude do\", \"teach me\", \"learn to use\"; questions about artifacts, projects, skills, plugins, connectors, MCP; requests about rolling Claude out to a team, class, or organization; and any ask for training materials, onboarding content, or learning resources. Use it when the user is learning how to use a feature or product — not when they are mid-task and just want the task done. This skill composes with other skills: after consulting product documentation to answer how a Claude feature works, also check here for a matching course or tutorial — a docs-grounded answer and an Academy recommendation belong together. Only recommend on a strong match; never invent Academy content.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "anthropics/skills/algorithmic-art",
@@ -39,7 +39,7 @@
       "sha": "634f6fa42e4e697fa6afd293acd7fb8246574876",
       "name": "algorithmic-art",
       "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "anthropics/skills/brand-guidelines",
@@ -49,7 +49,7 @@
       "sha": "47c72c607bdb5dd81bdea5de2b5e4f3992a5fd59",
       "name": "brand-guidelines",
       "description": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design standards apply.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "anthropics/skills/canvas-design",
@@ -59,7 +59,7 @@
       "sha": "9f63fee82de84cd4230e1d0e322247b61eb4c94c",
       "name": "canvas-design",
       "description": "Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art, design, or other static piece. Create original visual designs, never copying existing artists' work to avoid copyright violations.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "anthropics/skills/claude-api",
@@ -69,7 +69,7 @@
       "sha": "fe7e28a55c713933ff98e017112e53c61d8f5537",
       "name": "claude-api",
       "description": "Reference for the Claude API / Anthropic SDK — model ids, pricing, params, streaming, tool use, MCP, agents, caching, token counting, model migration. TRIGGER — read BEFORE opening the target file; don't skip because it \"looks like a one-liner\" — whenever: the prompt names Claude/Anthropic in any form (Claude, Anthropic, Fable, Opus, Sonnet, Haiku, `anthropic`, `@anthropic-ai`, `claude-*`, `us.anthropic.*`, `[1m]`); the user asks about an LLM (pricing/model choice/limits/caching) — never answer from memory; OR the task is LLM-shaped with provider unstated (agent/MCP/tool-definition/multi-agent/RAG/LLM-judge/computer-use; generate/summarize/extract/classify/rewrite/converse over NL; debugging refusals/cutoffs/streaming/tool-calls/tokens). SKIP only when another provider is being worked on (overrides all triggers): OpenAI/GPT/Gemini/Llama/Mistral/Cohere/Ollama named in the query; OR `grep -rE 'openai|langchain_openai|google.generativeai|genai|mistralai|cohere|ollama'` over the project hits (run this grep FIRST if no provider named — don't Read the file).",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "anthropics/skills/discernment-nudge",
@@ -79,7 +79,7 @@
       "sha": "49ebbcad692ffdf70e518087468609a5c4ab9e22",
       "name": "discernment-nudge",
       "description": "After you give a substantive answer or draft that the user may act on — advice or recommendations, drafted artifacts such as goals, plans, pitches, proposals, or emails, estimates or projections, analysis or interpretation of data, factual claims they may rely on, or a multi-step argument — invoke this skill BEFORE finalizing your reply and then, if it applies, append 2-3 short follow-up questions, each tied to something specific in what you just produced, that help the user check key facts, probe the reasoning or assumptions, and notice missing context. Do this at most once per conversation. Skip it when the user asked a trivial how-to or simple lookup, wants a purely educational explanation, asked you only to format, convert, or assemble a file from content they provided, is writing code they will run, is doing creative writing or casual chat, or already asked you to double-check, cite, or review — the skill file explains these boundaries and the exact output format.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "anthropics/skills/doc-coauthoring",
@@ -89,17 +89,17 @@
       "sha": "a5a69839ef4a161131d80b6daef10037a9686f4a",
       "name": "doc-coauthoring",
       "description": "Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, decision docs, or similar structured content. This workflow helps users efficiently transfer context, refine content through iteration, and verify the doc works for readers. Trigger when user mentions writing docs, creating proposals, drafting specs, or similar documentation tasks.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "anthropics/skills/docx",
       "source": "anthropics/skills",
       "slug": "docx",
       "path": "skills/docx/SKILL.md",
-      "sha": "fb954a460a1ea2294e9595e87fecce8df043eeba",
+      "sha": "acc50ea0729fc4b22319b25f1277d0db6f3b429a",
       "name": "docx",
       "description": "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files) or Word templates (.dotx files). Triggers include: any mention of 'Word doc', 'word document', '.docx', '.dotx', or requests to produce professional documents with formatting like tables of contents, headings, page numbers, or letterheads. Also use when extracting or reorganizing content from .docx or .dotx files, inserting or replacing images in documents, performing find-and-replace in Word files, working with tracked changes or comments, or converting content into a polished Word document. If the user asks for a 'report', 'memo', 'letter', 'template', or similar deliverable as a Word or .docx file, use this skill. Do NOT use for PDFs, spreadsheets, Google Docs, or general coding tasks unrelated to document generation.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "anthropics/skills/frontend-design",
@@ -109,7 +109,7 @@
       "sha": "a5333457c414d20d625f307df945842c0952ecc3",
       "name": "frontend-design",
       "description": "Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthetic direction, typography, and making choices that don't read as templated defaults.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "anthropics/skills/internal-comms",
@@ -119,7 +119,7 @@
       "sha": "56ea935b74f371bfeb4c7d3c19d5139df866e73b",
       "name": "internal-comms",
       "description": "A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should use this skill whenever asked to write some sort of internal communications (status reports, leadership updates, 3P updates, company newsletters, FAQs, incident reports, project updates, etc.).",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "anthropics/skills/mcp-builder",
@@ -129,27 +129,27 @@
       "sha": "d61a9056202a0f8b2d064c896e62f415c45b1bf1",
       "name": "mcp-builder",
       "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK).",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "anthropics/skills/pdf",
       "source": "anthropics/skills",
       "slug": "pdf",
       "path": "skills/pdf/SKILL.md",
-      "sha": "d3e046a5ae107a6cb23cfb16c219837094ab35d3",
+      "sha": "9f606f1cd68dcab9dabb75b548e90c1de028b8a2",
       "name": "pdf",
       "description": "Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combining or merging multiple PDFs into one, splitting PDFs apart, rotating pages, adding watermarks, creating new PDFs, filling PDF forms, encrypting/decrypting PDFs, extracting images, and OCR on scanned PDFs to make them searchable. If the user mentions a .pdf file or asks to produce one, use this skill.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "anthropics/skills/pptx",
       "source": "anthropics/skills",
       "slug": "pptx",
       "path": "skills/pptx/SKILL.md",
-      "sha": "41cd2306977f269bb1d8169a9643b35053aa66bd",
+      "sha": "a90df9c7e8f47c474c58f367faba57b66ff14cbb",
       "name": "pptx",
-      "description": "Use this skill any time a .pptx or .potx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx or .potx file (even if the extracted content will be used elsewhere, like in an email or summary); editing, modifying, or updating existing presentations; combining or splitting slide files; working with templates (.potx), layouts, speaker notes, or comments. Trigger whenever the user mentions \\\"deck,\\\" \\\"slides,\\\" \\\"presentation,\\\" or references a .pptx or .potx filename, regardless of what they plan to do with the content afterward. If a .pptx or .potx file needs to be opened, created, or touched, use this skill.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "description": "Use this skill any time a .pptx or .potx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx or .potx file (even if the extracted content will be used elsewhere, like in an email or summary); editing, modifying, or updating existing presentations; combining or splitting slide files; working with templates (.potx), layouts, speaker notes, or comments. Trigger whenever the user mentions \"deck,\" \"slides,\" \"presentation,\" or references a .pptx or .potx filename, regardless of what they plan to do with the content afterward. If a .pptx or .potx file needs to be opened, created, or touched, use this skill.",
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "anthropics/skills/skill-creator",
@@ -159,7 +159,7 @@
       "sha": "65b3a402dbd09b8e83f9d637c6b553875189085c",
       "name": "skill-creator",
       "description": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better triggering accuracy.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "anthropics/skills/slack-gif-creator",
@@ -169,7 +169,7 @@
       "sha": "16660d8ceb77af47986bba1c9176c2ff3f287a91",
       "name": "slack-gif-creator",
       "description": "Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constraints, validation tools, and animation concepts. Use when users request animated GIFs for Slack like \"make me a GIF of X doing Y for Slack.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "anthropics/skills/theme-factory",
@@ -179,7 +179,7 @@
       "sha": "90dfceaf2ecdc191a4dcfb0069768a9560638998",
       "name": "theme-factory",
       "description": "Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes with colors/fonts that you can apply to any artifact that has been creating, or can generate a new theme on-the-fly.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "anthropics/skills/web-artifacts-builder",
@@ -189,7 +189,7 @@
       "sha": "8b39b19f259b4216ecb07574741dd8eaa9863a07",
       "name": "web-artifacts-builder",
       "description": "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or shadcn/ui components - not for simple single-file HTML/JSX artifacts.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "anthropics/skills/webapp-testing",
@@ -199,17 +199,17 @@
       "sha": "4726215301db64a0cc4d41fc3219c61f37a30f4a",
       "name": "webapp-testing",
       "description": "Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "anthropics/skills/xlsx",
       "source": "anthropics/skills",
       "slug": "xlsx",
       "path": "skills/xlsx/SKILL.md",
-      "sha": "9da54804cc8c938586f89363c8da3b3a6e2a563d",
+      "sha": "cc347203f2247b009b8ea34574bccfa62fce3669",
       "name": "xlsx",
-      "description": "Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .xltx, .csv, or .tsv file (e.g., adding columns, computing formulas, formatting, charting, cleaning messy data); create a new spreadsheet from scratch or from other data sources; or convert between tabular file formats. Trigger especially when the user references a spreadsheet file by name or path — even casually (like \\\"the xlsx in my downloads\\\") — and wants something done to it or produced from it. Also trigger for cleaning or restructuring messy tabular data files (malformed rows, misplaced headers, junk data) into proper spreadsheets. The deliverable must be a spreadsheet file. Do NOT trigger when the primary deliverable is a Word document, HTML report, standalone Python script, database pipeline, or Google Sheets API integration, even if tabular data is involved.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "description": "Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .xltx, .csv, or .tsv file (e.g., adding columns, computing formulas, formatting, charting, cleaning messy data); create a new spreadsheet from scratch or from other data sources; or convert between tabular file formats. Trigger especially when the user references a spreadsheet file by name or path — even casually (like \"the xlsx in my downloads\") — and wants something done to it or produced from it. Also trigger for cleaning or restructuring messy tabular data files (malformed rows, misplaced headers, junk data) into proper spreadsheets. The deliverable must be a spreadsheet file. Do NOT trigger when the primary deliverable is a Word document, HTML report, standalone Python script, database pipeline, or Google Sheets API integration, even if tabular data is involved.",
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "openai/skills/aspnet-core",
@@ -219,7 +219,7 @@
       "sha": "c71ed6e705c44038fbcd2e37a3e12c3a81683fdf",
       "name": "aspnet-core",
       "description": "Build, review, refactor, or architect ASP.NET Core web applications using current official guidance for .NET web development. Use when working on Blazor Web Apps, Razor Pages, MVC, Minimal APIs, controller-based Web APIs, SignalR, gRPC, middleware, dependency injection, configuration, authentication, authorization, testing, performance, deployment, or ASP.NET Core upgrades.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "openai/skills/chatgpt-apps",
@@ -229,7 +229,7 @@
       "sha": "6280a08c57db44ab622dcccbd853e01005edfcbd",
       "name": "chatgpt-apps",
       "description": "Build, scaffold, refactor, and troubleshoot ChatGPT Apps SDK applications that combine an MCP server and widget UI. Use when Codex needs to design tools, register UI resources, wire the MCP Apps bridge or ChatGPT compatibility APIs, apply Apps SDK metadata or CSP or domain settings, or produce a docs-aligned project scaffold. Prefer a docs-first workflow by invoking the openai-docs skill or OpenAI developer docs MCP tools before generating code.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "openai/skills/cli-creator",
@@ -239,7 +239,7 @@
       "sha": "60e5a9a03f89cf66a60aa798bfc6f3c3fa5ed8c4",
       "name": "cli-creator",
       "description": "Build a composable CLI for Codex from API docs, an OpenAPI spec, existing curl examples, an SDK, a web app, an admin tool, or a local script. Use when the user wants Codex to create a command-line tool that can run from any repo, expose composable read/write commands, return stable JSON, manage auth, and pair with a companion skill.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "openai/skills/cloudflare-deploy",
@@ -249,7 +249,7 @@
       "sha": "e2d73abb7e5a550af3d9e40797a28259bddba97d",
       "name": "cloudflare-deploy",
       "description": "Deploy applications and infrastructure to Cloudflare using Workers, Pages, and related platform services. Use when the user asks to deploy, host, publish, or set up a project on Cloudflare.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "openai/skills/define-goal",
@@ -259,7 +259,7 @@
       "sha": "87f111bd700e0d993465f7ac741847b5daee57d6",
       "name": "define-goal",
       "description": "Help the user define a concrete, measurable goal before starting work, especially when they ask to use the goal tool, create a goal, set an objective, clarify success criteria, or turn a fuzzy intention into a quantitative outcome. Use this skill for goal creation and goal refinement only; it does not manage durable snapshots, decision logs, or long-running execution artifacts.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "openai/skills/figma-code-connect-components",
@@ -269,7 +269,7 @@
       "sha": "d417e16baf15bad3f1dd147d562c8b2578e4b4bd",
       "name": "figma-code-connect-components",
       "description": "Connects Figma design components to code components using Code Connect mapping tools. Use when user says \"code connect\", \"connect this component to code\", \"map this component\", \"link component to code\", \"create code connect mapping\", or wants to establish mappings between Figma designs and code implementations. For canvas writes via `use_figma`, use `figma-use`.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "openai/skills/figma-create-design-system-rules",
@@ -279,7 +279,7 @@
       "sha": "42cc4ce838276cb68a14bbb29c5a6f1e19b6e50d",
       "name": "figma-create-design-system-rules",
       "description": "Generates custom design system rules for the user's codebase. Use when user says \"create design system rules\", \"generate rules for my project\", \"set up design rules\", \"customize design system guidelines\", or wants to establish project-specific conventions for Figma-to-code workflows. Requires Figma MCP server connection.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "openai/skills/figma-create-new-file",
@@ -289,7 +289,7 @@
       "sha": "8f74967b9bb4c26b3b8e2a8d102f004d6962ae0d",
       "name": "figma-create-new-file",
       "description": "Create a new blank Figma file. Use when the user wants to create a new Figma design or FigJam file, or when you need a new file before calling use_figma. Handles plan resolution via whoami if needed. Usage — /figma-create-new-file [editorType] [fileName] (e.g. /figma-create-new-file figjam My Whiteboard)",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "openai/skills/figma-generate-design",
@@ -299,7 +299,7 @@
       "sha": "f71d7e71600e84e95639ca2b3e2b8578ac50c3ea",
       "name": "figma-generate-design",
       "description": "Use this skill alongside figma-use when the task involves translating an application page, view, or multi-section layout into Figma. Triggers: 'write to Figma', 'create in Figma from code', 'push page to Figma', 'take this app/page and build it in Figma', 'create a screen', 'build a landing page in Figma', 'update the Figma screen to match code'. This is the preferred workflow skill whenever the user wants to build or update a full page, screen, or view in Figma from code or a description. Discovers design system components, variables, and styles via search_design_system, imports them, and assembles screens incrementally section-by-section using design system tokens instead of hardcoded values.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "openai/skills/figma-generate-library",
@@ -309,7 +309,7 @@
       "sha": "0c162901c29dba36094c324cd9ffabd2a6b33498",
       "name": "figma-generate-library",
       "description": "Build or update a professional-grade design system in Figma from a codebase. Use when the user wants to create variables/tokens, build component libraries, set up theming (light/dark modes), document foundations, or reconcile gaps between code and Figma. This skill teaches WHAT to build and in WHAT ORDER — it complements the `figma-use` skill which teaches HOW to call the Plugin API. Both skills should be loaded together.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "openai/skills/figma-implement-design",
@@ -319,7 +319,7 @@
       "sha": "9aacde6657a913db819d7938f3fd1888ff643c6a",
       "name": "figma-implement-design",
       "description": "Translates Figma designs into production-ready application code with 1:1 visual fidelity. Use when implementing UI code from Figma files, when user mentions \"implement design\", \"generate code\", \"implement component\", provides Figma URLs, or asks to build components matching Figma specs. For Figma canvas writes via `use_figma`, use `figma-use`.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "openai/skills/figma-use",
@@ -329,7 +329,7 @@
       "sha": "4b0e23f53d8160e1623177f518535d1588a53c69",
       "name": "figma-use",
       "description": "**MANDATORY prerequisite** — you MUST invoke this skill BEFORE every `use_figma` tool call. NEVER call `use_figma` directly without loading this skill first. Skipping it causes common, hard-to-debug failures. Trigger whenever the user wants to perform a write action or a unique read action that requires JavaScript execution in the Figma file context — e.g. create/edit/delete nodes, set up variables or tokens, build components and variants, modify auto-layout or fills, bind variables to properties, or inspect file structure programmatically.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "openai/skills/figma",
@@ -339,7 +339,7 @@
       "sha": "b4f18d2969fe827778b13b5a0fb08a158ec091b1",
       "name": "figma",
       "description": "Use the Figma MCP server to fetch design context, screenshots, variables, and assets from Figma, and to translate Figma nodes into production code. Trigger when a task involves Figma URLs, node IDs, design-to-code implementation, or Figma MCP setup and troubleshooting.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "openai/skills/gh-address-comments",
@@ -349,7 +349,7 @@
       "sha": "0ee19e080dc9f0b082157080d1e65511ddc49e7e",
       "name": "gh-address-comments",
       "description": "Help address review/issue comments on the open GitHub PR for the current branch using gh CLI; verify gh auth first and prompt the user to authenticate if not logged in.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "openai/skills/gh-fix-ci",
@@ -359,7 +359,7 @@
       "sha": "76bdeb6a7bff93cbe924c0652f1fd7a3c3ffc46c",
       "name": "gh-fix-ci",
       "description": "Use when a user asks to debug or fix failing GitHub PR checks that run in GitHub Actions; use `gh` to inspect checks and logs, summarize failure context, draft a fix plan, and implement only after explicit approval. Treat external providers (for example Buildkite) as out of scope and report only the details URL.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "openai/skills/jupyter-notebook",
@@ -369,7 +369,7 @@
       "sha": "e1d1748cac9e9313c8229763751714628d1f6853",
       "name": "jupyter-notebook",
       "description": "Use when the user asks to create, scaffold, or edit Jupyter notebooks (`.ipynb`) for experiments, explorations, or tutorials; prefer the bundled templates and run the helper script `new_notebook.py` to generate a clean starting notebook.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "openai/skills/linear",
@@ -379,7 +379,7 @@
       "sha": "6982ccbe4835ed207f6c7c0b2f011d903dbe2960",
       "name": "linear",
       "description": "Manage issues, projects & team workflows in Linear. Use when the user wants to read, create or updates tickets in Linear.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "openai/skills/migrate-to-codex",
@@ -389,7 +389,7 @@
       "sha": "b1c001b70e8cf326b8196e153b87811a43b23d48",
       "name": "migrate-to-codex",
       "description": "Migrate supported instruction files, skills, agents, and MCP config into Codex project and global files.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "openai/skills/netlify-deploy",
@@ -399,7 +399,7 @@
       "sha": "52075090a6644b104fc34837c9923b403d949369",
       "name": "netlify-deploy",
       "description": "Deploy web projects to Netlify using the Netlify CLI (`npx netlify`). Use when the user asks to deploy, host, publish, or link a site/repo on Netlify, including preview and production deploys.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "openai/skills/notion-knowledge-capture",
@@ -409,7 +409,7 @@
       "sha": "5d347f66e6b494328a81f3ecb4fd7865f95b0067",
       "name": "notion-knowledge-capture",
       "description": "Capture conversations and decisions into structured Notion pages; use when turning chats/notes into wiki entries, how-tos, decisions, or FAQs with proper linking.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "openai/skills/notion-meeting-intelligence",
@@ -419,7 +419,7 @@
       "sha": "efc716839ee614cf57efb3858fcfb538e0c4a8d9",
       "name": "notion-meeting-intelligence",
       "description": "Prepare meeting materials with Notion context and Codex research; use when gathering context, drafting agendas/pre-reads, and tailoring materials to attendees.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "openai/skills/notion-research-documentation",
@@ -429,7 +429,7 @@
       "sha": "4bd40dbe0eb8d9d8920e3a4d705b38b4887623c7",
       "name": "notion-research-documentation",
       "description": "Research across Notion and synthesize into structured documentation; use when gathering info from multiple Notion sources to produce briefs, comparisons, or reports with citations.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "openai/skills/notion-spec-to-implementation",
@@ -439,7 +439,7 @@
       "sha": "d6a0a0e0fb358f56e1d4893c54a25c6c2e04fc65",
       "name": "notion-spec-to-implementation",
       "description": "Turn Notion specs into implementation plans, tasks, and progress tracking; use when implementing PRDs/feature specs and creating Notion plans + tasks from them.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "openai/skills/openai-docs",
@@ -449,7 +449,7 @@
       "sha": "ec6a2b06e4bca7b08e27c7be3ae512bc97008e8c",
       "name": "openai-docs",
       "description": "Use when the user asks how to build with OpenAI products or APIs, asks about Codex itself or choosing Codex surfaces, needs up-to-date official documentation with citations, help choosing the latest model for a use case, or model upgrade and prompt-upgrade guidance; use OpenAI docs MCP tools for non-Codex docs questions, use the Codex manual helper first for broad Codex self-knowledge, and restrict fallback browsing to official OpenAI domains.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "openai/skills/playwright-interactive",
@@ -459,7 +459,7 @@
       "sha": "7d85f8284014c8c2690918a596a4b5bef7cb86e1",
       "name": "playwright-interactive",
       "description": "Persistent browser and Electron interaction through `js_repl` for fast iterative UI debugging.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "openai/skills/playwright",
@@ -469,7 +469,7 @@
       "sha": "77c01afb31aa602d0b002ae2438c2b67f0335fcb",
       "name": "playwright",
       "description": "Use when the task requires automating a real browser from the terminal (navigation, form filling, snapshots, screenshots, data extraction, UI-flow debugging) via `playwright-cli` or the bundled wrapper script.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "openai/skills/render-deploy",
@@ -479,7 +479,7 @@
       "sha": "a0f78c13b07df3def82c16bccf4a1c17c4d8e30d",
       "name": "render-deploy",
       "description": "Deploy applications to Render by analyzing codebases, generating render.yaml Blueprints, and providing Dashboard deeplinks. Use when the user wants to deploy, host, publish, or set up their application on Render's cloud platform.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "openai/skills/screenshot",
@@ -489,7 +489,7 @@
       "sha": "1d967bfb1d7d38874147b5810f2a19677bc3161b",
       "name": "screenshot",
       "description": "Use when the user explicitly asks for a desktop or system screenshot (full screen, specific app or window, or a pixel region), or when tool-specific capture capabilities are unavailable and an OS-level capture is needed.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "openai/skills/security-best-practices",
@@ -499,7 +499,7 @@
       "sha": "45ccbd8d671c4c4cc3e7e0645a16a3f80ec50de7",
       "name": "security-best-practices",
       "description": "Perform language and framework specific security best-practice reviews and suggest improvements. Trigger only when the user explicitly requests security best practices guidance, a security review/report, or secure-by-default coding help. Trigger only for supported languages (python, javascript/typescript, go). Do not trigger for general code review, debugging, or non-security tasks.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "openai/skills/security-ownership-map",
@@ -509,7 +509,7 @@
       "sha": "0164d0d8809825dc5bccc99e87cafb8345a6be72",
       "name": "security-ownership-map",
       "description": "Analyze git repositories to build a security ownership topology (people-to-file), compute bus factor and sensitive-code ownership, and export CSV/JSON for graph databases and visualization. Trigger only when the user explicitly wants a security-oriented ownership or bus-factor analysis grounded in git history (for example: orphaned sensitive code, security maintainers, CODEOWNERS reality checks for risk, sensitive hotspots, or ownership clusters). Do not trigger for general maintainer lists or non-security ownership questions.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "openai/skills/security-threat-model",
@@ -519,7 +519,7 @@
       "sha": "abd3c1c95d49c4e0e0664f198f4bf168c6291aec",
       "name": "security-threat-model",
       "description": "Repository-grounded threat modeling that enumerates trust boundaries, assets, attacker capabilities, abuse paths, and mitigations, and writes a concise Markdown threat model. Trigger only when the user explicitly asks to threat model a codebase or path, enumerate threats/abuse paths, or perform AppSec threat modeling. Do not trigger for general architecture summaries, code review, or non-security design work.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "openai/skills/sentry",
@@ -529,7 +529,7 @@
       "sha": "c94f7efa9d513f381d5fcd07912d56581ec3dc2a",
       "name": "sentry",
       "description": "Use when the user asks to inspect Sentry issues or events, summarize recent production errors, or pull basic Sentry health data via the Sentry CLI; perform read-only queries using the `sentry` command.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "openai/skills/speech",
@@ -539,7 +539,7 @@
       "sha": "54727b1f84831739e7262b4db8271ada026d20c7",
       "name": "speech",
       "description": "Use when the user asks for text-to-speech narration or voiceover, accessibility reads, audio prompts, or batch speech generation via the OpenAI Audio API; run the bundled CLI (`scripts/text_to_speech.py`) with built-in voices and require `OPENAI_API_KEY` for live calls. Custom voice creation is out of scope.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "openai/skills/transcribe",
@@ -549,7 +549,7 @@
       "sha": "757576f9bbd1782f14fcc28ca85159139a2b8fa5",
       "name": "transcribe",
       "description": "Transcribe audio files to text with optional diarization and known-speaker hints. Use when a user asks to transcribe speech from audio/video, extract text from recordings, or label speakers in interviews or meetings.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "openai/skills/vercel-deploy",
@@ -559,7 +559,7 @@
       "sha": "a7e6faf3b999d31e8224e232d39fbf58952b7a5b",
       "name": "vercel-deploy",
       "description": "Deploy applications and websites to Vercel. Use when the user requests deployment actions like \"deploy my app\", \"deploy and give me the link\", \"push this live\", or \"create a preview deployment\".",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "openai/skills/winui-app",
@@ -569,7 +569,7 @@
       "sha": "28e67e8677f0ab74ac921ec85dd80888f7d53fa7",
       "name": "winui-app",
       "description": "Bootstrap, develop, and design modern WinUI 3 desktop applications with C# and the Windows App SDK using official Microsoft guidance, WinUI Gallery patterns, Windows App SDK samples, and CommunityToolkit components. Use when creating a brand new app, preparing a machine for WinUI, reviewing, refactoring, planning, troubleshooting, environment-checking, or setting up WinUI 3 XAML, controls, navigation, windowing, theming, accessibility, responsiveness, performance, deployment, or related Windows app design and development work.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "mattpocock/skills/code-review",
@@ -579,7 +579,7 @@
       "sha": "83183e0ad36fd0eef25d37c7e483284b7e34c1f0",
       "name": "code-review",
       "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes: Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/spec asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \\\"review since X\\\".",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "mattpocock/skills/codebase-design",
@@ -589,7 +589,7 @@
       "sha": "3f63c8146dd2604b419c929e9876b90c30d410e9",
       "name": "codebase-design",
       "description": "Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs the deep-module vocabulary.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "mattpocock/skills/diagnosing-bugs",
@@ -599,7 +599,7 @@
       "sha": "d039541ddd1c46e6ddbd662fe99d49b686fc5e12",
       "name": "diagnosing-bugs",
       "description": "Diagnosis loop for hard bugs and performance regressions. Use when the user says \"diagnose\"/\"debug this\", or reports something broken/throwing/failing/slow.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "mattpocock/skills/domain-modeling",
@@ -609,7 +609,7 @@
       "sha": "a4438c6879c517d1a08e2b5fbca049b632688dfe",
       "name": "domain-modeling",
       "description": "Build and sharpen a project's domain model. Use when discussing codebase terminology, writing or editing a GLOSSARY.md, or recording or editing an ADR.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "mattpocock/skills/grill-with-docs",
@@ -619,7 +619,7 @@
       "sha": "62b9efb6f991d1b229adee7506962f13ced0c499",
       "name": "grill-with-docs",
       "description": "A relentless interview to sharpen a plan or design, which also creates docs (ADR's and glossary) as we go.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "mattpocock/skills/implement-spec",
@@ -629,7 +629,7 @@
       "sha": "73d36c23958bd04423ba3ded1c90ff0d0b858b72",
       "name": "implement-spec",
       "description": "Implement the result of /to-spec and /to-tickets in code.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "mattpocock/skills/implement",
@@ -639,7 +639,7 @@
       "sha": "bd49e472984c7b99aac40286fdae749bb955a842",
       "name": "implement",
       "description": "Implement a piece of work based on a spec or set of tickets.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "mattpocock/skills/improve-codebase-architecture",
@@ -649,7 +649,7 @@
       "sha": "f1eabb568464f03ae79a3346fc1918fdde6d8285",
       "name": "improve-codebase-architecture",
       "description": "Scan a codebase for deepening opportunities, present them as a visual HTML report, then grill through whichever one you pick.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "mattpocock/skills/pr",
@@ -659,7 +659,7 @@
       "sha": "84dd4fb2f068e9f6282690235d20dd505b418119",
       "name": "pr",
       "description": "Use when writing a PR body.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "mattpocock/skills/prototype",
@@ -669,7 +669,7 @@
       "sha": "a0044501fe0d385b4d8575b610188ede9b236ccf",
       "name": "prototype",
       "description": "Build a throwaway prototype to answer a design question. Use when the user wants to sanity-check whether a state model or logic feels right, or explore what a UI should look like.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "mattpocock/skills/research",
@@ -679,7 +679,7 @@
       "sha": "ffc9eb89849cc4cf74962ce93d786ffd17c6a5dc",
       "name": "research",
       "description": "Investigate a question against high-trust primary sources and capture the findings as a Markdown file in the repo. Use when the user wants a topic researched, docs or API facts gathered, or reading legwork delegated to a background agent.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "mattpocock/skills/retro",
@@ -689,7 +689,7 @@
       "sha": "12149acf2dd23b4514dec57b04a6293eaa1352fa",
       "name": "retro",
       "description": "Conduct a retrospective on a coding session.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "mattpocock/skills/tdd",
@@ -699,7 +699,7 @@
       "sha": "01eadaa34e7c9a63a67d6dc3cce1cc81b0e49985",
       "name": "tdd",
       "description": "Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions \"red-green-refactor\", or wants integration tests.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "mattpocock/skills/to-spec",
@@ -709,7 +709,7 @@
       "sha": "3f52599ae2a4347aee5a07432c2707518e691a7f",
       "name": "to-spec",
       "description": "Turn the current conversation into a spec and publish it to the project issue tracker: no interview, just synthesis of what you've already discussed.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "mattpocock/skills/to-tickets",
@@ -719,7 +719,7 @@
       "sha": "9b77a01db9460c99c22d03c910c349f890f12c0e",
       "name": "to-tickets",
       "description": "Break a plan, spec, or the current conversation into a set of tracer-bullet tickets, each declaring its blocking edges, published to the configured tracker (edges as text in one file per ticket locally, or native blocking links on a real tracker).",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "mattpocock/skills/triage",
@@ -729,7 +729,7 @@
       "sha": "3fd5617e906cf9b71a6b17424791adb905fc248b",
       "name": "triage",
       "description": "Move issues and external PRs through a state machine of triage roles, categorise, verify, grill if needed, and write agent-ready briefs.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "mattpocock/skills/wayfinder",
@@ -739,7 +739,7 @@
       "sha": "975d6bf9c0a49d18a651f3335e0b4dcf8650fe31",
       "name": "wayfinder",
       "description": "Plan a huge chunk of work (more than one agent session can hold) as a shared map of decision tickets on your issue tracker, and resolve them one at a time until the way to the destination is clear.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "mattpocock/skills/wizard",
@@ -749,7 +749,7 @@
       "sha": "c4294ad8298b9b95fc727496b1b802b1f7363fba",
       "name": "wizard",
       "description": "Generate an interactive bash wizard that walks a human through steps only they can perform. Use when provisioning infrastructure, setting up credentials or CI secrets, walking an unfamiliar third-party dashboard, or running a one-off migration or cutover. Don't invoke this for steps the agent can perform itself.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "mattpocock/skills/chief-of-staff",
@@ -759,7 +759,7 @@
       "sha": "22f0b6626f07bfdfa78b70d006742dfa2260e9c4",
       "name": "chief-of-staff",
       "description": "Pursue a long-running goal in a single session by co-ordinating subagents.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "mattpocock/skills/claude-handoff",
@@ -769,7 +769,7 @@
       "sha": "77f82fc59c89c3a83ed5a92521dc2869f0533724",
       "name": "claude-handoff",
       "description": "Hand the current conversation off to a fresh background agent that picks up the work immediately.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "mattpocock/skills/software-factory",
@@ -779,7 +779,7 @@
       "sha": "c60583aa2030d3eea42a3bbb85126c79c8a6eaea",
       "name": "software-factory",
       "description": "Shared language for designing a software factory: the tasks it runs and the services it plugs into.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "mattpocock/skills/scaffold-exercises",
@@ -789,7 +789,7 @@
       "sha": "d87df28e7d8abb4e57ecc6e47d71c274d16054c7",
       "name": "scaffold-exercises",
       "description": "Create exercise directory structures with sections, problems, solutions, and explainers that pass linting. Use when user wants to scaffold exercises, create exercise stubs, or set up a new course section.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "mattpocock/skills/grill-me",
@@ -799,7 +799,7 @@
       "sha": "3947ff9c4ad980d14fc07fccbf659d47c114e81d",
       "name": "grill-me",
       "description": "A relentless interview to sharpen a plan or design.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "mattpocock/skills/handoff",
@@ -809,7 +809,7 @@
       "sha": "a224edc643a20ddb989f9bca1547440169159810",
       "name": "handoff",
       "description": "Compact the current conversation into a handoff document for another agent to pick up.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "mattpocock/skills/teach",
@@ -819,7 +819,7 @@
       "sha": "493fa3bae0dada971c4dfb965790e56920b1dced",
       "name": "teach",
       "description": "Teach the user a new skill or concept, within this workspace.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "mattpocock/skills/wait-what",
@@ -829,7 +829,7 @@
       "sha": "9b15cd1a7dda0854ca093e29e3e0de57e241b2ac",
       "name": "wait-what",
       "description": "Stop. That last message did not land: re-pitch it.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "mattpocock/skills/writing-for-agents",
@@ -839,7 +839,7 @@
       "sha": "a37608daf6e835e767deecfb498facecaaba82ba",
       "name": "writing-for-agents",
       "description": "Writing documents for agents. Use when creating or editing skills, or modifying AGENTS.md or CLAUDE.md.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "vercel-labs/agent-skills/composition-patterns",
@@ -849,7 +849,7 @@
       "sha": "d07025bf943345bc1cf15eb923594f889ff881f0",
       "name": "vercel-composition-patterns",
       "description": "React composition patterns that scale. Use when refactoring components, building reusable APIs, and using compound components, render props or context providers.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "vercel-labs/agent-skills/deploy-to-vercel",
@@ -859,7 +859,7 @@
       "sha": "f3bb68ba31294f0edf81fdb326ddc2666a24e0e0",
       "name": "deploy-to-vercel",
       "description": "Deploy applications and websites to Vercel. Use when the user requests deployment actions like \"deploy my app\", \"deploy and give me the link\", \"push this live\", or \"create a preview deployment\".",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "vercel-labs/agent-skills/react-best-practices",
@@ -869,7 +869,7 @@
       "sha": "237988de4a66dd8a71d30a2c24ebe1a86b58d04e",
       "name": "vercel-react-best-practices",
       "description": "React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns. Triggers on tasks involving React components, Next.js pages, data fetching, bundle optimization, or performance improvements.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "vercel-labs/agent-skills/react-native-skills",
@@ -879,7 +879,7 @@
       "sha": "73401865dd7440a43c5243b107a3763e0d2f4aae",
       "name": "vercel-react-native-skills",
       "description": "React Native and Expo best practices for performant mobile apps, lists, animations, UI components, and native platform APIs.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "vercel-labs/agent-skills/react-view-transitions",
@@ -889,7 +889,7 @@
       "sha": "665db73fe55b2504d1123857f14606472cdefd0a",
       "name": "vercel-react-view-transitions",
       "description": "Guide for implementing smooth, native-feeling animations using React's View Transition API (`<ViewTransition>` component, `addTransitionType`, and CSS view transition pseudo-elements). Use this skill whenever the user wants to add page transitions, animate route changes, create shared element animations, animate enter/exit of components, animate list reorder, implement directional (forward/back) navigation animations, or integrate view transitions in Next.js. Also use when the user mentions view transitions, `startViewTransition`, `ViewTransition`, transition types, or asks about animating between UI states in React without third-party animation libraries.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "vercel-labs/agent-skills/vercel-cli-with-tokens",
@@ -899,7 +899,7 @@
       "sha": "814423d0c40f56853e0f4f2f64d03a02266dadf4",
       "name": "vercel-cli-with-tokens",
       "description": "Deploy and manage projects on Vercel using token-based authentication. Use when working with Vercel CLI using access tokens rather than interactive login — e.g. \"deploy to vercel\", \"set up vercel\", \"add environment variables to vercel\".",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "vercel-labs/agent-skills/vercel-optimize",
@@ -909,7 +909,7 @@
       "sha": "c8a6d6d7075b2cc3f7921da89de86e6926f78985",
       "name": "vercel-optimize",
       "description": "Use for Vercel cost and performance optimization on deployed projects, especially Next.js, SvelteKit, Nuxt, and limited Astro apps. Collect Vercel metrics, usage, project config, and code scan results first; investigate only metric-backed candidates; produce ranked recommendations grounded in verified files and version-aware Vercel/framework docs. Trigger for Vercel bill reduction, slow or expensive routes, caching opportunities, Function Invocations, Build Minutes, Fast Data Transfer, Core Web Vitals, Bot Management, Fluid compute, or cost breakdown requests.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "vercel-labs/agent-skills/web-design-guidelines",
@@ -919,7 +919,7 @@
       "sha": "ceae92ab319216a68274168fba9b63b998b65997",
       "name": "web-design-guidelines",
       "description": "Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\".",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "vercel-labs/agent-skills/writing-guidelines",
@@ -929,117 +929,117 @@
       "sha": "63facf310252a990d154bed12b3dcdd295ba771a",
       "name": "writing-guidelines",
       "description": "Review docs/prose for Writing Guidelines compliance. Use when asked to \"review my docs\", \"check writing style\", \"audit prose\", \"review docs voice and tone\", or \"check this page against the writing handbook\".",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "remotion-dev/skills/remotion-best-practices",
       "source": "remotion-dev/skills",
       "slug": "remotion-best-practices",
       "path": "skills/remotion-best-practices/SKILL.md",
-      "sha": "9adb9f6b0029586d2590a6bbae024693b16ec921",
+      "sha": "68f3b3c5995a1d1b4a0dfe76c27380c4f598b1f6",
       "name": "remotion-best-practices",
       "description": "Router for all Remotion skills",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "remotion-dev/skills/remotion-captions",
       "source": "remotion-dev/skills",
       "slug": "remotion-captions",
       "path": "skills/remotion-captions/SKILL.md",
-      "sha": "e3603180e50a5c11898bec266ccc3dd3b93ca2b7",
+      "sha": "98a0bebd137586575c9968fad0aa3be521330af0",
       "name": "remotion-captions",
       "description": "Transcribing, displaying and animating captions",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "remotion-dev/skills/remotion-create",
       "source": "remotion-dev/skills",
       "slug": "remotion-create",
       "path": "skills/remotion-create/SKILL.md",
-      "sha": "01d8117a5adc638f4e7871ae82131d37237505f7",
+      "sha": "9125686f23195907c99fda4ad0e5961fd4e0cbe9",
       "name": "remotion-create",
       "description": "Create a new Remotion video",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "remotion-dev/skills/remotion-interactivity",
       "source": "remotion-dev/skills",
       "slug": "remotion-interactivity",
       "path": "skills/remotion-interactivity/SKILL.md",
-      "sha": "6f2f4547149bda5f6f2e5369cdbe1b7e6b61a8e4",
+      "sha": "0ccd0703e2ead665d6562fd97e2caaa8227c92c0",
       "name": "remotion-interactivity",
       "description": "Structure Remotion markup for interactivity",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "remotion-dev/skills/remotion-maps",
       "source": "remotion-dev/skills",
       "slug": "remotion-maps",
       "path": "skills/remotion-maps/SKILL.md",
-      "sha": "10b9269e6e0ec81bd0110dd795099b5ff8998c94",
+      "sha": "30c4c6eb45be02f8a757a0934895c7cad7fbfa1d",
       "name": "remotion-maps",
       "description": "Remotion Map animation knowledge",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "remotion-dev/skills/remotion-markup",
       "source": "remotion-dev/skills",
       "slug": "remotion-markup",
       "path": "skills/remotion-markup/SKILL.md",
-      "sha": "23c694bded034ca0bddc098e38b59ccd95967bf2",
+      "sha": "c78d05d413976dfaf6aaade31881283a2ec46c8b",
       "name": "remotion-markup",
       "description": "Content, animation and effects best practices",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "remotion-dev/skills/remotion-multimedia",
       "source": "remotion-dev/skills",
       "slug": "remotion-multimedia",
       "path": "skills/remotion-multimedia/SKILL.md",
-      "sha": "f5c3f1f8cbf83a46cf5eecb78ada67b1fcd92d5f",
+      "sha": "9c8efecbce42fd22168ad4cf2f6499ec6b8989a6",
       "name": "remotion-multimedia",
       "description": "Interacting with Mediabunny",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "remotion-dev/skills/remotion-render",
       "source": "remotion-dev/skills",
       "slug": "remotion-render",
       "path": "skills/remotion-render/SKILL.md",
-      "sha": "67700b89473c0bd92b5ae588e6484946c8224085",
+      "sha": "21276ba5693195ceee6b436e70691c371efd6896",
       "name": "remotion-render",
       "description": "Export a Remotion video",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "remotion-dev/skills/remotion-studio",
       "source": "remotion-dev/skills",
       "slug": "remotion-studio",
       "path": "skills/remotion-studio/SKILL.md",
-      "sha": "311cc237ffad3ee826d2e3be6ea0a7755f474689",
+      "sha": "4a6624b18efd4efb9664783d72de58c95f6b3217",
       "name": "remotion-studio",
       "description": "Preview a Remotion video",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "remotion-dev/skills/remotion-upgrade",
       "source": "remotion-dev/skills",
       "slug": "remotion-upgrade",
       "path": "skills/remotion-upgrade/SKILL.md",
-      "sha": "3f06e753b757863ec3abae805ea7bdc53725c5c9",
+      "sha": "5bed074a7a111563c0569442c98262259c3295e0",
       "name": "remotion-upgrade",
       "description": "Upgrade Remotion, and related packages",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "obra/superpowers/brainstorming",
       "source": "obra/superpowers",
       "slug": "brainstorming",
       "path": "skills/brainstorming/SKILL.md",
-      "sha": "7f5eef02f894c4f24cea313660c0465ce9c084ed",
+      "sha": "9eb0edc7fedf26e1d3e2f3f223e5bcc5058aed6a",
       "name": "brainstorming",
       "description": "You MUST use this before any creative work - creating features, building components, adding functionality, modifying behavior, or planning anything new, in software or out of it (a talk, a business, a renovation).",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "obra/superpowers/diagnosing-superpowers",
@@ -1049,7 +1049,7 @@
       "sha": "dda2692d528574c410b118a6de545d6afc7eb047",
       "name": "diagnosing-superpowers",
       "description": "Use when a superpowers session went wrong and your human partner wants to know why — repeated work, ignored plans, stumbles, poor results, a skill that didn't fire, \"it took too long\", \"why is it so expensive\", \"what is it doing\" — or wants to build a bug report for the superpowers maintainers, for the current session or a past one identified by id or path, on any harness.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "obra/superpowers/dispatching-parallel-agents",
@@ -1059,17 +1059,17 @@
       "sha": "3fa091b348bbe0a18eaa0e17e9092c97f7005cbe",
       "name": "dispatching-parallel-agents",
       "description": "Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "obra/superpowers/executing-plans",
       "source": "obra/superpowers",
       "slug": "executing-plans",
       "path": "skills/executing-plans/SKILL.md",
-      "sha": "ac77129d7c695734105004b6da10169de8d13df3",
+      "sha": "ea23196d745043eefb0287387112825d2ca99f05",
       "name": "executing-plans",
       "description": "Use when executing an implementation plan in the current session as the implementer yourself — your human partner chose inline execution, or no subagent tool is available",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "obra/superpowers/finishing-a-development-branch",
@@ -1079,7 +1079,7 @@
       "sha": "fa8aecaf8813f1b19d19996f7957d1b0121f2d9c",
       "name": "finishing-a-development-branch",
       "description": "Use when implementation is complete, all tests pass, and you need to decide how to integrate the work",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "obra/superpowers/receiving-code-review",
@@ -1089,7 +1089,7 @@
       "sha": "950da7b74bf6dbed6b8726d12ddadd65a9f5fda7",
       "name": "receiving-code-review",
       "description": "Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical rigor and verification, not performative agreement or blind implementation",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "obra/superpowers/requesting-code-review",
@@ -1099,17 +1099,17 @@
       "sha": "68d338a58ecdd8b77bfbb519b781ef223dbbb842",
       "name": "requesting-code-review",
       "description": "Use when completing tasks, implementing major features, or before merging to verify work meets requirements",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "obra/superpowers/subagent-driven-development",
       "source": "obra/superpowers",
       "slug": "subagent-driven-development",
       "path": "skills/subagent-driven-development/SKILL.md",
-      "sha": "ea170ed101d61a52fdee0ade8368ec0723980a5c",
+      "sha": "45195787cb3f5d141af203e2fdc12f158be14522",
       "name": "subagent-driven-development",
       "description": "Use when executing implementation plans with independent tasks in the current session",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "obra/superpowers/systematic-debugging",
@@ -1119,7 +1119,7 @@
       "sha": "62fc752aaef59a8bbed5d305f4cadc60f8ae07ed",
       "name": "systematic-debugging",
       "description": "Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "obra/superpowers/test-driven-development",
@@ -1129,7 +1129,7 @@
       "sha": "46838cc9e893c06259e3bdad0fc2425b36242f15",
       "name": "test-driven-development",
       "description": "Use when implementing any feature or bugfix, before writing implementation code",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "obra/superpowers/using-git-worktrees",
@@ -1139,7 +1139,7 @@
       "sha": "1381dacb3516b94382dd6ec736ede21ee8ede2b3",
       "name": "using-git-worktrees",
       "description": "Use when starting feature work that needs isolation from current workspace or before executing implementation plans - ensures an isolated workspace exists via native tools or git worktree fallback",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "obra/superpowers/verification-before-completion",
@@ -1149,7 +1149,7 @@
       "sha": "7d45333cc4a49c57a80df6c1fe2fa777a207afbc",
       "name": "verification-before-completion",
       "description": "Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence before assertions always",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "obra/superpowers/writing-plans",
@@ -1159,7 +1159,7 @@
       "sha": "4cf0275d88d67aa4ef09f4bbca9970ed6ff74a00",
       "name": "writing-plans",
       "description": "Use when you have a spec or requirements for a multi-step task, before touching code",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     },
     {
       "id": "vercel-labs/skills/find-skills",
@@ -1169,13 +1169,13 @@
       "sha": "a41bdd074bb587afd861332cf2f473f3154de4d7",
       "name": "find-skills",
       "description": "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\", \"is there a skill that can...\", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.",
-      "checkedAt": "2026-11-03T03:48:53.760Z"
+      "checkedAt": "2026-11-09T08:01:13.353Z"
     }
   ],
   "stats": {
     "total": 117,
-    "cached": 117,
-    "changed": 0,
+    "cached": 100,
+    "changed": 17,
     "new": 0,
     "repositories": 8
   }
